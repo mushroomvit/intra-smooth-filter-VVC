@@ -1,0 +1,32 @@
+{
+  "label": "POST-ROUTE EARLY RAIL ESTIMATE \u2014 native VCD instance currents",
+  "design": "65-SGPF",
+  "power_budget_W": 2.087e-05,
+  "expected_current_A": 2.6087499999999997e-05,
+  "rail_state": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_141943-65-SGPF-final-spef/postroute_era/results/CORE_25C_avg_1",
+  "nets": {
+    "VDD": {
+      "loaded_current_A": 2.6123548195755575e-05,
+      "ir_violations": 0,
+      "minimum_voltage_V": 0.799957,
+      "average_voltage_V": 0.799968,
+      "maximum_voltage_V": 0.8,
+      "worst_drop_or_rise_V": 4.300000000001525e-05,
+      "report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_141943-65-SGPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/VDD.main.rpt"
+    },
+    "VSS": {
+      "loaded_current_A": 2.6086428078997415e-05,
+      "ir_violations": 0,
+      "minimum_voltage_V": 1.30069e-13,
+      "average_voltage_V": 3.79316e-05,
+      "maximum_voltage_V": 4.95729e-05,
+      "worst_drop_or_rise_V": 4.95729e-05,
+      "report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_141943-65-SGPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/VSS.main.rpt"
+    }
+  },
+  "voltage_drop_limit_fraction": 0.1,
+  "voltage_drop_limit_V": 0.08000000000000002,
+  "combined_drop_upper_bound_V": 9.257290000001525e-05,
+  "combined_drop_upper_bound_fraction": 0.00011571612500001906,
+  "within_limit": true
+}

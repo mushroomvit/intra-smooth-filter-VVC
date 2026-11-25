@@ -1,0 +1,41 @@
+{
+  "current_layouts": {
+    "FPF": "20261125_125823-FPF-final-spef",
+    "129-SGPF": "20261125_125823-129-SGPF-final-spef",
+    "MPF": "20261125_125823-MPF-final-spef",
+    "65-SGPF": "20261125_141943-65-SGPF-final-spef"
+  },
+  "kept_physical_run_chain": [
+    "20261125_115837-129-SGPF-u65-ring02",
+    "20261125_115837-65-SGPF-u65-ring02",
+    "20261125_115837-FPF-u65-ring02",
+    "20261125_115837-MPF-u65-ring02",
+    "20261125_125823-129-SGPF-final-spef",
+    "20261125_125823-FPF-final-spef",
+    "20261125_125823-MPF-final-spef",
+    "20261125_141943-65-SGPF-final-spef"
+  ],
+  "native_power_destination": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261125_125823-final-spef-power",
+  "remove": [
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_110908-129-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_110908-65-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_110908-FPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_110908-MPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_125823-65-SGPF-final-spef",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_110908-129-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_110908-65-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_110908-FPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_110908-MPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-65-SGPF-final-spef",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_110908-129-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_110908-65-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_110908-FPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_110908-MPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-65-SGPF-final-spef",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/work/20261125_110908-129-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/work/20261125_110908-65-SGPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/work/20261125_110908-FPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/work/20261125_110908-MPF-u65-ring02",
+    "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/work/20261125_125823-65-SGPF-final-spef"
+  ]
+}

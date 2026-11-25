@@ -1,0 +1,14 @@
+{
+  "label": "POST-ROUTE EARLY RAIL ESTIMATE \u2014 native VCD instance currents",
+  "design": "FPF",
+  "scenario": "Tango2_qp37_3_89MHz",
+  "supply_V": 0.8,
+  "temperature_C": 25,
+  "power_budget_W": 7.022e-05,
+  "margin_fraction": 0,
+  "voltage_drop_limit_fraction": 0.1,
+  "source_power_summary": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/power/finish/power_summary.json",
+  "current_model": "Native per-instance static VDD/VSS currents from the implemented CTS netlist",
+  "contact_model": "Ideal contacts at top/bottom M6 ring midpoints",
+  "limitations": "RTL VCD with mapped activity propagation; no gate-level SDF glitch simulation; post-CTS signal RC is estimated before routing"
+}

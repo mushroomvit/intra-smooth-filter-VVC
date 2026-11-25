@@ -1,0 +1,362 @@
+Begin Preparing Database for Report Generation
+    Net VSS:
+        
+        Circuit profile:
+                                                              Current    Voltage
+        Layer Name                       Nodes   Resistors    Sources    Sources
+        ----- --------------------  ----------  ----------  ---------  ---------
+        0     M6                            38          36          0          2
+        1     VIA5                           0          36          0          0
+        2     M5                          1923        1905          0          0
+        3     VIA4                           0        1887          0          0
+        4     M4                          1887           0          0          0
+        5     VIA3                           0        1887          0          0
+        6     M3                          1887           0          0          0
+        7     VIA2                           0        1887          0          0
+        8     M2                          3598        3480          0          0
+        9     VIA1                           0        1887          0          0
+        10    M1                         37130       37012      35343          0
+                                    ----------  ----------  ---------  ---------
+        11    Circuit total              46464       50017      35343          2
+
+    Net VDD:
+        
+        Circuit profile:
+                                                              Current    Voltage
+        Layer Name                       Nodes   Resistors    Sources    Sources
+        ----- --------------------  ----------  ----------  ---------  ---------
+        0     M6                            38          36          0          2
+        1     VIA5                           0          36          0          0
+        2     M5                          1924        1906          0          0
+        3     VIA4                           0        1888          0          0
+        4     M4                          1888           0          0          0
+        5     VIA3                           0        1888          0          0
+        6     M3                          1888           0          0          0
+        7     VIA2                           0        1888          0          0
+        8     M2                          3600        3482          0          0
+        9     VIA1                           0        1888          0          0
+        10    M1                         37226       37108      35363          0
+                                    ----------  ----------  ---------  ---------
+        11    Circuit total              46565       50120      35363          2
+Ended Preparing Database for Report Generation
+
+************************************************************************************
+
+Begin IR Drop (Linear) Report Generation
+    Net VSS:
+          Voltage: 0
+          Threshold: 0.08
+          Minimum, Average, Maximum IR Drop: 0.000V, 0.144mV, 0.183mV
+            Range 1(   0.160mV  -     0.183mV ):     18529 ( 39.88%)
+            Range 2(   0.137mV  -     0.160mV ):     11837 ( 25.48%)
+            Range 3(   0.114mV  -     0.137mV ):      8449 ( 18.18%)
+            Range 4(  91.412uV  -     0.114mV ):      5141 ( 11.06%)
+            Range 5(  68.559uV  -    91.412uV ):      1893 (  4.07%)
+            Range 6(  45.706uV  -    68.559uV ):       573 (  1.23%)
+            Range 7(  22.853uV  -    45.706uV ):        35 (  0.08%)
+            Range 8(    0.000V  -    22.853uV ):         6 (  0.01%)
+            Layer with maximum IR Drop:  M5
+              M6: 0.00010925 [0 - 0.00010925]
+              M5: 0.00017051 [9.2161e-06 - 0.00017972]
+              M4: 0.00014387 [3.6231e-05 - 0.00018011]
+              M3: 0.00014243 [3.8055e-05 - 0.00018049]
+              M2: 0.00014099 [3.9879e-05 - 0.00018087]
+              M1: 0.0001418 [4.1028e-05 - 0.00018282]
+          IR Report: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/VSS.main.rpt
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/ir_linear.gif
+
+    Net VDD:
+          Voltage: 0.8
+          Threshold: 0.72
+          Minimum, Average, Maximum IR Drop: 0.800V, 0.800V, 0.800V
+            Range 1(    0.800V  -      0.800V ):     18093 ( 38.86%)
+            Range 2(    0.800V  -      0.800V ):     11643 ( 25.00%)
+            Range 3(    0.800V  -      0.800V ):      8281 ( 17.78%)
+            Range 4(    0.800V  -      0.800V ):      5498 ( 11.81%)
+            Range 5(    0.800V  -      0.800V ):      2124 (  4.56%)
+            Range 6(    0.800V  -      0.800V ):       772 (  1.66%)
+            Range 7(    0.800V  -      0.800V ):       147 (  0.32%)
+            Range 8(    0.800V  -      0.800V ):         6 (  0.01%)
+            Layer with maximum IR Drop:  M5
+              M6: 0.00010461 [0.7999 - 0.8]
+              M5: 0.00015789 [0.79983 - 0.79999]
+              M4: 0.00014788 [0.79983 - 0.79998]
+              M3: 0.00014627 [0.79983 - 0.79997]
+              M2: 0.00014466 [0.79983 - 0.79997]
+              M1: 0.00014561 [0.79983 - 0.79997]
+          IR Report: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/VDD.main.rpt
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/ir_linear.gif
+Ended IR Drop (Linear) Report Generation
+
+************************************************************************************
+
+Begin IR Drop (Limit) Report Generation
+    Net VSS:
+          Voltage: 0
+          Threshold: 0.08
+          Minimum, Average, Maximum IR Drop: 0.000V, 0.144mV, 0.183mV
+            Range 1(  80.000mV  -    80.008mV ):         0 (  0.00%)
+            Range 2(  73.333mV  -    80.000mV ):         0 (  0.00%)
+            Range 3(  66.667mV  -    73.333mV ):         0 (  0.00%)
+            Range 4(  60.000mV  -    66.667mV ):         0 (  0.00%)
+            Range 5(  53.333mV  -    60.000mV ):         0 (  0.00%)
+            Range 6(  46.667mV  -    53.333mV ):         0 (  0.00%)
+            Range 7(  40.000mV  -    46.667mV ):         0 (  0.00%)
+            Range 8(  -1.000uV  -    40.000mV ):     46463 (100.00%)
+            Layer with maximum IR Drop:  M5
+              M6: 0.00010925 [0 - 0.00010925]
+              M5: 0.00017051 [9.2161e-06 - 0.00017972]
+              M4: 0.00014387 [3.6231e-05 - 0.00018011]
+              M3: 0.00014243 [3.8055e-05 - 0.00018049]
+              M2: 0.00014099 [3.9879e-05 - 0.00018087]
+              M1: 0.0001418 [4.1028e-05 - 0.00018282]
+          IR Report: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/VSS.main.rpt
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/ir_limit.gif
+
+    Net VDD:
+          Voltage: 0.8
+          Threshold: 0.72
+          Minimum, Average, Maximum IR Drop: 0.800V, 0.800V, 0.800V
+            Range 1(    0.720V  -      0.720V ):         0 (  0.00%)
+            Range 2(    0.720V  -      0.727V ):         0 (  0.00%)
+            Range 3(    0.727V  -      0.733V ):         0 (  0.00%)
+            Range 4(    0.733V  -      0.740V ):         0 (  0.00%)
+            Range 5(    0.740V  -      0.747V ):         0 (  0.00%)
+            Range 6(    0.747V  -      0.753V ):         0 (  0.00%)
+            Range 7(    0.753V  -      0.760V ):         0 (  0.00%)
+            Range 8(    0.760V  -      0.800V ):     46564 (100.00%)
+            Layer with maximum IR Drop:  M5
+              M6: 0.00010461 [0.7999 - 0.8]
+              M5: 0.00015789 [0.79983 - 0.79999]
+              M4: 0.00014788 [0.79983 - 0.79998]
+              M3: 0.00014627 [0.79983 - 0.79997]
+              M2: 0.00014466 [0.79983 - 0.79997]
+              M1: 0.00014561 [0.79983 - 0.79997]
+          IR Report: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/VDD.main.rpt
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/ir_limit.gif
+Ended IR Drop (Limit) Report Generation
+
+************************************************************************************
+
+Begin Tap Current Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Tap Current: -0.307uA, -2.484nA, 0.000A
+          Total Current: -87.780uA
+            Range 1(  -1.000GA  -    -1.000mA ):         0 (  0.00%)
+            Range 2(  -1.000mA  -  -100.000uA ):         0 (  0.00%)
+            Range 3(-100.000uA  -   -10.000uA ):         0 (  0.00%)
+            Range 4( -10.000uA  -    -1.000uA ):         0 (  0.00%)
+            Range 5(  -1.000uA  -  -100.000nA ):        85 (  0.24%)
+            Range 6(-100.000nA  -   -10.000nA ):      4075 ( 11.53%)
+            Range 7( -10.000nA  -    -1.000nA ):      3171 (  8.97%)
+            Range 8(  -1.000nA  -      0.000A ):     28012 ( 79.26%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/tc.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Tap Current: 0.000A, 2.482nA, 0.307uA
+          Total Current: 87.780uA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):         0 (  0.00%)
+            Range 3(  10.000uA  -   100.000uA ):         0 (  0.00%)
+            Range 4(   1.000uA  -    10.000uA ):         0 (  0.00%)
+            Range 5( 100.000nA  -     1.000uA ):        85 (  0.24%)
+            Range 6(  10.000nA  -   100.000nA ):      4093 ( 11.57%)
+            Range 7(   1.000nA  -    10.000nA ):      3155 (  8.92%)
+            Range 8(    0.000A  -     1.000nA ):     28030 ( 79.26%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/tc.gif
+Ended Tap Current Report Generation
+
+************************************************************************************
+
+Begin Instance Based IR Drop Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Instance Based IR Drop: 41.587uV, 0.145mV, 0.183mV
+            Range 1(  80.000mV  -    80.008mV ):         0 (  0.00%)
+            Range 2(  73.333mV  -    80.000mV ):         0 (  0.00%)
+            Range 3(  66.667mV  -    73.333mV ):         0 (  0.00%)
+            Range 4(  60.000mV  -    66.667mV ):         0 (  0.00%)
+            Range 5(  53.333mV  -    60.000mV ):         0 (  0.00%)
+            Range 6(  46.667mV  -    53.333mV ):         0 (  0.00%)
+            Range 7(  40.000mV  -    46.667mV ):         0 (  0.00%)
+            Range 8(  -1.000uV  -    40.000mV ):     35343 (100.00%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/iv.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Instance Based IR Drop: 0.800V, 0.800V, 0.800V
+            Range 1(    0.720V  -      0.720V ):         0 (  0.00%)
+            Range 2(    0.720V  -      0.727V ):         0 (  0.00%)
+            Range 3(    0.727V  -      0.733V ):         0 (  0.00%)
+            Range 4(    0.733V  -      0.740V ):         0 (  0.00%)
+            Range 5(    0.740V  -      0.747V ):         0 (  0.00%)
+            Range 6(    0.747V  -      0.753V ):         0 (  0.00%)
+            Range 7(    0.753V  -      0.760V ):         0 (  0.00%)
+            Range 8(    0.760V  -      0.800V ):     35363 (100.00%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/iv.gif
+Ended Instance Based IR Drop Report Generation
+
+************************************************************************************
+
+Begin Effective Instance Voltage Report Generation
+    Net VSS:
+
+    Net VDD:
+        
+         Avg EIV:
+          Minimum, Average, Maximum Effective Instance Voltage: 0.800V, 0.800V, 0.800V
+            Range 1(    0.800V  -      0.800V ):     11813 ( 31.70%)
+            Range 2(    0.800V  -      0.800V ):      8890 ( 23.86%)
+            Range 3(    0.800V  -      0.800V ):      6052 ( 16.24%)
+            Range 4(    0.800V  -      0.800V ):      5067 ( 13.60%)
+            Range 5(    0.800V  -      0.800V ):      3103 (  8.33%)
+            Range 6(    0.800V  -      0.800V ):      1472 (  3.95%)
+            Range 7(    0.800V  -      0.800V ):       641 (  1.72%)
+            Range 8(    0.800V  -      0.800V ):       223 (  0.60%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD_VSS.avg_div.gif
+          GIF Limit plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD_VSS.avg_limit_div.gif
+          **** Note: Histogram and gif file are generated based on elapsed EIV results.
+Ended Effective Instance Voltage Report Generation
+
+************************************************************************************
+
+Begin Voltage Source Current Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Voltage Source Current: 43.775uA, 43.890uA, 44.005uA
+          Total Current: 87.780uA
+            Range 1(  43.976uA  -    44.009uA ):         1 ( 50.00%)
+            Range 2(  43.947uA  -    43.976uA ):         0 (  0.00%)
+            Range 3(  43.919uA  -    43.947uA ):         0 (  0.00%)
+            Range 4(  43.890uA  -    43.919uA ):         0 (  0.00%)
+            Range 5(  43.861uA  -    43.890uA ):         0 (  0.00%)
+            Range 6(  43.833uA  -    43.861uA ):         0 (  0.00%)
+            Range 7(  43.804uA  -    43.833uA ):         0 (  0.00%)
+            Range 8(  43.771uA  -    43.804uA ):         1 ( 50.00%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/vc.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Voltage Source Current: -43.887uA, -43.887uA, -43.887uA
+          Total Current: -87.774uA
+            Range 1( -43.887uA  -   -43.883uA ):         2 (100.00%)
+            Range 2( -43.887uA  -   -43.887uA ):         0 (  0.00%)
+            Range 3( -43.887uA  -   -43.887uA ):         0 (  0.00%)
+            Range 4( -43.887uA  -   -43.887uA ):         0 (  0.00%)
+            Range 5( -43.887uA  -   -43.887uA ):         0 (  0.00%)
+            Range 6( -43.887uA  -   -43.887uA ):         0 (  0.00%)
+            Range 7( -43.887uA  -   -43.887uA ):         0 (  0.00%)
+            Range 8( -43.892uA  -   -43.887uA ):         0 (  0.00%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/vc.gif
+Ended Voltage Source Current Report Generation
+
+************************************************************************************
+
+Begin Resistor Current Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Resistor Current: 0.000A, 0.111uA, 25.024uA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):         0 (  0.00%)
+            Range 3(  10.000uA  -   100.000uA ):        10 (  0.02%)
+            Range 4(   1.000uA  -    10.000uA ):      1277 (  2.55%)
+            Range 5(   0.100uA  -     1.000uA ):      7005 ( 14.01%)
+            Range 6(  10.000nA  -     0.100uA ):     33984 ( 67.94%)
+            Range 7(   1.000nA  -    10.000nA ):      4383 (  8.76%)
+            Range 8(    0.000A  -     1.000nA ):      3358 (  6.71%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/rc.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Resistor Current: 0.000A, 0.112uA, 24.542uA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):         0 (  0.00%)
+            Range 3(  10.000uA  -   100.000uA ):        10 (  0.02%)
+            Range 4(   1.000uA  -    10.000uA ):      1261 (  2.52%)
+            Range 5(   0.100uA  -     1.000uA ):      7828 ( 15.62%)
+            Range 6(  10.000nA  -     0.100uA ):     28002 ( 55.87%)
+            Range 7(   1.000nA  -    10.000nA ):       391 (  0.78%)
+            Range 8(    0.000A  -     1.000nA ):     12628 ( 25.20%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/rc.gif
+Ended Resistor Current Report Generation
+
+************************************************************************************
+
+Begin Resistor Voltage Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Resistor Voltage: 0.000V, 0.270uV, 30.958uV
+            Range 1(  27.088uV  -    30.961uV ):         5 (  0.01%)
+            Range 2(  23.218uV  -    27.088uV ):         3 (  0.01%)
+            Range 3(  19.349uV  -    23.218uV ):         3 (  0.01%)
+            Range 4(  15.479uV  -    19.349uV ):         5 (  0.01%)
+            Range 5(  11.609uV  -    15.479uV ):        23 (  0.05%)
+            Range 6(   7.739uV  -    11.609uV ):        77 (  0.15%)
+            Range 7(   3.870uV  -     7.739uV ):       311 (  0.62%)
+            Range 8(    0.000V  -     3.870uV ):     49590 ( 99.15%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VSS/rv.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Resistor Voltage: 0.000V, 0.273uV, 28.610uV
+            Range 1(  25.034uV  -    28.613uV ):         4 (  0.01%)
+            Range 2(  21.458uV  -    25.034uV ):         2 (  0.00%)
+            Range 3(  17.881uV  -    21.458uV ):         2 (  0.00%)
+            Range 4(  14.305uV  -    17.881uV ):        11 (  0.02%)
+            Range 5(  10.729uV  -    14.305uV ):        35 (  0.07%)
+            Range 6(   7.153uV  -    10.729uV ):        91 (  0.18%)
+            Range 7(   3.576uV  -     7.153uV ):       346 (  0.69%)
+            Range 8(    0.000V  -     3.576uV ):     49629 ( 99.02%)
+          GIF plot: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/postroute_era/results/CORE_25C_avg_1/Reports/VDD/rv.gif
+Ended Resistor Voltage Report Generation
+
+************************************************************************************
+
+Begin Power Gate I/Idsat Report Generation
+    Net VSS:
+          No data found
+
+    Net VDD:
+          No data found
+Ended Power Gate I/Idsat Report Generation
+
+************************************************************************************
+
+Begin Power Gate Voltage Report Generation
+    Net VSS:
+          No data found.
+
+    Net VDD:
+          No data found.
+Ended Power Gate Voltage Report Generation
+
+************************************************************************************
+
+Begin Voltage Across Vias and Contacts Report Generation
+    Net VSS:
+
+    Net VDD:
+Ended Voltage Across Vias and Contacts Report Generation
+
+************************************************************************************
+
+Begin Weak Grid Connectivity Report
+    Net VSS:
+
+    Net VDD:
+Ended Weak Grid Connectivity Report
+
+************************************************************************************
+
+Begin Grid Integrity Report Generation
+    Net VSS:
+          # Missing Cell Power-Grid Views: 0
+          # Physically Disconnected Instances: 0
+          # Instances with Floating Power Pins: 0
+          # Disconnected Wire Segments: 0
+          # Weakly Connected Metal Segments: 0
+          # Dropped Voltage Sources: 0
+
+    Net VDD:
+          # Missing Cell Power-Grid Views: 0
+          # Physically Disconnected Instances: 0
+          # Instances with Floating Power Pins: 0
+          # Disconnected Wire Segments: 0
+          # Weakly Connected Metal Segments: 0
+          # Dropped Voltage Sources: 0
+Ended Grid Integrity Report Generation
+
+************************************************************************************
+

@@ -1,0 +1,29 @@
+{
+  "tie_cells_classified_as_logic": [
+    {
+      "cell": "TIELSGBWP7T40P140",
+      "instance": "/wrapper/u_ctrl_CG_RC_CG_HIER_INST0/TIE_LTIELO"
+    },
+    {
+      "cell": "TIELSGBWP7T40P140",
+      "instance": "/wrapper/CG_RC_CG_HIER_INST2/TIE_LTIELO"
+    },
+    {
+      "cell": "TIELSGBWP7T40P140",
+      "instance": "/wrapper/CG_RC_CG_HIER_INST1/TIE_LTIELO"
+    }
+  ],
+  "clock_partition_difference_uW": {
+    "switching": 0.004797540000099992,
+    "internal": -1.2441439199081805e-06,
+    "leakage": -5.399847236020605e-14,
+    "total": 0.004796295859000127
+  },
+  "native_clock_comb": {
+    "switching": 0.1255337599999,
+    "internal": 0.04586651599992,
+    "leakage": 0.01854484999999,
+    "total": 0.189945126
+  },
+  "clock_definition": "Clock-sequential is native clock_seq; clock-combinational is aggregate clock minus clock_seq, including clock-network contributions omitted by the cell-only clock_comb category."
+}

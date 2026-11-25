@@ -1,0 +1,44 @@
+----------------- report_spef_annotation-----------------
+Type      Count  Annotated       %  Unannotated  %      
+---------------------------------------------------------
+Normal     2661       2661  100.00            0  0.00   
+Unloaded     26          0    0.00           26  100.00 
+Undriven      0          0    0.00            0  0.00   
+Constant      0          0    0.00            0  0.00   
+Total      2687       2661   99.03           26  0.97   
+---------------------------------------------------------
+
+Net category : unloaded
+-----------------------------
+WireCap SinkCap LoadCap Net
+-----------------------------
+                       /wrapper/UNCONNECTED
+                       /wrapper/UNCONNECTED0
+                       /wrapper/UNCONNECTED1
+                       /wrapper/UNCONNECTED2
+                       /wrapper/UNCONNECTED3
+                       /wrapper/UNCONNECTED4
+                       /wrapper/UNCONNECTED5
+                       /wrapper/UNCONNECTED6
+                       /wrapper/UNCONNECTED7
+                       /wrapper/UNCONNECTED8
+                       /wrapper/UNCONNECTED9
+                       /wrapper/UNCONNECTED10
+                       /wrapper/UNCONNECTED11
+                       /wrapper/UNCONNECTED12
+                       /wrapper/UNCONNECTED13
+                       /wrapper/UNCONNECTED14
+                       /wrapper/UNCONNECTED15
+                       /wrapper/UNCONNECTED16
+                       /wrapper/UNCONNECTED17
+                       /wrapper/UNCONNECTED18
+                       /wrapper/UNCONNECTED19
+                       /wrapper/UNCONNECTED20
+                       /wrapper/UNCONNECTED21
+                       /wrapper/UNCONNECTED22
+                       /wrapper/UNCONNECTED23
+                       /wrapper/UNCONNECTED24
+-----------------------------
+0.000   0.000   0.000   Sum
+0.000   0.000   0.000   Avg
+-----------------------------

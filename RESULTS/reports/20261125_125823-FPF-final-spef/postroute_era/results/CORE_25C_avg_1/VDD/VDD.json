@@ -1,0 +1,43 @@
+{
+    "net_name": "VDD",
+    "smg": {
+        "config": {
+            "name": "VDD",
+            "output_path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD",
+            "nominal_voltage": "0.800000012"
+        },
+        "result": {
+            "DefInstData": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/VDD.defInstData",
+                "type": "proto::voltus.def_instdata_mgr.proto.DefInstDataManager"
+            },
+            "layerInfo": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/layerInfo",
+                "type": "proto.voltus.layer_manager.LayerManager"
+            },
+            "pgdb": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD"
+            },
+            "cellview": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/VDD.cellviews",
+                "type": "txt"
+            },
+            "pgv_table": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/VDD.pgv_table.rpt",
+                "type": "txt"
+            },
+            "pg_candidate": {
+                "dir": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/pg_candidate",
+                "net": "VDD"
+            },
+            "grid_report": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/VDD.grid.report",
+                "type": "txt"
+            },
+            "missing_pgv": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/VDD.missingPGVData.protobuf",
+                "type": "protobuf.VOLTUS.SMGDATA.MissingPGV"
+            }
+        }
+    }
+}

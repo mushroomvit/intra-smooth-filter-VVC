@@ -1,0 +1,764 @@
+- Cell: AN2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AN2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 17 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN3SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AN3SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN4SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AN4SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 5 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO211SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO211SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 9 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO21SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO21SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 29 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO221SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO221SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO22SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO22SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 7 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO31SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO31SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO32SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO32SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 5 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO33SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AO33SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI211SGD0BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: AOI211SGD0BWP7T40P140 Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI211SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AOI211SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI21SGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: AOI21SGD1BWP7T40P140 Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI21SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AOI21SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 7 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI221SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AOI221SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI22SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AOI22SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 7 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AOI31SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: AOI31SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BOUNDARY_LEFTSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BOUNDARY_LEFTSGBWP7T40P140 Pin: VDD Instantiation: 114 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BOUNDARY_RIGHTSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BOUNDARY_RIGHTSGBWP7T40P140 Pin: VDD Instantiation: 114 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BUFFSGD0BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BUFFSGD0BWP7T40P140 Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKBSGD16BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKBSGD16BWP7T40P140 Pin: VDD Instantiation: 15 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKBSGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKBSGD1BWP7T40P140 Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKBSGD2BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKBSGD2BWP7T40P140 Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKLNQOPPSASGD2BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKLNQOPPSASGD2BWP7T40P140 Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKLNQSGD16BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKLNQSGD16BWP7T40P140 Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKND2SGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKND2SGD1BWP7T40P140 Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKND2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: CKND2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 7 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKNSGD0BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: CKNSGD0BWP7T40P140 Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: CKNSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: CKNSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 22 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: DFKCNQSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: DFKCNQSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 49 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: DFKCNQSGD2BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: DFKCNQSGD2BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: DFKCNSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: DFKCNSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 498 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: DFQSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: DFQSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 516 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: DFQSGD2BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: DFQSGD2BWP7T40P140UHVT Pin: VDD Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: DFSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: DFSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: FA1SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: FA1SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: FA1SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: FA1SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 798 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: FILL32SGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: FILL32SGBWP7T40P140 Pin: VDD Instantiation: 9 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: FILL3SGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: FILL3SGBWP7T40P140 Pin: VDD Instantiation: 2486 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: FILL4SGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: FILL4SGBWP7T40P140 Pin: VDD Instantiation: 838 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: FILL8SGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: FILL8SGBWP7T40P140 Pin: VDD Instantiation: 492 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: IND2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: IND2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 26 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: IND3SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: IND3SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: INR2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: INR2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 8 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: INR3SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: INR3SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: INVSGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: INVSGD1BWP7T40P140 Pin: VDD Instantiation: 27 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: INVSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: INVSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 33 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MAOI222SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: MAOI222SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MAOI22SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: MAOI22SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 12 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MOAI22SGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: MOAI22SGD1BWP7T40P140 Pin: VDD Instantiation: 32 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MOAI22SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: MOAI22SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 429 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MUX2NSGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: MUX2NSGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MUX2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: MUX2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 70 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ND2SGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: ND2SGD1BWP7T40P140 Pin: VDD Instantiation: 18 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ND2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: ND2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 148 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ND3SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: ND3SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NR2SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: NR2SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NR2SGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: NR2SGD1BWP7T40P140 Pin: VDD Instantiation: 13 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NR2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: NR2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 78 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NR3SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: NR3SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA211SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OA211SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 5 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA21SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OA21SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 79 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA221SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OA221SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA22SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OA22SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA31SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OA31SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA32SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OA32SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OAI211SGD0BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: OAI211SGD0BWP7T40P140 Pin: VDD Instantiation: 60 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OAI21SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OAI21SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 23 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OAI222SGD0BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OAI222SGD0BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OAI22SGD1BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: OAI22SGD1BWP7T40P140 Pin: VDD Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OAI22SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OAI22SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 24 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OAI31SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OAI31SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OR2SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OR2SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 87 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OR3SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OR3SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OR4SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: OR4SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: TAPCELLSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: TAPCELLSGBWP7T40P140 Pin: VDD Instantiation: 986 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: TIELSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: TIELSGBWP7T40P140 Pin: VDD Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: XNR2SGD2BWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: XNR2SGD2BWP7T40P140 Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: XNR3SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: XNR3SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 5 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: XNR4SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: XNR4SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: XOR2SGD2BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: XOR2SGD2BWP7T40P140UHVT Pin: VDD Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: XOR4SGD1BWP7T40P140UHVT Tag: 
+ Temperature: 25
+* Cell: XOR4SGD1BWP7T40P140UHVT Pin: VDD Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+
+Grid Statistics of Net VDD:
+- NODE
+  Total node: 10584
+    Top Level grid node: 10584
+      Top level interface node: 8291
+    Missing interface node: 0
+    Cell internal node: 0
+- ELEM
+  Total element: 11404
+    Top Level grid element: 11404
+    Cell internal element: 0
+- INST
+  Instance logically connected: 8291
+    Tech: 8291
+    StdCell: 0
+    Macro:
+      Early: 0
+      IR: 0
+      EM: 0
+    Current Region:  0
+  Dropped instance due to missing/incomplete cell library: 0
+- TAP
+  Total tap: 8291
+
+

@@ -1,0 +1,30 @@
+{
+    "created_on": "2026-Nov-25 13:02:31",
+    "creator": "voltus_rail",
+    "nominal_voltage": "0.800000012",
+    "is_power_net": "true",
+    "is_dynamic_analysis": "false",
+    "results": [
+        {
+            "type": "average",
+            "num_voltages": "46565",
+            "min_node_voltage": "0.799825191",
+            "max_node_voltage": "0.800000012",
+            "num_currents": "46565",
+            "min_tap_current": "-0",
+            "max_tap_current": "3.0662946e-07",
+            "min_voltage_source_current": "-4.3887117499252781e-05",
+            "max_voltage_source_current": "-4.3887117499252781e-05",
+            "min_voltage_source_voltage": "0.80000001192092896",
+            "max_voltage_source_voltage": "0.80000001192092896",
+            "num_peak_currents": "50120",
+            "peak_current_file": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_125823-FPF-final-spef\/postroute_era\/results\/CORE_25C_avg_1\/\/VDD\/voltus_rail.iavg",
+            "min_peak_current": "-2.4569502784288488e-05",
+            "max_peak_current": "1.9616005374700762e-05"
+        }
+    ],
+    "VC_SUM_Peak": "8.7774235e-05",
+    "TC_SUM_Peak": "8.77801358e-05",
+    "VC_SUM_Avg": "8.7774235e-05",
+    "TC_SUM_Avg": "8.77801358e-05"
+}

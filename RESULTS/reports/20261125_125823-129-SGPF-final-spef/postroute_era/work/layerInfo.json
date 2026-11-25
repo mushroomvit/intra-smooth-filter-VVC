@@ -1,0 +1,1051 @@
+{
+ "layers": [
+  {
+   "id": 0,
+   "type": "LAYER_REDUCED",
+   "techName": "REDUCED",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 1,
+   "type": "LAYER_VIA",
+   "techName": "ULP_2D5VIO_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 2,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_HVT_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 3,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_HVT_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 4,
+   "type": "LAYER_VIA",
+   "techName": "ULP_EHVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 5,
+   "type": "LAYER_VIA",
+   "techName": "ULP_EHVT_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 6,
+   "type": "LAYER_VIA",
+   "techName": "ULP_EDC_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 7,
+   "type": "LAYER_VIA",
+   "techName": "ULP_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 8,
+   "type": "LAYER_VIA",
+   "techName": "ULP_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 9,
+   "type": "LAYER_VIA",
+   "techName": "ULP_CHVT_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 10,
+   "type": "LAYER_VIA",
+   "techName": "ULP_AVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 11,
+   "type": "LAYER_VIA",
+   "techName": "ULP_ALVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 12,
+   "type": "LAYER_VIA",
+   "techName": "ULP_3D3VIO_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 13,
+   "type": "LAYER_VIA",
+   "techName": "ULP_3D3VIO_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 14,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_LVT_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 15,
+   "type": "LAYER_VIA",
+   "techName": "ULP_2D5VIO_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 16,
+   "type": "LAYER_VIA",
+   "techName": "ULP_1D8VIO_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 17,
+   "type": "LAYER_VIA",
+   "techName": "ULP_1D8VIO_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 18,
+   "type": "LAYER_VIA",
+   "techName": "ULP_1D5VIO_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 19,
+   "type": "LAYER_VIA",
+   "techName": "ULP_1D5VIO_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 20,
+   "type": "LAYER_VIA",
+   "techName": "ULP_1D2VIO_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 21,
+   "type": "LAYER_VIA",
+   "techName": "ULP_1D2VIO_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 22,
+   "type": "LAYER_VIA",
+   "techName": "p_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 23,
+   "type": "LAYER_VIA",
+   "techName": "n_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 24,
+   "type": "LAYER_VIA",
+   "techName": "p_polyCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 25,
+   "type": "LAYER_VIA",
+   "techName": "n_polyCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 26,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_LVT_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 27,
+   "type": "LAYER_VIA",
+   "techName": "ULP_ZVT_CORE_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 28,
+   "type": "LAYER_VIA",
+   "techName": "ULP_ULVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 29,
+   "type": "LAYER_VIA",
+   "techName": "ULP_ULVT_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 30,
+   "type": "LAYER_VIA",
+   "techName": "ULP_UHVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 31,
+   "type": "LAYER_VIA",
+   "techName": "ULP_UHVT_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 32,
+   "type": "LAYER_VIA",
+   "techName": "ULP_NA_CORE_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 33,
+   "type": "LAYER_VIA",
+   "techName": "ULP_NA_3D3VIO_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 34,
+   "type": "LAYER_VIA",
+   "techName": "ULP_NA_2D5VIO_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 35,
+   "type": "LAYER_VIA",
+   "techName": "ULP_NA_1D8VIO_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 36,
+   "type": "LAYER_VIA",
+   "techName": "ULP_NA_1D5VIO_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 37,
+   "type": "LAYER_VIA",
+   "techName": "ULP_NA_1D2VIO_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 38,
+   "type": "LAYER_VIA",
+   "techName": "ULP_LVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 39,
+   "type": "LAYER_VIA",
+   "techName": "ULP_LVT_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 40,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HVT_CORE_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 41,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HVT_CORE_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 42,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_ULVT_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 43,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_ULVT_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 44,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_UHVT_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 45,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_UHVT_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 46,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_PMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 47,
+   "type": "LAYER_VIA",
+   "techName": "ULP_HG_NMOS_odCont",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 48,
+   "type": "LAYER_METAL",
+   "techName": "CSUBSTRATE",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 49,
+   "type": "LAYER_DIFFUSION",
+   "techName": "pod",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 50,
+   "type": "LAYER_DIFFUSION",
+   "techName": "active",
+   "defNames": [],
+   "topLayerIds": [
+    98
+   ],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 51,
+   "type": "LAYER_DIFFUSION",
+   "techName": "nod",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 52,
+   "type": "LAYER_POLY",
+   "techName": "n_poly",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 53,
+   "type": "LAYER_POLY",
+   "techName": "p_poly",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 54,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_HVT_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 55,
+   "type": "LAYER_POLY",
+   "techName": "ULP_ULVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 56,
+   "type": "LAYER_POLY",
+   "techName": "ULP_EHVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 57,
+   "type": "LAYER_POLY",
+   "techName": "ULP_EHVT_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 58,
+   "type": "LAYER_POLY",
+   "techName": "ULP_EDC_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 59,
+   "type": "LAYER_POLY",
+   "techName": "ULP_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 60,
+   "type": "LAYER_POLY",
+   "techName": "ULP_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 61,
+   "type": "LAYER_POLY",
+   "techName": "ULP_CHVT_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 62,
+   "type": "LAYER_POLY",
+   "techName": "ULP_AVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 63,
+   "type": "LAYER_POLY",
+   "techName": "ULP_ALVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 64,
+   "type": "LAYER_POLY",
+   "techName": "ULP_3D3VIO_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 65,
+   "type": "LAYER_POLY",
+   "techName": "ULP_3D3VIO_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 66,
+   "type": "LAYER_POLY",
+   "techName": "ULP_2D5VIO_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 67,
+   "type": "LAYER_POLY",
+   "techName": "ULP_2D5VIO_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 68,
+   "type": "LAYER_POLY",
+   "techName": "ULP_1D8VIO_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 69,
+   "type": "LAYER_POLY",
+   "techName": "ULP_1D8VIO_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 70,
+   "type": "LAYER_POLY",
+   "techName": "ULP_1D5VIO_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 71,
+   "type": "LAYER_POLY",
+   "techName": "ULP_1D5VIO_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 72,
+   "type": "LAYER_POLY",
+   "techName": "ULP_1D2VIO_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 73,
+   "type": "LAYER_POLY",
+   "techName": "ULP_1D2VIO_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 74,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_LVT_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 75,
+   "type": "LAYER_POLY",
+   "techName": "ULP_ZVT_CORE",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 76,
+   "type": "LAYER_POLY",
+   "techName": "ULP_ULVT_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 77,
+   "type": "LAYER_POLY",
+   "techName": "ULP_UHVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 78,
+   "type": "LAYER_POLY",
+   "techName": "ULP_UHVT_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 79,
+   "type": "LAYER_POLY",
+   "techName": "ULP_NA_CORE",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 80,
+   "type": "LAYER_POLY",
+   "techName": "ULP_NA_3D3VIO",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 81,
+   "type": "LAYER_POLY",
+   "techName": "ULP_NA_2D5VIO",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 82,
+   "type": "LAYER_POLY",
+   "techName": "ULP_NA_1D8VIO",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 83,
+   "type": "LAYER_POLY",
+   "techName": "ULP_NA_1D5VIO",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 84,
+   "type": "LAYER_POLY",
+   "techName": "ULP_NA_1D2VIO",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 85,
+   "type": "LAYER_POLY",
+   "techName": "ULP_LVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 86,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HVT_CORE_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 87,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HVT_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 88,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_ULVT_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 89,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_ULVT_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 90,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_UHVT_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 91,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_UHVT_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 92,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 93,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 94,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_LVT_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 95,
+   "type": "LAYER_POLY",
+   "techName": "ULP_LVT_CORE_NMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 96,
+   "type": "LAYER_POLY",
+   "techName": "ULP_HG_HVT_PMOS",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 97,
+   "type": "LAYER_POLY",
+   "techName": "poly",
+   "defNames": [],
+   "topLayerIds": [
+    99
+   ],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 98,
+   "type": "LAYER_VIA",
+   "techName": "odCont",
+   "defNames": [
+    "CO"
+   ],
+   "topLayerIds": [
+    100
+   ],
+   "bottomLayerIds": [
+    50
+   ]
+  },
+  {
+   "id": 99,
+   "type": "LAYER_VIA",
+   "techName": "polyCont",
+   "defNames": [],
+   "topLayerIds": [
+    100
+   ],
+   "bottomLayerIds": [
+    97
+   ]
+  },
+  {
+   "id": 100,
+   "type": "LAYER_METAL",
+   "techName": "M1",
+   "defNames": [
+    "M1"
+   ],
+   "topLayerIds": [
+    101
+   ],
+   "bottomLayerIds": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": 101,
+   "type": "LAYER_VIA",
+   "techName": "VIA1",
+   "defNames": [
+    "VIA1"
+   ],
+   "topLayerIds": [
+    102
+   ],
+   "bottomLayerIds": [
+    100
+   ]
+  },
+  {
+   "id": 102,
+   "type": "LAYER_METAL",
+   "techName": "M2",
+   "defNames": [
+    "M2"
+   ],
+   "topLayerIds": [
+    103
+   ],
+   "bottomLayerIds": [
+    101
+   ]
+  },
+  {
+   "id": 103,
+   "type": "LAYER_VIA",
+   "techName": "VIA2",
+   "defNames": [
+    "VIA2"
+   ],
+   "topLayerIds": [
+    104
+   ],
+   "bottomLayerIds": [
+    102
+   ]
+  },
+  {
+   "id": 104,
+   "type": "LAYER_METAL",
+   "techName": "M3",
+   "defNames": [
+    "M3"
+   ],
+   "topLayerIds": [
+    105
+   ],
+   "bottomLayerIds": [
+    103
+   ]
+  },
+  {
+   "id": 105,
+   "type": "LAYER_VIA",
+   "techName": "VIA3",
+   "defNames": [
+    "VIA3"
+   ],
+   "topLayerIds": [
+    106
+   ],
+   "bottomLayerIds": [
+    104
+   ]
+  },
+  {
+   "id": 106,
+   "type": "LAYER_METAL",
+   "techName": "M4",
+   "defNames": [
+    "M4"
+   ],
+   "topLayerIds": [
+    107
+   ],
+   "bottomLayerIds": [
+    105
+   ]
+  },
+  {
+   "id": 107,
+   "type": "LAYER_VIA",
+   "techName": "VIA4",
+   "defNames": [
+    "VIA4"
+   ],
+   "topLayerIds": [
+    108
+   ],
+   "bottomLayerIds": [
+    106
+   ]
+  },
+  {
+   "id": 108,
+   "type": "LAYER_METAL",
+   "techName": "M5",
+   "defNames": [
+    "M5"
+   ],
+   "topLayerIds": [
+    109
+   ],
+   "bottomLayerIds": [
+    107
+   ]
+  },
+  {
+   "id": 109,
+   "type": "LAYER_VIA",
+   "techName": "VIA5",
+   "defNames": [
+    "VIA5"
+   ],
+   "topLayerIds": [
+    110
+   ],
+   "bottomLayerIds": [
+    108
+   ]
+  },
+  {
+   "id": 110,
+   "type": "LAYER_METAL",
+   "techName": "M6",
+   "defNames": [
+    "M6"
+   ],
+   "topLayerIds": [
+    112
+   ],
+   "bottomLayerIds": [
+    109
+   ]
+  },
+  {
+   "id": 111,
+   "type": "LAYER_METAL",
+   "techName": "TFR_7",
+   "defNames": [],
+   "topLayerIds": [
+    113
+   ],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 112,
+   "type": "LAYER_VIA",
+   "techName": "VIA6",
+   "defNames": [
+    "VIA6"
+   ],
+   "topLayerIds": [
+    114
+   ],
+   "bottomLayerIds": [
+    110
+   ]
+  },
+  {
+   "id": 113,
+   "type": "LAYER_VIA",
+   "techName": "TFR_VIA6",
+   "defNames": [],
+   "topLayerIds": [
+    114
+   ],
+   "bottomLayerIds": [
+    111
+   ]
+  },
+  {
+   "id": 114,
+   "type": "LAYER_METAL",
+   "techName": "M7",
+   "defNames": [
+    "M7"
+   ],
+   "topLayerIds": [
+    115
+   ],
+   "bottomLayerIds": [
+    112,
+    113
+   ]
+  },
+  {
+   "id": 115,
+   "type": "LAYER_VIA",
+   "techName": "RV",
+   "defNames": [
+    "RV"
+   ],
+   "topLayerIds": [
+    116
+   ],
+   "bottomLayerIds": [
+    114
+   ]
+  },
+  {
+   "id": 116,
+   "type": "LAYER_METAL",
+   "techName": "AP",
+   "defNames": [
+    "AP"
+   ],
+   "topLayerIds": [],
+   "bottomLayerIds": [
+    115
+   ]
+  }
+ ]
+}
+

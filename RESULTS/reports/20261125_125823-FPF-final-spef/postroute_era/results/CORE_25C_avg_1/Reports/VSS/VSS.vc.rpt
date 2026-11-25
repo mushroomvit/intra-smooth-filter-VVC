@@ -1,0 +1,18 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         1    4.4005e-05A   ERA_finish_VSS_2   87.75, 172.90  M6
+         8    4.3775e-05A   ERA_finish_VSS_1   87.75, 1.20  M6
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: 43.775uA, 43.890uA, 44.005uA
+  Total Current: 87.780uA
+    Range 1(  43.976uA  -    44.009uA ):         1 ( 50.00%)
+    Range 2(  43.947uA  -    43.976uA ):         0 (  0.00%)
+    Range 3(  43.919uA  -    43.947uA ):         0 (  0.00%)
+    Range 4(  43.890uA  -    43.919uA ):         0 (  0.00%)
+    Range 5(  43.861uA  -    43.890uA ):         0 (  0.00%)
+    Range 6(  43.833uA  -    43.861uA ):         0 (  0.00%)
+    Range 7(  43.804uA  -    43.833uA ):         0 (  0.00%)
+    Range 8(  43.771uA  -    43.804uA ):         1 ( 50.00%)

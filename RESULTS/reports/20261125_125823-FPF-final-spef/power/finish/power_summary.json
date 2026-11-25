@@ -1,0 +1,30 @@
+{
+  "design": "FPF",
+  "scenario": "Tango2_qp37_3_89MHz",
+  "stage": "finish",
+  "clock_tree": true,
+  "total_power_W": 7.022e-05,
+  "view": "TT_25",
+  "supply_V": 0.8,
+  "temperature_C": 25,
+  "primary_inputs": {
+    "annotated": 2077,
+    "total": 2077,
+    "percent": 100.0
+  },
+  "flop_outputs": {
+    "annotated": 2026,
+    "total": 5389,
+    "percent": 37.5951
+  },
+  "default_sequential_nets": 0,
+  "default_connected_sequential_nets": 0,
+  "equivalent_Q_Qbar_annotation": true,
+  "activity_selection": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/activity/activity_selection.json",
+  "report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/power/finish/power.rpt",
+  "current_files": {
+    "VDD": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/power/finish/static_VDD.ptiavg",
+    "VSS": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/power/finish/static_VSS.ptiavg"
+  },
+  "limitations": "RTL VCD with mapped activity propagation; no gate-level SDF glitch simulation; post-CTS signal RC is estimated before routing"
+}

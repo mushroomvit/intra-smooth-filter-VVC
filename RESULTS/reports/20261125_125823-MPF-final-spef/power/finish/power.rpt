@@ -1,0 +1,128 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 26.10-p003_1 (64bit) 06/17/2026 14:23 (Linux 4.18.0-305.el8.x86_64)
+*	
+*
+* 	Date & Time:	2026-Nov-25 13:06:43 (2026-Nov-25 16:06:43 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: wrapper
+*
+*	Liberty Libraries used: 
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvtffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvtffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvtssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvtssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        0.8 
+*
+*       Dynamic View: TT_25
+*
+*       Leakage View: TT_25
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-MPF-final-spef/activity/activity_innovus.vcd
+*                    Vcd Window used(Start Time, Stop Time):   
+*                     Vcd Scale Factor: 1 
+* *                    Design annotation coverage: 854/2687 = 31.7827% 
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1W
+*
+*	Time Units = 1e-09 secs 
+*
+*       Temperature = 25 
+*
+*       report_power -outfile /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-MPF-final-spef/power/finish/power.rpt -view TT_25
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.00000760 	   70.4274%
+Total Switching Power:       0.00000309 	   28.6603%
+Total Leakage Power:         0.00000010 	    0.9123%
+Total Power:                 0.00001079 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                     5.172e-06   6.051e-07   3.326e-08   5.811e-06       53.87 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                  2.137e-06   1.841e-06   4.021e-08   4.018e-06       37.25 
+Clock (Combinational)           2.16e-07   5.944e-07   1.856e-08   8.289e-07       7.685 
+Clock (Sequential)             7.228e-08   5.089e-08   6.383e-09   1.295e-07       1.201 
+-----------------------------------------------------------------------------------------
+Total                          7.597e-06   3.092e-06   9.841e-08   1.079e-05         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.8  7.597e-06   3.092e-06   9.841e-08   1.079e-05         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                            2.883e-07   6.453e-07   2.495e-08   9.585e-07       8.885 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)   2.883e-07   6.453e-07   2.495e-08   9.585e-07       8.885 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.257069 usec 
+Clock Toggle Rate:     7.7801 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:       CTS_ccl_a_buf_00007 (CKBSGD16BWP7T40P140):        1.139e-07 
+*                Highest Leakage Power: CG_RC_CG_HIER_INST1/RC_CGIC_INST (CKLNQSGD16BWP7T40P140):        2.577e-09 
+*          Total Cap:      6.21728e-12 F
+*          Total instances in design:  1726
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

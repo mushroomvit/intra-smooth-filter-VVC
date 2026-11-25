@@ -1,0 +1,18 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         1    2.1924e-05A   ERA_finish_VSS_1   61.25, 1.20  M6
+         8    2.1240e-05A   ERA_finish_VSS_2   61.25, 120.40  M6
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: 21.240uA, 21.582uA, 21.924uA
+  Total Current: 43.164uA
+    Range 1(  21.839uA  -    21.926uA ):         1 ( 50.00%)
+    Range 2(  21.753uA  -    21.839uA ):         0 (  0.00%)
+    Range 3(  21.668uA  -    21.753uA ):         0 (  0.00%)
+    Range 4(  21.582uA  -    21.668uA ):         0 (  0.00%)
+    Range 5(  21.497uA  -    21.582uA ):         0 (  0.00%)
+    Range 6(  21.411uA  -    21.497uA ):         0 (  0.00%)
+    Range 7(  21.326uA  -    21.411uA ):         0 (  0.00%)
+    Range 8(  21.238uA  -    21.326uA ):         1 ( 50.00%)

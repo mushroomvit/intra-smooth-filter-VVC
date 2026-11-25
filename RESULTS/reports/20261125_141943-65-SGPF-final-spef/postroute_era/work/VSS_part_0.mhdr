@@ -1,0 +1,56 @@
+* The organization, structure, and layout of this file are copyrights and
+* confidential and proprietary trade secrets of Cadence Design Systems, Inc.,
+* subject to the terms and conditions of the license agreement in effect
+* between you and Cadence Design Systems, Inc. This file and its information
+* may not be disclosed, sold, or otherwise transferred to any third party
+* without the express written consent of Cadence Design Systems, Inc. Export
+* of any or all of this file in violation of any statute or regulation is
+* strictly prohibited.
+* 
+
+FORMAT: 11.0
+PROJECT: none
+NET: VSS 
+CREATOR: QX
+
+CREATED: 2026-Nov-25 14:22:01 (2026-Nov-25 17:22:01 GMT)
+
+LAYOUT_XMIN: -20
+LAYOUT_YMIN: 380
+LAYOUT_XMAX: 181820
+LAYOUT_YMAX: 178420
+
+NODES: 10096
+NODE_FILE: VSS_part_0.mnode
+RESISTORS: 10784
+INDUCTORS: 0
+
+LAYERS: 11
+LAYER: M6 M 18 VSS_part_0.ml06
+LAYER: VIA5 V 18 VSS_part_0.ml07
+LAYER: M5 M 407 VSS_part_0.ml08
+LAYER: VIA4 V 398 VSS_part_0.ml09
+LAYER: M4 M 0 VSS_part_0.ml10
+LAYER: VIA3 V 398 VSS_part_0.ml11
+LAYER: M3 M 0 VSS_part_0.ml12
+LAYER: VIA2 V 398 VSS_part_0.ml13
+LAYER: M2 M 625 VSS_part_0.ml14
+LAYER: VIA1 V 398 VSS_part_0.ml15
+LAYER: M1 M 8124 VSS_part_0.ml16
+
+CUT_LAYER: none
+GRID_CAP: false
+DIFF_CAP: false
+NUM_PINS: 0
+PINS: VSS_part_0.bmpin
+NUM_INSTANCE_TAPS: 8291
+INSTANCES: VSS_part_0.bminst
+I_LOADS:
+NODE_MAP:
+RESISTOR_MAP:
+TILE_FILE: VSS_part_0.mtile
+OUTPUT_WLT: drawn
+LAYOUT_SCALE_FACTOR: 0.855
+TEMPERATURE: 25
+BINARY_INST: true
+MICRON_UNITS: 2000

@@ -1,0 +1,41 @@
+
+Begin Preparing Data for Parasitic Extraction
+.
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:01, real=0:00:02, mem(process/total/peak)=161.23MB/8603.19MB/4696.96MB)
+
+Begin Parasitic Extraction
+
+Nets to Extract:
+VSS
+
+** INFO:  (VOLTUS_EXTR-1054): Extracting following DFM effects:
+ MetalFill        : n/a 
+ WEE Effects      : OFF 
+ Erosion Effects  : none 
+ T/B Enlargements : ON 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : OFF 
+ R(sw,st) Effects : OFF 
+ TC(w) Effects    : ON 
+Some effects indicate n/a because of non-availability of relevant input
+data (or) requested to be off.
+
+   0% at 13:02:21 11/25/2026 
+
+  25% at 13:02:21 11/25/2026
+
+  50% at 13:02:21 11/25/2026
+
+  75% at 13:02:21 11/25/2026
+
+ 100% at 13:02:21 11/25/2026 
+
+Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=117.29MB/8603.19MB/4696.96MB)
+
+Hostname server_ci_inovador
+
+Wall clock 5.459920
+
+CPU time 1.755592
+
+Peak memory (process): 319492096

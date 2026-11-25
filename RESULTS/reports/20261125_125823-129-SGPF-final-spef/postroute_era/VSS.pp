@@ -1,0 +1,2 @@
+ERA_finish_VSS_1 61.25 1.2 M6 VSS
+ERA_finish_VSS_2 61.25 120.4 M6 VSS

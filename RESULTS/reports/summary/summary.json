@@ -1,0 +1,62 @@
+{
+  "stage": "routed with CTS and detailed SPEF",
+  "cases": 120,
+  "rows": [
+    {
+      "design": "FPF",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "cell_area_um2": 17441.844,
+      "nand2_cell": "ND2SGD1BWP7T40P140",
+      "nand2_area_um2": 0.294,
+      "nand2_equivalent_kgates": 59.32600000000001,
+      "power_min_uW": 15.6967180818,
+      "power_mean_uW": 36.85712064312333,
+      "power_max_uW": 67.2674031948,
+      "power_max_case": "Tango2_qp37_3_89MHz",
+      "case_count": 30,
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/final_cell_area.rpt"
+    },
+    {
+      "design": "129-SGPF",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "cell_area_um2": 8283.94,
+      "nand2_cell": "ND2SGD1BWP7T40P140",
+      "nand2_area_um2": 0.294,
+      "nand2_equivalent_kgates": 28.176666666666673,
+      "power_min_uW": 6.18599323301,
+      "power_mean_uW": 15.919488276161331,
+      "power_max_uW": 31.5319644564,
+      "power_max_case": "Tango2_qp37_3_89MHz",
+      "case_count": 30,
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-129-SGPF-final-spef/final_cell_area.rpt"
+    },
+    {
+      "design": "65-SGPF",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "cell_area_um2": 4233.6,
+      "nand2_cell": "ND2SGD1BWP7T40P140",
+      "nand2_area_um2": 0.294,
+      "nand2_equivalent_kgates": 14.400000000000002,
+      "power_min_uW": 4.25902310552,
+      "power_mean_uW": 10.752262713024333,
+      "power_max_uW": 20.1956623223,
+      "power_max_case": "Tango2_qp37_3_89MHz",
+      "case_count": 30,
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_141943-65-SGPF-final-spef/final_cell_area.rpt"
+    },
+    {
+      "design": "MPF",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "cell_area_um2": 2203.53,
+      "nand2_cell": "ND2SGD1BWP7T40P140",
+      "nand2_area_um2": 0.294,
+      "nand2_equivalent_kgates": 7.495000000000001,
+      "power_min_uW": 2.31881087954,
+      "power_mean_uW": 5.721420166473333,
+      "power_max_uW": 10.3954747038,
+      "power_max_case": "ParkRunning3_qp37_3_89MHz",
+      "case_count": 30,
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-MPF-final-spef/final_cell_area.rpt"
+    }
+  ]
+}

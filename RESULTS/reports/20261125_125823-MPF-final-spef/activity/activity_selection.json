@@ -1,0 +1,18 @@
+{
+  "design": "MPF",
+  "syn_run": "20261114_222318-MPF",
+  "source_csv": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/updated_samples_power/power_summary.csv",
+  "selection": "maximum baseline dynamic_uW among all 30 completed cases",
+  "scenario": "ParkRunning3_qp37_3_89MHz",
+  "original_vcd": "/home/weber/PESSOAL/intra-smooth-filter-VVC/frontend/build_samples_20261124/MPF/ParkRunning3_qp37_3_89MHz/activity.vcd",
+  "original_sha256": "7d07d71f251856134437e21faf8b2a009663806a35e2bb5731f82ce970b2cf71",
+  "vcd": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-MPF-final-spef/activity/activity_innovus.vcd",
+  "vcd_sha256": "517fbc5a665bd9491fb49e285d7229fdb98821bf034a03d7886a68362082c66a",
+  "rewritten_array_declarations": 136,
+  "events_preserved": true,
+  "scope": "ParkRunning3_qp37_3_89MHz/u_wrapper",
+  "clock_ps": 257069,
+  "baseline_dynamic_W": 8.2613e-06,
+  "baseline_total_W": 8.32698e-06,
+  "limitations": "Highest average dynamic power among tested cases; not a proven peak-current window. RTL VCD, not SDF gate simulation."
+}
