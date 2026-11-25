@@ -1,0 +1,29 @@
+Stim Id                   : /stim#1
+Stim file                 : /home/weber/PESSOAL/intra-smooth-filter-VVC/frontend/build_samples_20261124/129-SGPF/BQTerrace_qp22_1_94MHz/activity.vcd
+Stim file format          : vcd
+Top instance              : /BQTerrace_qp22_1_94MHz/u_wrapper
+Design Top                : /wrapper
+Num frames                : 1
+Duration                  : 1.15459e+07ns
+-------------------------------------------------- Annotation Report --------------------------------------------------
+Object Type         Asserted  User_Asserted  Default  Computed  Clock_Source  Unconnected  Constant  Total  Asserted% 
+-----------------------------------------------------------------------------------------------------------------------
+Primary Ports                                                                                                         
+  Inputs                1066              0        0         0             0            0         0   1066    100.00% 
+  Outputs               1033              0        0         0             0            0         0   1033    100.00% 
+  I/O                      0              0        0         0             0            0         0      0        N/A 
+Sequential Outputs                                                                                                    
+  Memory                   0              0        0         0             0            0         0      0        N/A 
+  Flop                  3018              0        0         1             0            0         0   3019     99.96% 
+  Latch                    0              0        0         0             0            0         0      0        N/A 
+  Arch ICGC                0              0        0         3             0            0         0      3      0.00% 
+  Inferred ICGC            0              0        0         0             0            0         0      0        N/A 
+  Total ICGC               0              0        0         3             0            0         0      3      0.00% 
+Drivers                                                                                                               
+  Driver nets           4084              0        0      5763             0            3         0   9850     41.46% 
+  RTL Driver nets       3018              0        0      5763             0            3         0   8784     34.35% 
+DFT                                                                                                                   
+  Input Ports              0              0        0         0             0            0         0      0        N/A 
+  Flop Outputs             0              0        0         0             0            0         0      0        N/A 
+  Memory Outputs           0              0        0         0             0            0         0      0        N/A 
+-----------------------------------------------------------------------------------------------------------------------

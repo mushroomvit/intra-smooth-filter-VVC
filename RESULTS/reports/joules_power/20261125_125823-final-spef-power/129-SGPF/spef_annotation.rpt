@@ -1,0 +1,111 @@
+----------------- report_spef_annotation-----------------
+Type      Count  Annotated       %  Unannotated  %      
+---------------------------------------------------------
+Normal     9757       9757  100.00            0  0.00   
+Unloaded     93          0    0.00           93  100.00 
+Undriven      0          0    0.00            0  0.00   
+Constant      0          0    0.00            0  0.00   
+Total      9850       9757   99.06           93  0.94   
+---------------------------------------------------------
+
+Net category : unloaded
+-----------------------------
+WireCap SinkCap LoadCap Net
+-----------------------------
+                       /wrapper/n_8552
+                       /wrapper/n_8553
+                       /wrapper/n_8554
+                       /wrapper/n_8555
+                       /wrapper/n_8556
+                       /wrapper/n_8557
+                       /wrapper/n_8558
+                       /wrapper/n_8559
+                       /wrapper/n_8560
+                       /wrapper/n_8561
+                       /wrapper/n_8562
+                       /wrapper/n_8563
+                       /wrapper/n_8564
+                       /wrapper/n_8565
+                       /wrapper/n_8566
+                       /wrapper/n_8567
+                       /wrapper/n_8568
+                       /wrapper/n_8569
+                       /wrapper/n_8570
+                       /wrapper/n_8571
+                       /wrapper/n_8572
+                       /wrapper/n_8573
+                       /wrapper/n_8574
+                       /wrapper/n_8575
+                       /wrapper/n_8576
+                       /wrapper/n_8577
+                       /wrapper/n_8578
+                       /wrapper/n_8579
+                       /wrapper/n_8580
+                       /wrapper/n_8581
+                       /wrapper/n_8582
+                       /wrapper/n_8583
+                       /wrapper/n_8584
+                       /wrapper/n_8585
+                       /wrapper/n_8586
+                       /wrapper/n_8587
+                       /wrapper/n_8588
+                       /wrapper/n_8589
+                       /wrapper/n_8590
+                       /wrapper/n_8591
+                       /wrapper/n_8592
+                       /wrapper/n_8593
+                       /wrapper/n_8594
+                       /wrapper/n_8595
+                       /wrapper/n_8596
+                       /wrapper/n_8597
+                       /wrapper/n_8598
+                       /wrapper/n_8599
+                       /wrapper/n_8600
+                       /wrapper/n_8601
+                       /wrapper/n_8602
+                       /wrapper/n_8603
+                       /wrapper/n_8604
+                       /wrapper/n_8605
+                       /wrapper/n_8606
+                       /wrapper/n_8607
+                       /wrapper/n_8608
+                       /wrapper/n_8609
+                       /wrapper/n_8610
+                       /wrapper/n_8611
+                       /wrapper/n_8612
+                       /wrapper/n_8613
+                       /wrapper/n_8614
+                       /wrapper/n_8615
+                       /wrapper/n_8616
+                       /wrapper/n_8617
+                       /wrapper/n_8618
+                       /wrapper/n_8619
+                       /wrapper/n_8620
+                       /wrapper/n_8621
+                       /wrapper/n_8622
+                       /wrapper/n_8623
+                       /wrapper/n_8624
+                       /wrapper/n_8625
+                       /wrapper/n_8626
+                       /wrapper/n_8627
+                       /wrapper/n_8628
+                       /wrapper/n_8629
+                       /wrapper/n_8630
+                       /wrapper/n_8631
+                       /wrapper/n_8632
+                       /wrapper/n_8633
+                       /wrapper/n_8634
+                       /wrapper/n_8635
+                       /wrapper/n_8636
+                       /wrapper/n_8637
+                       /wrapper/n_8638
+                       /wrapper/n_8639
+                       /wrapper/n_8640
+                       /wrapper/UNCONNECTED
+                       /wrapper/UNCONNECTED0
+                       /wrapper/UNCONNECTED1
+                       /wrapper/n_8641
+-----------------------------
+0.000   0.000   0.000   Sum
+0.000   0.000   0.000   Avg
+-----------------------------
