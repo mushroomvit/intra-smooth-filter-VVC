@@ -1,0 +1,60 @@
+{
+    "net_name": "VSS",
+    "smg": {
+        "config": {
+            "name": "VSS",
+            "output_path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS",
+            "nominal_voltage": "0",
+            "current_region": {
+                "2": {
+                    "index": "2",
+                    "net": "VSS",
+                    "name": "current_region_CORE_ESTIMATE_VSS_id_2",
+                    "boundary_point_num": "4",
+                    "boundary_point_array": [
+                        "4.7999999999999998",
+                        "4.7999999999999998",
+                        "63.700000000000003",
+                        "62.200000000000003"
+                    ],
+                    "layer": "M1",
+                    "current": "1.2489999999999999e-05",
+                    "intrinsic_cap": "0"
+                }
+            }
+        },
+        "result": {
+            "DefInstData": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/VSS.defInstData",
+                "type": "proto::voltus.def_instdata_mgr.proto.DefInstDataManager"
+            },
+            "layerInfo": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/layerInfo",
+                "type": "proto.voltus.layer_manager.LayerManager"
+            },
+            "pgdb": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS"
+            },
+            "cellview": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/VSS.cellviews",
+                "type": "txt"
+            },
+            "pgv_table": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/VSS.pgv_table.rpt",
+                "type": "txt"
+            },
+            "pg_candidate": {
+                "dir": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/pg_candidate",
+                "net": "VSS"
+            },
+            "grid_report": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/VSS.grid.report",
+                "type": "txt"
+            },
+            "missing_pgv": {
+                "path": "\/home\/weber\/PESSOAL\/intra-smooth-filter-VVC\/backend\/lay\/reports\/20261125_115837-MPF-u65-ring02\/era\/results\/CORE_25C_avg_1\/VSS\/VSS.missingPGVData.protobuf",
+                "type": "protobuf.VOLTUS.SMGDATA.MissingPGV"
+            }
+        }
+    }
+}

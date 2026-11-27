@@ -1,0 +1,24 @@
+{
+  "native_check": {
+    "pads": 0,
+    "pins": 1075,
+    "legal": 1075,
+    "illegal": 0,
+    "internal": 0,
+    "internal_illegal": 0,
+    "feedthrough": 0,
+    "feedthrough_illegal": 0,
+    "constant": 0,
+    "unplaced": 0
+  },
+  "design": "65-SGPF",
+  "passed": true,
+  "pin_count": 1075,
+  "groups": {
+    "input": 536,
+    "output": 520,
+    "control": 19
+  },
+  "def_file": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_115837-65-SGPF-u65-ring02/pin_assignment.def",
+  "errors": []
+}

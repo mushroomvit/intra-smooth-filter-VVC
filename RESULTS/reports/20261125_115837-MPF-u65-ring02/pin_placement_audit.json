@@ -1,0 +1,24 @@
+{
+  "native_check": {
+    "pads": 0,
+    "pins": 563,
+    "legal": 563,
+    "illegal": 0,
+    "internal": 0,
+    "internal_illegal": 0,
+    "feedthrough": 0,
+    "feedthrough_illegal": 0,
+    "constant": 0,
+    "unplaced": 0
+  },
+  "design": "MPF",
+  "passed": true,
+  "pin_count": 563,
+  "groups": {
+    "input": 280,
+    "output": 264,
+    "control": 19
+  },
+  "def_file": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_115837-MPF-u65-ring02/pin_assignment.def",
+  "errors": []
+}

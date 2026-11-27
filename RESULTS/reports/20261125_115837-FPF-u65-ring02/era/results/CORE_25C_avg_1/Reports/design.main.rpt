@@ -1,0 +1,25 @@
+RAIL ANALYSIS REPORT
+Generated Date: Wed Nov 25 12:00:57 2026
+Host Name: server_ci_inovador
+
+
+==============================
+
+==============================
+User: weber 
+Hostname: server_ci_inovador 
+Peak Memory: 0 Mbytes 
+Total CPU time: 00:00:15 
+Total Wall Clock time: 00:00:27 
+Exit status: Successful 
+State Directory: /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-FPF-u65-ring02/era/results/CORE_25C_avg_1 
+Units: Volt, Amp, Ohm, fF 
+
+
+==============================
+POWER NETS
+==============================
+Net Name: VSS
+Net Name: VDD
+Analysis Method: static 
+

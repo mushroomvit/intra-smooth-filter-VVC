@@ -1,0 +1,18 @@
+{
+  "design": "65-SGPF",
+  "syn_run": "20261114_222318-65-SGPF",
+  "source_csv": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/updated_samples_power/power_summary.csv",
+  "selection": "maximum baseline dynamic_uW among all 30 completed cases",
+  "scenario": "Tango2_qp37_3_89MHz",
+  "original_vcd": "/home/weber/PESSOAL/intra-smooth-filter-VVC/frontend/build_samples_20261124/65-SGPF/Tango2_qp37_3_89MHz/activity.vcd",
+  "original_sha256": "4d4a8bc8857a563434b05a1e2ae15e344db9ff8d32d1f957b3fb2a170281c835",
+  "vcd": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-65-SGPF-u65-ring02/activity/activity_innovus.vcd",
+  "vcd_sha256": "4331caca068c500d661a0fb1018a6afc1f0270acd26b3d90e319e4b3ec455516",
+  "rewritten_array_declarations": 264,
+  "events_preserved": true,
+  "scope": "Tango2_qp37_3_89MHz/u_wrapper",
+  "clock_ps": 257069,
+  "baseline_dynamic_W": 1.548124e-05,
+  "baseline_total_W": 1.5607100000000002e-05,
+  "limitations": "Highest average dynamic power among tested cases; not a proven peak-current window. RTL VCD, not SDF gate simulation."
+}

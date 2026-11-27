@@ -1,0 +1,264 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 26.10-p003_1 (64bit) 06/17/2026 14:23 (Linux 4.18.0-305.el8.x86_64)
+*	
+*
+* 	Date & Time:	2026-Nov-25 12:10:08 (2026-Nov-25 15:10:08 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: filtragem1x64_wrapper
+*
+*	Liberty Libraries used: 
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v85c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v25c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvtffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvtffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgffg0p88v125c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvtssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvtssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgssg0p72v0c.lib.gz
+*	        /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        0.8 
+*
+*       Dynamic View: TT_25
+*
+*       Leakage View: TT_25
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-FPF-u65-ring02/activity/activity_innovus.vcd
+*                    Vcd Window used(Start Time, Stop Time):   
+*                     Vcd Scale Factor: 1 
+* *                    Design annotation coverage: 4141/21906 = 18.9035% 
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1W
+*
+*	Time Units = 1e-09 secs 
+*
+*       Temperature = 25 
+*
+*       report_power -outfile /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-FPF-u65-ring02/power/cts/clock_power.rpt -clock_network all -view TT_25
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.00005185 	   82.5102%
+Total Switching Power:       0.00000999 	   15.8886%
+Total Leakage Power:         0.00000101 	    1.6012%
+Total Power:                 0.00006284 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                     4.562e-05   2.078e-07    2.43e-07   4.607e-05       73.31 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                  2.963e-06    1.59e-06   5.563e-07    5.11e-06       8.132 
+Clock (Combinational)          3.269e-06   8.187e-06   2.069e-07   1.166e-05       18.56 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                          5.185e-05   9.985e-06   1.006e-06   6.284e-05         100 
+-----------------------------------------------------------------------------------------
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                            3.269e-06   8.187e-06   2.069e-07   1.166e-05       18.56 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)   3.269e-06   8.187e-06   2.069e-07   1.166e-05       18.56 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.257069 usec 
+Clock Toggle Rate:     7.7807 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.8  5.185e-05   9.985e-06   1.006e-06   6.284e-05         100 
+
+ 
+ 
+Instance Power Report for clk clock network
+
+Instance                      Max Toggles   Total Toggles   Internal   Switching     Leakage       Total  Percentage    Cell
+                              Input Pins    Output Pins     Power      Power         Power         Power  (%)           Name
+----------------------------------------------------------------------------------------------------------------------------
+CTS_ccl_a_buf_00048              7.78e+06        7.78e+06   3.88e-08   1.298e-07   2.419e-09    1.71e-07      0.2722    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00051              7.78e+06        7.78e+06  3.892e-08   1.274e-07   2.419e-09   1.688e-07      0.2686    CKBSGD16BWP7T40P140
+CTS_csf_buf_00082                7.78e+06        7.78e+06  3.913e-08   1.259e-07   2.419e-09   1.675e-07      0.2665    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00035              7.78e+06        7.78e+06  3.892e-08   1.251e-07   2.419e-09   1.664e-07      0.2648    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00025              7.78e+06        7.78e+06  3.888e-08   1.245e-07   2.419e-09   1.658e-07      0.2638    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00050              7.78e+06        7.78e+06  3.871e-08   1.242e-07   2.419e-09   1.654e-07      0.2631    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00053              7.78e+06        7.78e+06  3.887e-08   1.239e-07   2.419e-09   1.652e-07      0.2629    CKBSGD16BWP7T40P140
+CTS_csf_buf_00077                7.78e+06        7.78e+06  3.901e-08   1.233e-07   2.419e-09   1.648e-07      0.2622    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00014              7.78e+06        7.78e+06  3.867e-08   1.222e-07   2.419e-09   1.633e-07      0.2598    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00031              7.78e+06        7.78e+06  3.868e-08   1.213e-07   2.419e-09   1.624e-07      0.2585    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00012              7.78e+06        7.78e+06  3.887e-08   1.204e-07   2.419e-09   1.617e-07      0.2573    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00013              7.78e+06        7.78e+06  3.862e-08   1.185e-07   2.419e-09   1.596e-07      0.2539    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00017              7.78e+06        7.78e+06   3.86e-08   1.177e-07   2.419e-09   1.587e-07      0.2525    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00006              7.78e+06        7.78e+06  3.881e-08   1.165e-07   2.419e-09   1.577e-07       0.251    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00046              7.78e+06        7.78e+06  3.881e-08   1.164e-07   2.419e-09   1.577e-07      0.2509    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00028              7.78e+06        7.78e+06  3.857e-08   1.155e-07   2.419e-09   1.565e-07      0.2491    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00055              7.78e+06        7.78e+06  3.857e-08   1.149e-07   2.419e-09   1.559e-07      0.2481    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00045              7.78e+06        7.78e+06  3.885e-08   1.133e-07   2.419e-09   1.546e-07       0.246    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00039              7.78e+06        7.78e+06  3.913e-08   1.107e-07   2.419e-09   1.523e-07      0.2423    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00033              7.78e+06        7.78e+06  3.852e-08   1.112e-07   2.419e-09   1.521e-07      0.2421    CKBSGD16BWP7T40P140
+CTS_csf_buf_00100                7.78e+06        7.78e+06  3.866e-08   1.105e-07   2.419e-09   1.516e-07      0.2412    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00002              7.78e+06        7.78e+06  3.892e-08   1.096e-07   2.419e-09   1.509e-07      0.2402    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00036              7.78e+06        7.78e+06  3.912e-08    1.08e-07   2.419e-09   1.495e-07       0.238    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00001              7.78e+06        7.78e+06  3.879e-08   1.073e-07   2.419e-09   1.485e-07      0.2363    CKBSGD16BWP7T40P140
+CTS_csf_buf_00076                7.78e+06        7.78e+06  3.882e-08   1.057e-07   2.419e-09   1.469e-07      0.2338    CKBSGD16BWP7T40P140
+CTS_csf_buf_00089                7.78e+06        7.78e+06  3.892e-08   1.054e-07   2.419e-09   1.467e-07      0.2335    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00032              7.78e+06        7.78e+06  3.845e-08   1.057e-07   2.419e-09   1.466e-07      0.2333    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00047              7.78e+06        7.78e+06  3.876e-08   1.052e-07   2.419e-09   1.464e-07       0.233    CKBSGD16BWP7T40P140
+CTS_csf_buf_00132                7.78e+06        7.78e+06   3.87e-08   1.031e-07   2.419e-09   1.442e-07      0.2294    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00049              7.78e+06        7.78e+06  3.836e-08   1.005e-07   2.419e-09   1.413e-07      0.2249    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00034              7.78e+06        7.78e+06  3.835e-08   9.986e-08   2.419e-09   1.406e-07      0.2238    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00042              7.78e+06        7.78e+06  3.907e-08   9.906e-08   2.419e-09   1.406e-07      0.2237    CKBSGD16BWP7T40P140
+CTS_csf_buf_00138                7.78e+06        7.78e+06  3.899e-08   9.694e-08   2.419e-09   1.384e-07      0.2202    CKBSGD16BWP7T40P140
+CTS_csf_buf_00105                7.78e+06        7.78e+06  3.851e-08   9.705e-08   2.419e-09    1.38e-07      0.2196    CKBSGD16BWP7T40P140
+CTS_csf_buf_00112                7.78e+06        7.78e+06   3.85e-08   9.614e-08   2.419e-09   1.371e-07      0.2181    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00019              7.78e+06        7.78e+06  3.879e-08   9.582e-08   2.419e-09    1.37e-07       0.218    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00054              7.78e+06        7.78e+06  2.899e-08   9.864e-08   1.855e-09   1.295e-07       0.206    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00041              7.78e+06        7.78e+06  2.918e-08   9.509e-08   1.855e-09   1.261e-07      0.2007    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00058              7.78e+06        7.78e+06  3.846e-08   8.499e-08   2.419e-09   1.259e-07      0.2003    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00030              7.78e+06        7.78e+06  2.891e-08   9.297e-08   1.855e-09   1.237e-07      0.1969    CKBSGD12BWP7T40P140
+CTS_csf_buf_00139                7.78e+06        7.78e+06  2.935e-08   9.208e-08   1.855e-09   1.233e-07      0.1962    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00016              7.78e+06        7.78e+06  2.888e-08   9.038e-08   1.855e-09   1.211e-07      0.1927    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00040              7.78e+06        7.78e+06  2.911e-08   8.858e-08   1.855e-09   1.195e-07      0.1902    CKBSGD12BWP7T40P140
+CTS_csf_buf_00118                7.78e+06        7.78e+06  2.933e-08   8.815e-08   1.855e-09   1.193e-07      0.1899    CKBSGD12BWP7T40P140
+CTS_cdb_buf_00168                7.78e+06        7.78e+06  3.868e-08    7.72e-08   2.419e-09   1.183e-07      0.1882    CKBSGD16BWP7T40P140
+CTS_csf_buf_00079                7.78e+06        7.78e+06  2.939e-08   8.548e-08   1.855e-09   1.167e-07      0.1857    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00038              7.78e+06        7.78e+06  2.891e-08   8.191e-08   1.855e-09   1.127e-07      0.1793    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00062              7.78e+06        7.78e+06  2.929e-08   8.044e-08   1.855e-09   1.116e-07      0.1776    CKBSGD12BWP7T40P140
+CTS_csf_buf_00095                7.78e+06        7.78e+06  2.936e-08   7.844e-08   1.855e-09   1.097e-07      0.1745    CKBSGD12BWP7T40P140
+CTS_csf_buf_00097                7.78e+06        7.78e+06   2.94e-08   7.667e-08   1.855e-09   1.079e-07      0.1717    CKBSGD12BWP7T40P140
+CTS_csf_buf_00119                7.78e+06        7.78e+06  2.927e-08   7.677e-08   1.855e-09   1.079e-07      0.1717    CKBSGD12BWP7T40P140
+CTS_csf_buf_00109                7.78e+06        7.78e+06  2.919e-08   7.663e-08   1.855e-09   1.077e-07      0.1714    CKBSGD12BWP7T40P140
+CTS_csf_buf_00122                7.78e+06        7.78e+06  2.894e-08    7.66e-08   1.855e-09   1.074e-07      0.1709    CKBSGD12BWP7T40P140
+CTS_csf_buf_00071                7.78e+06        7.78e+06  3.804e-08   6.522e-08   2.419e-09   1.057e-07      0.1682    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00020              7.78e+06        7.78e+06  3.805e-08   6.482e-08   2.419e-09   1.053e-07      0.1675    CKBSGD16BWP7T40P140
+CTS_csf_buf_00125                7.78e+06        7.78e+06  2.933e-08   7.389e-08   1.855e-09   1.051e-07      0.1672    CKBSGD12BWP7T40P140
+CTS_csf_buf_00080                7.78e+06        7.78e+06  2.934e-08    7.37e-08   1.855e-09   1.049e-07      0.1669    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00015              7.78e+06        7.78e+06  3.772e-08   6.432e-08   2.419e-09   1.045e-07      0.1662    CKBSGD16BWP7T40P140
+CTS_ccl_a_buf_00015_clone        7.78e+06        7.78e+06  3.769e-08   6.349e-08   2.419e-09   1.036e-07      0.1648    CKBSGD16BWP7T40P140
+CTS_csf_buf_00083                7.78e+06        7.78e+06  2.915e-08   7.252e-08   1.855e-09   1.035e-07      0.1647    CKBSGD12BWP7T40P140
+CTS_csf_buf_00098                7.78e+06        7.78e+06  2.939e-08    7.19e-08   1.855e-09   1.031e-07      0.1641    CKBSGD12BWP7T40P140
+CTS_csf_buf_00121                7.78e+06        7.78e+06  2.888e-08   7.226e-08   1.855e-09    1.03e-07      0.1639    CKBSGD12BWP7T40P140
+CTS_csf_buf_00127                7.78e+06        7.78e+06  2.886e-08   7.206e-08   1.855e-09   1.028e-07      0.1635    CKBSGD12BWP7T40P140
+CTS_csf_buf_00116                7.78e+06        7.78e+06  2.904e-08   7.117e-08   1.855e-09   1.021e-07      0.1624    CKBSGD12BWP7T40P140
+CTS_csf_buf_00110                7.78e+06        7.78e+06  2.915e-08   7.101e-08   1.855e-09    1.02e-07      0.1623    CKBSGD12BWP7T40P140
+CTS_csf_buf_00113                7.78e+06        7.78e+06   2.87e-08   7.113e-08   1.855e-09   1.017e-07      0.1618    CKBSGD12BWP7T40P140
+CTS_csf_buf_00094                7.78e+06        7.78e+06  2.933e-08   7.033e-08   1.855e-09   1.015e-07      0.1615    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00043              7.78e+06        7.78e+06  2.897e-08   7.048e-08   1.855e-09   1.013e-07      0.1612    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00020_clone        7.78e+06        7.78e+06   3.79e-08   6.072e-08   2.419e-09    1.01e-07      0.1608    CKBSGD16BWP7T40P140
+CTS_csf_buf_00106                7.78e+06        7.78e+06   2.87e-08   7.022e-08   1.855e-09   1.008e-07      0.1604    CKBSGD12BWP7T40P140
+CTS_csf_buf_00115                7.78e+06        7.78e+06  2.901e-08   6.795e-08   1.855e-09   9.881e-08      0.1572    CKBSGD12BWP7T40P140
+CTS_csf_buf_00128                7.78e+06        7.78e+06   2.88e-08   6.775e-08   1.855e-09   9.841e-08      0.1566    CKBSGD12BWP7T40P140
+CTS_cdb_buf_00172                7.78e+06        7.78e+06  2.914e-08   6.494e-08   1.855e-09   9.594e-08      0.1527    CKBSGD12BWP7T40P140
+CTS_csf_buf_00101                7.78e+06        7.78e+06  2.861e-08   6.504e-08   1.855e-09   9.551e-08       0.152    CKBSGD12BWP7T40P140
+CTS_csf_buf_00091                7.78e+06        7.78e+06  2.071e-08   6.819e-08   1.269e-09   9.017e-08      0.1435    CKBSGD8BWP7T40P140
+CTS_csf_buf_00124                7.78e+06        7.78e+06   2.07e-08   6.803e-08   1.269e-09       9e-08      0.1432    CKBSGD8BWP7T40P140
+CTS_csf_buf_00092                7.78e+06        7.78e+06  2.068e-08    6.58e-08   1.269e-09   8.775e-08      0.1396    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00061              7.78e+06        7.78e+06  2.867e-08   5.617e-08   1.855e-09    8.67e-08       0.138    CKBSGD12BWP7T40P140
+CTS_csf_buf_00071_clone          7.78e+06        7.78e+06  3.736e-08   4.691e-08   2.419e-09   8.669e-08      0.1379    CKBSGD16BWP7T40P140
+CTS_csf_buf_00088                7.78e+06        7.78e+06  2.036e-08   5.858e-08   1.269e-09    8.02e-08      0.1276    CKBSGD8BWP7T40P140
+CTS_csf_buf_00072                7.78e+06        7.78e+06  2.012e-08   5.803e-08   1.269e-09   7.942e-08      0.1264    CKBSGD8BWP7T40P140
+CTS_csf_buf_00073                7.78e+06        7.78e+06  2.012e-08    5.79e-08   1.269e-09   7.928e-08      0.1262    CKBSGD8BWP7T40P140
+CTS_csf_buf_00140                7.78e+06        7.78e+06  2.047e-08   5.697e-08   1.269e-09   7.871e-08      0.1252    CKBSGD8BWP7T40P140
+CTS_csf_buf_00087                7.78e+06        7.78e+06  2.033e-08     5.7e-08   1.269e-09    7.86e-08      0.1251    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00057              7.78e+06        7.78e+06  3.734e-08   3.722e-08   2.419e-09   7.698e-08      0.1225    CKBSGD16BWP7T40P140
+CTS_csf_buf_00133                7.78e+06        7.78e+06      2e-08   4.752e-08   1.269e-09   6.879e-08      0.1095    CKBSGD8BWP7T40P140
+CTS_csf_buf_00134                7.78e+06        7.78e+06  1.997e-08   4.588e-08   1.269e-09   6.712e-08      0.1068    CKBSGD8BWP7T40P140
+CTS_csf_buf_00107                7.78e+06        7.78e+06   1.98e-08   4.482e-08   1.269e-09   6.589e-08      0.1048    CKBSGD8BWP7T40P140
+CTS_csf_buf_00074                7.78e+06        7.78e+06  1.988e-08   4.294e-08   1.269e-09   6.409e-08       0.102    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00060              7.78e+06        7.78e+06  2.024e-08   3.749e-08   1.269e-09     5.9e-08     0.09389    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00063             7.781e+06        7.78e+06  2.036e-08   3.552e-08   1.269e-09   5.715e-08     0.09095    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00056              7.78e+06        7.78e+06  2.004e-08   3.524e-08   1.269e-09   5.654e-08     0.08998    CKBSGD8BWP7T40P140
+CTS_cdb_buf_00167                7.78e+06        7.78e+06  2.793e-08   2.436e-08   1.855e-09   5.414e-08     0.08616    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00059              7.78e+06        7.78e+06  1.987e-08   2.823e-08   1.269e-09   4.936e-08     0.07855    CKBSGD8BWP7T40P140
+CTS_idc_buf_00157               7.781e+06        7.78e+06  1.998e-08   2.492e-08   1.269e-09   4.617e-08     0.07346    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00064             7.781e+06        7.78e+06  1.992e-08   2.267e-08   1.269e-09   4.386e-08     0.06979    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00029              7.78e+06        7.78e+06  2.682e-08   1.297e-08   1.855e-09   4.164e-08     0.06625    CKBSGD12BWP7T40P140
+CTS_ccl_a_buf_00003              7.78e+06        7.78e+06  1.927e-08   2.005e-08   1.269e-09   4.059e-08     0.06459    CKBSGD8BWP7T40P140
+CTS_cdb_buf_00181                7.78e+06        7.78e+06  1.913e-08   1.627e-08   1.269e-09   3.666e-08     0.05834    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00052              7.78e+06        7.78e+06  1.893e-08   1.314e-08   1.269e-09   3.334e-08     0.05305    CKBSGD8BWP7T40P140
+CTS_ccl_a_buf_00004              7.78e+06        7.78e+06  1.031e-08   2.078e-08    6.87e-10   3.178e-08     0.05057    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00037              7.78e+06        7.78e+06  1.041e-08   1.816e-08    6.87e-10   2.926e-08     0.04656    CKBSGD4BWP7T40P140
+CTS_cdb_buf_00171                7.78e+06        7.78e+06  1.023e-08   1.605e-08    6.87e-10   2.697e-08     0.04292    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00005              7.78e+06        7.78e+06  1.033e-08   1.514e-08    6.87e-10   2.616e-08     0.04162    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00007              7.78e+06        7.78e+06  1.026e-08   1.327e-08    6.87e-10   2.422e-08     0.03854    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00011              7.78e+06        7.78e+06  1.027e-08   1.293e-08    6.87e-10   2.389e-08     0.03802    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00008              7.78e+06        7.78e+06   1.02e-08   1.086e-08    6.87e-10   2.174e-08      0.0346    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00021              7.78e+06        7.78e+06  1.009e-08   8.245e-09    6.87e-10   1.902e-08     0.03027    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00022              7.78e+06        7.78e+06  9.959e-09   8.273e-09    6.87e-10   1.892e-08     0.03011    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00024              7.78e+06        7.78e+06   9.87e-09   7.828e-09    6.87e-10   1.838e-08     0.02925    CKBSGD4BWP7T40P140
+CTS_ccl_a_buf_00018              7.78e+06        7.78e+06  5.695e-09   1.052e-08   3.055e-10   1.652e-08     0.02628    CKBSGD2BWP7T40P140
+CTS_ccl_a_buf_00023              7.78e+06        7.78e+06   5.69e-09   1.015e-08   3.055e-10   1.615e-08     0.02569    CKBSGD2BWP7T40P140
+CTS_ccl_a_buf_00009              7.78e+06        7.78e+06  5.725e-09   7.865e-09   3.055e-10    1.39e-08     0.02211    CKBSGD2BWP7T40P140
+CTS_cdb_buf_00173                7.78e+06        7.78e+06  3.436e-09   5.047e-09   2.833e-10   8.766e-09     0.01395    CKBSGD1BWP7T40P140
+CTS_cdb_buf_00169                7.78e+06        7.78e+06  3.371e-09   4.052e-09   2.833e-10   7.706e-09     0.01226    CKBSGD1BWP7T40P140
+----------------------------------------------------------------------------------------------------------------------------
+Total                                                      3.269e-06   8.187e-06   2.069e-07   1.166e-05       18.56    
+
+ 
+ 
+Master Clock Power including generated clocks
+--------------------------------------------------------------------------------
+clk has total 115 instances
+generated clocks:
+                      3.269e-06   8.187e-06   2.069e-07  1.166e-05      18.56%
+--------------------------------------------------------------------------------
+Clock network has total 115 instances
+                      3.269e-06   8.187e-06   2.069e-07  1.166e-05      18.56%
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:       CTS_ccl_a_buf_00048 (CKBSGD16BWP7T40P140):         1.71e-07 
+*                Highest Leakage Power:   CTS_csf_buf_00071_clone (CKBSGD16BWP7T40P140):        2.419e-09 
+*          Total Cap:      2.61008e-11 F
+*          Total instances in design: 15264
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

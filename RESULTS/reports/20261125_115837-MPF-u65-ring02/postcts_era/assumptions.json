@@ -1,0 +1,14 @@
+{
+  "label": "POST-CTS EARLY RAIL ESTIMATE \u2014 native VCD instance currents",
+  "design": "MPF",
+  "scenario": "ParkRunning3_qp37_3_89MHz",
+  "supply_V": 0.8,
+  "temperature_C": 25,
+  "power_budget_W": 9.39e-06,
+  "margin_fraction": 0,
+  "voltage_drop_limit_fraction": 0.1,
+  "source_power_summary": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-MPF-u65-ring02/power/cts/power_summary.json",
+  "current_model": "Native per-instance static VDD/VSS currents from the implemented CTS netlist",
+  "contact_model": "Ideal contacts at top/bottom M6 ring midpoints",
+  "limitations": "RTL VCD with mapped activity propagation; no gate-level SDF glitch simulation; post-CTS signal RC is estimated before routing"
+}

@@ -1,0 +1,2 @@
+label CORE_ESTIMATE_VDD net VDD area 4.8 4.8 63.7 62.2 layer M1 current 0.01249047
+label CORE_ESTIMATE_VSS net VSS area 4.8 4.8 63.7 62.2 layer M1 current 0.01249047

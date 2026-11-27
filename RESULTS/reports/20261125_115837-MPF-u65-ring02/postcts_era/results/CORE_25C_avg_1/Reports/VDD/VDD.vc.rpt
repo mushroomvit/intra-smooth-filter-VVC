@@ -1,0 +1,18 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         1   -5.9064e-06A   ERA_cts_VDD_1   34.25, 3.70  M6
+         8   -5.8287e-06A   ERA_cts_VDD_2   34.25, 63.30  M6
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: -5.906uA, -5.868uA, -5.829uA
+  Total Current: -11.735uA
+    Range 1(  -5.907uA  -    -5.897uA ):         1 ( 50.00%)
+    Range 2(  -5.897uA  -    -5.887uA ):         0 (  0.00%)
+    Range 3(  -5.887uA  -    -5.877uA ):         0 (  0.00%)
+    Range 4(  -5.877uA  -    -5.868uA ):         0 (  0.00%)
+    Range 5(  -5.868uA  -    -5.858uA ):         0 (  0.00%)
+    Range 6(  -5.858uA  -    -5.848uA ):         0 (  0.00%)
+    Range 7(  -5.848uA  -    -5.838uA ):         0 (  0.00%)
+    Range 8(  -5.838uA  -    -5.828uA ):         1 ( 50.00%)

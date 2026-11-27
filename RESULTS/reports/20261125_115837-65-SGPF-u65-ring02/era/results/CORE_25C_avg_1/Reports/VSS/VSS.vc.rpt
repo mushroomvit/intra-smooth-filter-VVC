@@ -1,0 +1,18 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         1    1.1705e-05A   ERA_floorplan_VSS_1   45.45, 1.20  M6
+         1    1.1705e-05A   ERA_floorplan_VSS_2   45.45, 88.20  M6
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: 11.705uA, 11.705uA, 11.705uA
+  Total Current: 23.411uA
+    Range 1(  11.705uA  -    11.707uA ):         2 (100.00%)
+    Range 2(  11.705uA  -    11.705uA ):         0 (  0.00%)
+    Range 3(  11.705uA  -    11.705uA ):         0 (  0.00%)
+    Range 4(  11.705uA  -    11.705uA ):         0 (  0.00%)
+    Range 5(  11.705uA  -    11.705uA ):         0 (  0.00%)
+    Range 6(  11.705uA  -    11.705uA ):         0 (  0.00%)
+    Range 7(  11.705uA  -    11.705uA ):         0 (  0.00%)
+    Range 8(  11.704uA  -    11.705uA ):         0 (  0.00%)

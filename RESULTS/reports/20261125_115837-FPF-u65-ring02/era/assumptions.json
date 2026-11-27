@@ -1,0 +1,17 @@
+{
+  "label": "EARLY ESTIMATE \u2014 user-approved assumptions",
+  "design": "FPF",
+  "syn_run": "20261114_235105-FPF-rerun",
+  "source_csv": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/updated_samples_power/power_summary.csv",
+  "scenario": "Tango2_qp37_3_89MHz",
+  "baseline_power_W": 4.918289999999999e-05,
+  "margin_fraction": 0.2,
+  "power_budget_W": 5.901947999999999e-05,
+  "supply_V": 0.8,
+  "temperature_C": 25,
+  "current_budget_A": 7.377434999999999e-05,
+  "contact_model": "Ideal contacts at the top and bottom M6 ring midpoints for each net",
+  "current_model": "Uniform core current region on M1 with explicit I=P/V; existing PG routing plus ERA grid completion",
+  "voltage_drop_limit_fraction": 0.1,
+  "limitations": "Static early rail estimate; excludes package resistance/inductance and post-CTS/routed activity"
+}

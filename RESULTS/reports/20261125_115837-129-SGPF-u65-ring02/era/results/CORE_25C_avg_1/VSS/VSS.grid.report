@@ -1,0 +1,62 @@
+- Cell: BOUNDARY_LEFTSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BOUNDARY_LEFTSGBWP7T40P140 Pin: VSS Instantiation: 160 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BOUNDARY_RIGHTSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BOUNDARY_RIGHTSGBWP7T40P140 Pin: VSS Instantiation: 160 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: TAPCELLSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: TAPCELLSGBWP7T40P140 Pin: VSS Instantiation: 1944 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: current_region_CORE_ESTIMATE_VSS_id_2 Tag: 
+ Temperature: 25
+* Cell: current_region_CORE_ESTIMATE_VSS_id_2 Pin: VSS Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1            2960            2960               0               0            2960               0
+          Total            2960            2960               0               0            2960               0
+
+
+
+Grid Statistics of Net VSS:
+- NODE
+  Total node: 6534
+    Top Level grid node: 6534
+      Top level interface node: 5224
+    Missing interface node: 0
+    Cell internal node: 0
+- ELEM
+  Total element: 7345
+    Top Level grid element: 7345
+    Cell internal element: 0
+- INST
+  Instance logically connected: 2265
+    Tech: 2264
+    StdCell: 0
+    Macro:
+      Early: 0
+      IR: 0
+      EM: 0
+    Current Region:  1
+  Dropped instance due to missing/incomplete cell library: 0
+- TAP
+  Total tap: 5224
+
+

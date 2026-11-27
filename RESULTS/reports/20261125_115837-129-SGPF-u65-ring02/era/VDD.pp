@@ -1,0 +1,2 @@
+ERA_floorplan_VDD_1 61.25 3.7 M6 VDD
+ERA_floorplan_VDD_2 61.25 117.9 M6 VDD

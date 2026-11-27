@@ -1,0 +1,6 @@
+temperature -1
+extraction_tech_file /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile
+spice_subckts_xyscaling 1000
+use_powergate_data_from_lib 0
+default_frequency 2e+08
+decap_frequency 1e+09

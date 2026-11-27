@@ -1,0 +1,2 @@
+create_current_region  area="4.800000 4.800000 63.700000 62.200000 label=CORE_ESTIMATE_VSS layer=M1 pwrnet=VSS current=0.012490mA 
+create_current_region  area="4.800000 4.800000 63.700000 62.200000 label=CORE_ESTIMATE_VDD layer=M1 pwrnet=VDD current=0.012490mA 

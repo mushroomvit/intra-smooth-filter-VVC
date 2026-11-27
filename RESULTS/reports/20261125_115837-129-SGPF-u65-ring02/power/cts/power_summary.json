@@ -1,0 +1,30 @@
+{
+  "design": "129-SGPF",
+  "scenario": "Tango2_qp37_3_89MHz",
+  "stage": "cts",
+  "clock_tree": true,
+  "total_power_W": 2.765e-05,
+  "view": "TT_25",
+  "supply_V": 0.8,
+  "temperature_C": 25,
+  "primary_inputs": {
+    "annotated": 1066,
+    "total": 1066,
+    "percent": 100.0
+  },
+  "flop_outputs": {
+    "annotated": 2092,
+    "total": 3022,
+    "percent": 69.2257
+  },
+  "default_sequential_nets": 0,
+  "default_connected_sequential_nets": 0,
+  "equivalent_Q_Qbar_annotation": true,
+  "activity_selection": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-129-SGPF-u65-ring02/activity/activity_selection.json",
+  "report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-129-SGPF-u65-ring02/power/cts/power.rpt",
+  "current_files": {
+    "VDD": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-129-SGPF-u65-ring02/power/cts/static_VDD.ptiavg",
+    "VSS": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-129-SGPF-u65-ring02/power/cts/static_VSS.ptiavg"
+  },
+  "limitations": "RTL VCD with mapped activity propagation; no gate-level SDF glitch simulation; post-CTS signal RC is estimated before routing"
+}

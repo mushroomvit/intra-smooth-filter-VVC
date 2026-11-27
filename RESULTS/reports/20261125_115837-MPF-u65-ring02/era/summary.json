@@ -1,0 +1,32 @@
+{
+  "label": "EARLY ESTIMATE \u2014 user-approved assumptions",
+  "design": "MPF",
+  "power_budget_W": 9.992376e-06,
+  "expected_current_A": 1.249047e-05,
+  "rail_state": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-MPF-u65-ring02/era/results/CORE_25C_avg_1",
+  "nets": {
+    "VDD": {
+      "loaded_current_A": 1.2478906683099922e-05,
+      "ir_violations": 0,
+      "minimum_voltage_V": 0.799978,
+      "average_voltage_V": 0.799985,
+      "maximum_voltage_V": 0.8,
+      "worst_drop_or_rise_V": 2.2000000000077513e-05,
+      "report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-MPF-u65-ring02/era/results/CORE_25C_avg_1/Reports/VDD/VDD.main.rpt"
+    },
+    "VSS": {
+      "loaded_current_A": 1.2489999789977446e-05,
+      "ir_violations": 0,
+      "minimum_voltage_V": 6.245e-14,
+      "average_voltage_V": 1.83591e-05,
+      "maximum_voltage_V": 2.59397e-05,
+      "worst_drop_or_rise_V": 2.59397e-05,
+      "report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_115837-MPF-u65-ring02/era/results/CORE_25C_avg_1/Reports/VSS/VSS.main.rpt"
+    }
+  },
+  "voltage_drop_limit_fraction": 0.1,
+  "voltage_drop_limit_V": 0.08000000000000002,
+  "combined_drop_upper_bound_V": 4.793970000007751e-05,
+  "combined_drop_upper_bound_fraction": 5.992462500009689e-05,
+  "within_limit": true
+}

@@ -1,0 +1,62 @@
+- Cell: BOUNDARY_LEFTSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BOUNDARY_LEFTSGBWP7T40P140 Pin: VDD Instantiation: 235 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BOUNDARY_RIGHTSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: BOUNDARY_RIGHTSGBWP7T40P140 Pin: VDD Instantiation: 235 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: TAPCELLSGBWP7T40P140 Tag: 
+ Temperature: 25
+* Cell: TAPCELLSGBWP7T40P140 Pin: VDD Instantiation: 4147 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: current_region_CORE_ESTIMATE_VDD_id_1 Tag: 
+ Temperature: 25
+* Cell: current_region_CORE_ESTIMATE_VDD_id_1 Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+             M1            6254            6254               0               0            6254               0
+          Total            6254            6254               0               0            6254               0
+
+
+
+Grid Statistics of Net VDD:
+- NODE
+  Total node: 13880
+    Top Level grid node: 13880
+      Top level interface node: 10871
+    Missing interface node: 0
+    Cell internal node: 0
+- ELEM
+  Total element: 15666
+    Top Level grid element: 15666
+    Cell internal element: 0
+- INST
+  Instance logically connected: 4618
+    Tech: 4617
+    StdCell: 0
+    Macro:
+      Early: 0
+      IR: 0
+      EM: 0
+    Current Region:  1
+  Dropped instance due to missing/incomplete cell library: 0
+- TAP
+  Total tap: 10871
+
+

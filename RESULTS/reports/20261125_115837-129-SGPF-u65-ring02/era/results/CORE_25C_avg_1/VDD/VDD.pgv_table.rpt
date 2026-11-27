@@ -1,0 +1,6 @@
+                     Cell Name |     Power-Grid View |      Number of Instances
+-------------------------------------------------------------------------------
+    BOUNDARY_LEFTSGBWP7T40P140 |                Tech |                      160
+   BOUNDARY_RIGHTSGBWP7T40P140 |                Tech |                      160
+          TAPCELLSGBWP7T40P140 |                Tech |                     1944
+current_region_CORE_ESTIMATE_VDD_id_1 |      Current Region |                        1
