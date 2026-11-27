@@ -1,0 +1,96 @@
+Final routed gate counts and cell area
+
+Absolute counts are leaf standard-cell instances in the final Innovus netlists, including the clock tree and inserted buffers.
+Area is sum(instance count x Liberty cell area), in um^2. Every design count and area was checked against native Innovus final_cell_area.rpt.
+Physical-only filler, tap and boundary cells are outside this logical-cell inventory.
+NAND2 equivalents = logical cell area / 0.294 um^2 (ND2SGD1BWP7T40P140). This is an area equivalent, not the actual instance count.
+
+Definitions:
+  Mux: a multiplexer selects one data input using a select signal. MUX2 implements Z = (!S & I0) | (S & I1); MUX2N inverts that output.
+  Full adder: adds one-bit A, B and carry-in CI; SUM = A XOR B XOR CI, carry-out = AB | ACI | BCI.
+  Half adder: adds two one-bit inputs without carry-in; SUM = A XOR B, carry-out = AB.
+Counts below refer to dedicated mapped one-bit mux/full-adder/half-adder cells. They are not counts of buses or RTL arithmetic operators.
+For example, a multi-bit adder can contain many FA cells plus other gates. Selection and addition can also map to ordinary logic gates.
+FPF contains zero dedicated MUX cells; this does not mean it has no selection logic. Its selection functions have been mapped to ordinary logic.
+
+Design        Cells   Area um^2   NAND2 kGE   Mux count   Mux um^2   FA count    FA um^2   HA count   HA um^2
+FPF           15264   17441.844     59.326           0      0.000       3315   5522.790          0     0.000
+129-SGPF       6231    8283.940     28.177         164    112.700       1627   2710.582          0     0.000
+65-SGPF        3252    4233.600     14.400          71     48.902        802   1336.132          0     0.000
+MPF            1726    2203.530      7.495          44     30.380        407    678.062          0     0.000
+
+Gate categories: FPF
+Category                Absolute count       Area um^2      Area %
+mux                                   0           0.000       0.000
+full_adder                         3315        5522.790      31.664
+half_adder                            0           0.000       0.000
+flip_flop                          4139        8633.506      49.499
+latch                                 0           0.000       0.000
+clock_gating                          0           0.000       0.000
+buffer                              225         224.028       1.284
+inverter                             83          16.954       0.097
+delay                                18           5.292       0.030
+tie                                   0           0.000       0.000
+and_nand                           2886        1105.538       6.338
+or_nor                             2251         693.056       3.974
+xor_xnor                              0           0.000       0.000
+compound_logic                     2347        1240.680       7.113
+
+Gate categories: 129-SGPF
+Category                Absolute count       Area um^2      Area %
+mux                                 164         112.700       1.360
+full_adder                         1627        2710.582      32.721
+half_adder                            0           0.000       0.000
+flip_flop                          2093        4312.392      52.057
+latch                                 0           0.000       0.000
+clock_gating                          3           7.252       0.088
+buffer                               51          86.142       1.040
+inverter                            130          25.480       0.308
+delay                                 0           0.000       0.000
+tie                                   3           0.882       0.011
+and_nand                            312          98.784       1.192
+or_nor                              411         139.552       1.685
+xor_xnor                              7           7.938       0.096
+compound_logic                     1430         782.236       9.443
+
+Gate categories: 65-SGPF
+Category                Absolute count       Area um^2      Area %
+mux                                  71          48.902       1.155
+full_adder                          802        1336.132      31.560
+half_adder                            0           0.000       0.000
+flip_flop                          1069        2197.846      51.914
+latch                                 0           0.000       0.000
+clock_gating                          3           8.624       0.204
+buffer                               19          33.614       0.794
+inverter                             83          16.268       0.384
+delay                                 0           0.000       0.000
+tie                                   3           0.882       0.021
+and_nand                            232          75.264       1.778
+or_nor                              197          68.992       1.630
+xor_xnor                             14          19.992       0.472
+compound_logic                      759         427.084      10.088
+
+Gate categories: MPF
+Category                Absolute count       Area um^2      Area %
+mux                                  44          30.380       1.379
+full_adder                          407         678.062      30.772
+half_adder                            0           0.000       0.000
+flip_flop                           557        1147.972      52.097
+latch                                 0           0.000       0.000
+clock_gating                          3           8.624       0.391
+buffer                               11          17.738       0.805
+inverter                             37           7.252       0.329
+delay                                 0           0.000       0.000
+tie                                   3           0.882       0.040
+and_nand                            129          43.904       1.992
+or_nor                              140          48.118       2.184
+xor_xnor                              8           7.644       0.347
+compound_logic                      387         212.954       9.664
+
+Files:
+  summary.csv: absolute total, mux, full-adder and half-adder counts/areas; all other gate classes; NAND2 equivalents.
+  categories.csv: exclusive gate-class totals and area/count percentages.
+  cells.csv: absolute count, unit area and total area for every library cell used by each design.
+  instances.csv: every flattened logical leaf instance, master, category and area.
+  mux_adder_functions.json: the actual Liberty functions and areas of all used mux/adder masters.
+  provenance.json: exact netlist/library hashes, native area reports, scope and counting definitions.

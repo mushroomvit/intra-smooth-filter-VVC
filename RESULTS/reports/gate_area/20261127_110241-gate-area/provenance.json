@@ -1,0 +1,78 @@
+{
+  "created": "2026-11-27T11:02:53.358783",
+  "stage": "final routed Innovus netlists",
+  "area_unit": "um2",
+  "nand2_reference": "ND2SGD1BWP7T40P140",
+  "nand2_area_um2": "0.294",
+  "validation": "Counts and summed Liberty area match native Innovus final_cell_area.rpt for every design",
+  "libraries": [
+    {
+      "path": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v25c.lib.gz",
+      "sha256": "9addfb9281a01a4fc7f3652132465c788d184093a567ef956205f3d700a55b99"
+    },
+    {
+      "path": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz",
+      "sha256": "37263a800e7f9d59fccbaef70ea0165314441e472b57cba333c925b8c405a75e"
+    },
+    {
+      "path": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v25c.lib.gz",
+      "sha256": "1f0e64f0237ef507332f4d69ad0e6130ef14b93a7262e349fe9252e51768d0aa"
+    },
+    {
+      "path": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v25c.lib.gz",
+      "sha256": "ee362b32d9399ca971bdcb4de1a86125574aae5495de7556df5d91be272a97ba"
+    },
+    {
+      "path": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v25c.lib.gz",
+      "sha256": "87657a3d3fec076b9fa3fbbc3e8102899974aa1e40c0e0da86a4ec966f45574f"
+    },
+    {
+      "path": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v25c.lib.gz",
+      "sha256": "41614ea226b234d848ca99fb14579baf131948be4f3a15dd60e716e121e0646b"
+    }
+  ],
+  "designs": [
+    {
+      "design": "FPF",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "netlist": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_125823-FPF-final-spef/filtragem1x64_wrapper_routed.v",
+      "netlist_sha256": "98713f0d9e77fe1cddad85f2326df319582efb16eba008ecd5a729172efed48c",
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-FPF-final-spef/final_cell_area.rpt",
+      "area_report_sha256": "6b5bd8df64a9380b5312267c939c8414b80344b28476ee58be7b7258a75de015",
+      "validated_leaf_count": 15264,
+      "validated_area_um2": "17441.844"
+    },
+    {
+      "design": "129-SGPF",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "netlist": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_125823-129-SGPF-final-spef/wrapper_routed.v",
+      "netlist_sha256": "066c3afa6c4d4892a94f2a07ffb87e8d497fac698feb20bcb91def8af5c63954",
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-129-SGPF-final-spef/final_cell_area.rpt",
+      "area_report_sha256": "b4c0b91232aa68a80b95911a398aae66793c415497f2eebb4a805a109bdfc855",
+      "validated_leaf_count": 6231,
+      "validated_area_um2": "8283.940"
+    },
+    {
+      "design": "65-SGPF",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "netlist": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_141943-65-SGPF-final-spef/wrapper_routed.v",
+      "netlist_sha256": "380919aac6624aed86a09ce69d76d2e364a284b73ec566f3fde439e5f140cf6f",
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_141943-65-SGPF-final-spef/final_cell_area.rpt",
+      "area_report_sha256": "050a780e191ac809fa9f7e4e3b726bb8b2336ef0964cce4a037061a3d8dc06c1",
+      "validated_leaf_count": 3252,
+      "validated_area_um2": "4233.600"
+    },
+    {
+      "design": "MPF",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "netlist": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/deliverables/20261125_125823-MPF-final-spef/wrapper_routed.v",
+      "netlist_sha256": "88ce0fb2585b97e6128e157f8caf37d0d9046e66132164eff988ca49ddd7fd90",
+      "area_report": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/20261125_125823-MPF-final-spef/final_cell_area.rpt",
+      "area_report_sha256": "e96425b43a6ce966e6ab06b7c24e7813fff00e5cef11938268432f0241ddde75",
+      "validated_leaf_count": 1726,
+      "validated_area_um2": "2203.530"
+    }
+  ],
+  "scope": "All logical leaf cells including buffers, clock cells, sequential cells and ties; excludes physical-only filler/tap/boundary cells omitted from the routed logical netlist",
+  "interpretation": "Mux/adder counts are dedicated mapped one-bit standard cells. RTL multi-bit operator counts and decomposed selection/arithmetic logic cannot be inferred uniquely from these totals."
+}

@@ -1,0 +1,165 @@
+[
+  {
+    "design": "FPF",
+    "category": "full_adder",
+    "cell": "FA1SGD1BWP7T40P140UHVT",
+    "count": 3315,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "5522.790",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "129-SGPF",
+    "category": "full_adder",
+    "cell": "FA1SGD0BWP7T40P140UHVT",
+    "count": 3,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "4.998",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "129-SGPF",
+    "category": "full_adder",
+    "cell": "FA1SGD1BWP7T40P140UHVT",
+    "count": 1624,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "2705.584",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "129-SGPF",
+    "category": "mux",
+    "cell": "MUX2NSGD1BWP7T40P140UHVT",
+    "count": 1,
+    "unit_area_um2": "0.882",
+    "total_area_um2": "0.882",
+    "liberty_functions": [
+      "(!((S I1) + (!S I0)))"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "129-SGPF",
+    "category": "mux",
+    "cell": "MUX2SGD1BWP7T40P140UHVT",
+    "count": 163,
+    "unit_area_um2": "0.686",
+    "total_area_um2": "111.818",
+    "liberty_functions": [
+      "((S I1) + (!S I0))"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "65-SGPF",
+    "category": "full_adder",
+    "cell": "FA1SGD0BWP7T40P140UHVT",
+    "count": 4,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "6.664",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "65-SGPF",
+    "category": "full_adder",
+    "cell": "FA1SGD1BWP7T40P140UHVT",
+    "count": 798,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "1329.468",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "65-SGPF",
+    "category": "mux",
+    "cell": "MUX2NSGD1BWP7T40P140UHVT",
+    "count": 1,
+    "unit_area_um2": "0.882",
+    "total_area_um2": "0.882",
+    "liberty_functions": [
+      "(!((S I1) + (!S I0)))"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "65-SGPF",
+    "category": "mux",
+    "cell": "MUX2SGD1BWP7T40P140UHVT",
+    "count": 70,
+    "unit_area_um2": "0.686",
+    "total_area_um2": "48.020",
+    "liberty_functions": [
+      "((S I1) + (!S I0))"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "MPF",
+    "category": "full_adder",
+    "cell": "FA1SGD0BWP7T40P140UHVT",
+    "count": 2,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "3.332",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "MPF",
+    "category": "full_adder",
+    "cell": "FA1SGD1BWP7T40P140UHVT",
+    "count": 405,
+    "unit_area_um2": "1.666",
+    "total_area_um2": "674.730",
+    "liberty_functions": [
+      "(((A B)+(B CI))+(CI A))",
+      "((A^B)^CI)"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "MPF",
+    "category": "mux",
+    "cell": "MUX2NSGD1BWP7T40P140UHVT",
+    "count": 1,
+    "unit_area_um2": "0.882",
+    "total_area_um2": "0.882",
+    "liberty_functions": [
+      "(!((S I1) + (!S I0)))"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  },
+  {
+    "design": "MPF",
+    "category": "mux",
+    "cell": "MUX2SGD1BWP7T40P140UHVT",
+    "count": 43,
+    "unit_area_um2": "0.686",
+    "total_area_um2": "29.498",
+    "liberty_functions": [
+      "((S I1) + (!S I0))"
+    ],
+    "library": "/home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz"
+  }
+]
