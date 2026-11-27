@@ -1,0 +1,1131 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2026 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v26.10-p003_1, built Wed Jun 17 14:23:18 PDT 2026
+Options:	-stylus -no_gui -log /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/host -files /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/check_scaled_timing.tcl 
+Date:		Thu Nov 26 23:15:30 2026
+Host:		server_ci_inovador (x86_64 w/Linux 4.18.0-553.146.1.el8_10.x86_64) (24cores*48cpus*Intel(R) Xeon(R) Gold 5412U 46080KB)
+OS:		Rocky Linux 8.10 (Green Obsidian)
+
+License:
+		Licensing (25.02-p001) initialized with server/s 27001@192.168.1.10 at [11-26-2026 23:15:30.363265]
+		invs	Innovus Implementation System	INVS100	26.1
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK.
+
+Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+Info: Process UID = 2578509 / d1f02448-d2ea-480b-ab63-55078b9b9534 / vHzWTsZ8Fk
+
+**INFO:  MMMC transition support version v31-84 
+
+#@ Processing -files option
+@innovus 1> source /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/check_scaled_timing.tcl
+#@ Begin verbose source (pre): source /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/check_scaled_timing.tcl
+@file 1: # Read-only analysis of a finished routed checkpoint at the requested clock.
+@file 2: source [file join [file dirname [info script]] scaled_clock_constraints.tcl]
+#@ Begin verbose source /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/scaled_clock_constraints.tcl (pre)
+@file 1: # Re-evaluate SI timing while solving for a zero-slack period. No DB is written.
+@file 2: proc setup_at_period {period prefix} {
+  # Update the mode SDC in place and retain each view's CTS source latencies.
+  set modes [glob -directory [file join $::env(SCALED_TIMING_DB) mmmc modes] *]
+  if {[llength $modes] != 1} {error "Expected one functional constraint mode"}
+  set mode [file tail [lindex $modes 0]]
+  set original [file join [lindex $modes 0] ${mode}.sdc]
+  set f [open $original r]; set constraints [read $f]; close $f
+  set replacement [format {create_clock -name clk -period %.12g [get_ports {clk}]} $period]
+  if {[regsub -line {^create_clock[^\n]*$} $constraints $replacement constraints] != 1} {
+    error "Expected exactly one source clock"
+  }
+  set path [file join $::env(SCALED_TIMING_OUTPUT) ${prefix}.sdc]
+  set f [open $path w]; puts $f $constraints; close $f
+  update_constraint_mode -name $mode -sdc_files [list $path]
+  foreach latency [glob -directory [file join $::env(SCALED_TIMING_DB) mmmc views] */latency.sdc] {
+    update_analysis_view -name [file tail [file dirname $latency]] -latency_file $latency
+  }
+  extract_rc
+  time_design -post_route -report_dir $::env(SCALED_TIMING_OUTPUT) -report_prefix $prefix
+  set report [file join $::env(SCALED_TIMING_OUTPUT) ${prefix}.summary.gz]
+  set text [exec gzip -dc $report]
+  if {![regexp {WNS \(ns\):\|\s*([-0-9.]+)} $text -> slack]} {error "Missing setup slack in $report"}
+  return $slack
+}
+#@ End verbose source /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/scaled_clock_constraints.tcl
+#% Begin load design ... (date=11/26 23:15:44, mem=1868.4M)
+AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+##  Process: 22            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 22nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+Loading design 'wrapper' saved by 'Innovus' '26.10-p003_1' on 'Wed Nov 25 13:01:55 2026'.
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading lib_SS_0 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz.
+**WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLSGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL8SGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL64SGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL4SGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgssg0p72v0c.lib.gz)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 846 cells in library tcbn22ullbwp7t40p140sgssg0p72v0c.
+Reading lib_SS_0 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgssg0p72v0c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsgssg0p72v0c.
+Reading lib_SS_0 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz.
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL1'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 500)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL1'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 501)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL2'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 566)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL2'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 567)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 1134)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 1135)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL1'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 1439)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL1'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 1440)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL2'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 1505)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL2'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 1506)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL1'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2121)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL1'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2122)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL2'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2187)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL2'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2188)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL1'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2803)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL1'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2804)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL2'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2869)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL2'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 2870)
+**WARN: (TECHLIB-1277):	The attribute 'max_capacitance' has been defined for internal pin 'INTERNAL'. 'max_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 3437)
+**WARN: (TECHLIB-1277):	The attribute 'min_capacitance' has been defined for internal pin 'INTERNAL'. 'min_capacitance' cannot be defined at this level and is being ignored. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgssg0p72v0c.lib.gz, Line 3438)
+Message <TECHLIB-1277> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsgssg0p72v0c.
+Reading lib_SS_0 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz.
+**WARN: (TECHLIB-302):	No function defined for cell 'TAPCELLSGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL8SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL64SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL4SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL3SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL32SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL2SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILL16SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'DCAP8SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'DCAP64SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'DCAP4SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'DCAP32SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'DCAP16SGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'BOUNDARY_RIGHTSGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'BOUNDARY_LEFTSGBWP7T40P140'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNASGBWP7T40P140UHVT'. The cell will only be used for analysis. (File /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtssg0p72v0c.lib.gz)
+Read 846 cells in library tcbn22ullbwp7t40p140sguhvtssg0p72v0c.
+Reading lib_SS_0 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvtssg0p72v0c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsguhvtssg0p72v0c.
+Reading lib_SS_0 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvtssg0p72v0c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsguhvtssg0p72v0c.
+Library reading multithread flow ended.
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading lib_FF_125 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgffg0p88v125c.lib.gz.
+Read 846 cells in library tcbn22ullbwp7t40p140sgffg0p88v125c.
+Reading lib_FF_125 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgffg0p88v125c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsgffg0p88v125c.
+Reading lib_FF_125 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgffg0p88v125c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsgffg0p88v125c.
+Reading lib_FF_125 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvtffg0p88v125c.lib.gz.
+Read 846 cells in library tcbn22ullbwp7t40p140sguhvtffg0p88v125c.
+Reading lib_FF_125 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvtffg0p88v125c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsguhvtffg0p88v125c.
+Reading lib_FF_125 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvtffg0p88v125c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsguhvtffg0p88v125c.
+Library reading multithread flow ended.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/PRTF_Innovus_N22_7M_5X1Z_RDL_7T.16b.tlef ...
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140sg.lef ...
+Set DBUPerIGU to M1 pitch 280.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140sg.lef at line 186420.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140sguhvt.lef ...
+**WARN: (IMPLF-58):	MACRO 'BOUNDARY_LEFTSGBWP7T40P140' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'BOUNDARY_RIGHTSGBWP7T40P140' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'TAPCELLSGBWP7T40P140' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140sguhvt.lef at line 186420.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140mbsg.lef ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140mbsg.lef at line 24498.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140mbsguhvt.lef ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140mbsguhvt.lef at line 24498.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140pmsg.lef ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140pmsg.lef at line 11800.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140pmsguhvt.lef ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/lef/tcbn22ullbwp7t40p140pmsguhvt.lef at line 11800.
+**WARN: (IMPLF-61):	3 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNASGBWP7T40P140UHVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNASGBWP7T40P140' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Loading view definition file from /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/viewDefinition.tcl
+% Begin Load netlist data ... (date=11/26 23:15:53, mem=1993.6M)
+*** Begin netlist parsing (mem=1993.6M) ***
+Created 1827 new cells from 12 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/vbin/wrapper.v.bin'
+Reading binary database version 2 in multi-threaded mode
+
+*** Memory Usage v#1 (Current mem = 2050.023M, initial mem = 954.457M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=2050.0M) ***
+% End Load netlist data ... (date=11/26 23:15:53, total cpu=0:00:00.1, real=0:00:00.0, peak res=2048.8M, current mem=2048.8M)
+Set top cell to wrapper.
+Hooked 3660 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell wrapper ...
+*** Netlist is unique.
+** info: there are 3664 modules.
+** info: there are 6231 stdCell insts.
+** info: there are 6231 stdCell insts with at least one signal pin.
+
+*** Memory Usage v#1 (Current mem = 2338.527M, initial mem = 954.457M) ***
+*info: set bottom ioPad orient R0
+Adjusting Core to Left to: 4.9000.
+**WARN: (IMPFP-3961):	The techSite 'ccore7T' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Set Shrink Factor to 0.85500
+##  Process: 22            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 22nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+Effort level <high> specified for tdgp_reg2reg_default path_group
+Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+Change floorplan default-technical-site to 'core7T'.
+
+Loading LEF file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.lef.info.gz ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.lef.info.gz at line 34.
+*Info: initialize multi-corner CTS.
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading lib_TT_25 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v25c.lib.gz.
+Read 846 cells in library tcbn22ullbwp7t40p140sgtt0p8v25c.
+Reading lib_TT_25 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v25c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsgtt0p8v25c.
+Reading lib_TT_25 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v25c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsgtt0p8v25c.
+Reading lib_TT_25 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v25c.lib.gz.
+Read 846 cells in library tcbn22ullbwp7t40p140sguhvttt0p8v25c.
+Reading lib_TT_25 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v25c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsguhvttt0p8v25c.
+Reading lib_TT_25 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v25c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsguhvttt0p8v25c.
+Library reading multithread flow ended.
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading lib_TT_85 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sg_110b/tcbn22ullbwp7t40p140sgtt0p8v85c.lib.gz.
+Read 846 cells in library tcbn22ullbwp7t40p140sgtt0p8v85c.
+Reading lib_TT_85 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsg_110b/tcbn22ullbwp7t40p140mbsgtt0p8v85c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsgtt0p8v85c.
+Reading lib_TT_85 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsg_110b/tcbn22ullbwp7t40p140pmsgtt0p8v85c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsgtt0p8v85c.
+Reading lib_TT_85 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140sguhvt_110b/tcbn22ullbwp7t40p140sguhvttt0p8v85c.lib.gz.
+Read 846 cells in library tcbn22ullbwp7t40p140sguhvttt0p8v85c.
+Reading lib_TT_85 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140mbsguhvt_110b/tcbn22ullbwp7t40p140mbsguhvttt0p8v85c.lib.gz.
+Read 24 cells in library tcbn22ullbwp7t40p140mbsguhvttt0p8v85c.
+Reading lib_TT_85 timing library /home/tools/design_kits/tsmc/22/digital/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn22ullbwp7t40p140pmsguhvt_110b/tcbn22ullbwp7t40p140pmsguhvttt0p8v85c.lib.gz.
+Read 45 cells in library tcbn22ullbwp7t40p140pmsguhvttt0p8v85c.
+Library reading multithread flow ended.
+Total number of combinational cells: 1016
+Total number of sequential cells: 674
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 28
+Total number of power switch cells: 16
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 83
+List of usable buffers: BUFFSGD0BWP7T40P140 BUFFSGD1BWP7T40P140 CKBSGD0BWP7T40P140 CKBSGD1BWP7T40P140 DEL025SGD1BWP7T40P140 BUFFSGD2BWP7T40P140 CKBSGD2BWP7T40P140 BUFFSGD3BWP7T40P140 CKBSGD3BWP7T40P140 GBUFFSGD1BWP7T30P140 GBUFFSGD2BWP7T30P140 GBUFFSGD3BWP7T30P140 BUFFSGD4BWP7T40P140 CKBSGD4BWP7T40P140 BUFFSGD6BWP7T40P140 CKBSGD6BWP7T40P140 GBUFFSGD4BWP7T30P140 BUFFSGD8BWP7T40P140 CKBSGD8BWP7T40P140 DCCKBSGD4BWP7T40P140 BUFFSGD12BWP7T40P140 CKBSGD12BWP7T40P140 GBUFFSGD8BWP7T30P140 BUFFSGD16BWP7T40P140 CKBSGD16BWP7T40P140 DCCKBSGD8BWP7T40P140 BUFFSGD20BWP7T40P140 CKBSGD20BWP7T40P140 DCCKBSGD12BWP7T40P140 DCCKBSGD16BWP7T40P140
+Total number of usable buffers: 30
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CKNSGD0BWP7T40P140 CKNSGD0BWP7T40P140UHVT CKNSGD1BWP7T40P140 CKNSGD1BWP7T40P140UHVT INVSGD0BWP7T40P140 INVSGD0BWP7T40P140UHVT INVSGD1BWP7T40P140 INVSGD1BWP7T40P140UHVT CKNSGD2BWP7T40P140 CKNSGD2BWP7T40P140UHVT GINVSGD1BWP7T30P140 GINVSGD1BWP7T30P140UHVT GINVSGD2BWP7T30P140 GINVSGD2BWP7T30P140UHVT INVSGD2BWP7T40P140 INVSGD2BWP7T40P140UHVT CKNSGD3BWP7T40P140 CKNSGD3BWP7T40P140UHVT INVSGD3BWP7T40P140 INVSGD3BWP7T40P140UHVT CKNSGD4BWP7T40P140 CKNSGD4BWP7T40P140UHVT INVSGD4BWP7T40P140 INVSGD4BWP7T40P140UHVT GINVSGD3BWP7T30P140 GINVSGD3BWP7T30P140UHVT GINVSGD4BWP7T30P140 GINVSGD4BWP7T30P140UHVT CKNSGD6BWP7T40P140 CKNSGD6BWP7T40P140UHVT INVSGD6BWP7T40P140 INVSGD6BWP7T40P140UHVT CKNSGD8BWP7T40P140 CKNSGD8BWP7T40P140UHVT INVSGD8BWP7T40P140 INVSGD8BWP7T40P140UHVT DCCKNSGD4BWP7T40P140 DCCKNSGD4BWP7T40P140UHVT GINVSGD8BWP7T30P140 GINVSGD8BWP7T30P140UHVT CKNSGD12BWP7T40P140 CKNSGD12BWP7T40P140UHVT INVSGD12BWP7T40P140 INVSGD12BWP7T40P140UHVT CKNSGD16BWP7T40P140 CKNSGD16BWP7T40P140UHVT INVSGD16BWP7T40P140 INVSGD16BWP7T40P140UHVT DCCKNSGD8BWP7T40P140 DCCKNSGD8BWP7T40P140UHVT CKNSGD20BWP7T40P140 CKNSGD20BWP7T40P140UHVT INVSGD20BWP7T40P140 INVSGD20BWP7T40P140UHVT DCCKNSGD12BWP7T40P140 DCCKNSGD12BWP7T40P140UHVT DCCKNSGD16BWP7T40P140 DCCKNSGD16BWP7T40P140UHVT DCCKNSGD20BWP7T40P140 DCCKNSGD20BWP7T40P140UHVT
+Total number of usable inverters: 60
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUFFSGD0BWP7T40P140UHVT BUFFSGD1BWP7T40P140UHVT CKBSGD0BWP7T40P140UHVT CKBSGD1BWP7T40P140UHVT DEL025SGD1BWP7T40P140UHVT BUFFSGD2BWP7T40P140UHVT CKBSGD2BWP7T40P140UHVT BUFFSGD3BWP7T40P140UHVT CKBSGD3BWP7T40P140UHVT GBUFFSGD1BWP7T30P140UHVT GBUFFSGD2BWP7T30P140UHVT GBUFFSGD3BWP7T30P140UHVT BUFFSGD4BWP7T40P140UHVT CKBSGD4BWP7T40P140UHVT DEL050MSGD1BWP7T40P140 DEL050MSGD1BWP7T40P140UHVT BUFFSGD6BWP7T40P140UHVT CKBSGD6BWP7T40P140UHVT GBUFFSGD4BWP7T30P140UHVT BUFFSGD8BWP7T40P140UHVT CKBSGD8BWP7T40P140UHVT DEL075MSGD1BWP7T40P140 DEL075MSGD1BWP7T40P140UHVT DCCKBSGD4BWP7T40P140UHVT DEL100MSGD1BWP7T40P140 DEL100MSGD1BWP7T40P140UHVT BUFFSGD12BWP7T40P140UHVT CKBSGD12BWP7T40P140UHVT GBUFFSGD8BWP7T30P140UHVT DEL150MSGD1BWP7T40P140 DEL150MSGD1BWP7T40P140UHVT BUFFSGD16BWP7T40P140UHVT CKBSGD16BWP7T40P140UHVT DCCKBSGD8BWP7T40P140UHVT DEL200MSGD1BWP7T40P140 DEL200MSGD1BWP7T40P140UHVT BUFFSGD20BWP7T40P140UHVT CKBSGD20BWP7T40P140UHVT DEL250MSGD1BWP7T40P140 DEL250MSGD1BWP7T40P140UHVT DCCKBSGD12BWP7T40P140UHVT DCCKBSGD16BWP7T40P140UHVT
+Total number of identified usable delay cells: 42
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.fp.gz (mem = 3016.0M).
+% Begin Load floorplan data ... (date=11/26 23:16:01, mem=3017.2M)
+*info: reset 9855 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 245000 243200)
+**WARN: (IMPFP-3961):	The techSite 'ccore7T' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+ ... processed partition successfully.
+Reading binary special route file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.fp.spr.gz (Created by Innovus v26.10-p003_1 on Wed Nov 25 13:01:52 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=3017.2M, current mem=3017.2M)
+There are 48 nets with weight being set
+There are 48 nets with bottomPreferredRoutingLayer being set
+There are 48 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Delete all existing relative floorplan constraints.
+% End Load floorplan data ... (date=11/26 23:16:02, total cpu=0:00:00.2, real=0:00:01.0, peak res=3020.6M, current mem=3020.6M)
+Reading congestion map file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=11/26 23:16:02, mem=3020.6M)
+Congestion map from Innovus version 1
+% End Load SymbolTable ... (date=11/26 23:16:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=3021.8M, current mem=3021.8M)
+Loading place ...
+% Begin Load placement data ... (date=11/26 23:16:02, mem=3021.0M)
+Reading placement file - /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v26.10-p003_1 on Wed Nov 25 13:01:53 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 1 views from Binary DB for adaptive view pruning
+SS_0_C_worst
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=3023.8M) ***
+Total net length = 1.681e+05 (1.441e+05 2.394e+04) (ext = 6.888e+04)
+% End Load placement data ... (date=11/26 23:16:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=3023.2M, current mem=3023.2M)
+Reading PG file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.pg.gz, version#2, (Created by Innovus v26.10-p003_1 on       Wed Nov 25 13:01:52 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=3023.5M) ***
+% Begin Load routing data ... (date=11/26 23:16:02, mem=3023.5M)
+Reading routing file - /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.route.gz.
+Reading Innovus routing data (Created by Innovus v26.10-p003_1 on Wed Nov 25 13:01:53 2026 Format: 26.1) ...
+*** Total 9852 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=3025.0M) ***
+% End Load routing data ... (date=11/26 23:16:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=3024.4M, current mem=3024.4M)
+Loading Drc markers ...
+... 1709 markers are loaded ...
+... 0 geometry drc markers are loaded ...
+... 0 antenna drc markers are loaded ...
+TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=3026.8M) ***
+Reading dirtyarea snapshot file /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.db.da.gz (Create by Innovus v26.10-p003_1 on Wed Nov 25 13:01:53 2026, version: 8).
+Change floorplan default-technical-site to 'core7T'.
+** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
+
+Loading preRoute extraction data from directory '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/extraction/' ...
+Extraction setup Started for TopCell wrapper 
+Initializing multi-corner RC extraction with 6 active RC Corners ...
+Generating auto layer map file.
+Loading preRoute extracted patterns from file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper.techData.gz' ...
+Completed (cpu: 0:00:00.9 real: 0:00:01.0)
+Set Shrink Factor to 0.85500 (from technology file)
+Summary of Active RC-Corners : 
+ 
+ Analysis View: SS_0_RC_worst
+    RC-Corner Name        : rcworst_0C
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/mmmc/rcworst_125C/qrcTechFile'
+ 
+ Analysis View: SS_0_C_worst
+    RC-Corner Name        : cworst_0C
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/mmmc/cworst_125C/qrcTechFile'
+ 
+ Analysis View: FF_125_RC_best
+    RC-Corner Name        : rcbest_125C
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/mmmc/rcbest_0C/qrcTechFile'
+ 
+ Analysis View: FF_125_C_best
+    RC-Corner Name        : cbest_125C
+    RC-Corner Index       : 3
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/mmmc/cbest_0C/qrcTechFile'
+ 
+ Analysis View: TT_25
+    RC-Corner Name        : rctyp_25C
+    RC-Corner Index       : 4
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/mmmc/rctyp_85C/qrcTechFile'
+ 
+ Analysis View: TT_85
+    RC-Corner Name        : rctyp_85C
+    RC-Corner Index       : 5
+    RC-Corner Temperature : 85 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/mmmc/rctyp_85C/qrcTechFile'
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+Generating auto layer map file.
+Initializing preRoute extraction patterns for new vias...
+Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Completed (cpu: 0:00:00.6 real: 0:00:02.0)
+% Begin Load power constraints ... (date=11/26 23:16:06, mem=3182.3M)
+source /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/wrapper_power_constraints.tcl
+'set_default_switching_activity' finished successfully.
+** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
+
+'read_activity_file' finished successfully.
+% End Load power constraints ... (date=11/26 23:16:06, total cpu=0:00:00.1, real=0:00:00.0, peak res=3204.3M, current mem=3204.3M)
+% Begin Loading binary timing constraints ... (date=11/26 23:16:06, mem=3204.3M)
+% End Loading binary timing constraints ... (date=11/26 23:16:06, total cpu=0:00:00.1, real=0:00:00.0, peak res=3264.0M, current mem=3233.6M)
+% Begin load AAE data ... (date=11/26 23:16:06, mem=3233.6M)
+**WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+AAE DB initialization (MEM=3251.605469 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=11/26 23:16:07, total cpu=0:00:00.6, real=0:00:01.0, peak res=3251.9M, current mem=3251.9M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 2093 sinks and 3 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/SGPF129_FUNCTIONAL was created. It contains 2093 sinks and 1 sources.
+  The skew group clk/SGPF129_FUNCTIONAL was created. It contains 2093 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 1016
+Total number of sequential cells: 674
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 28
+Total number of power switch cells: 16
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 83
+List of usable buffers: BUFFSGD0BWP7T40P140 BUFFSGD1BWP7T40P140 CKBSGD0BWP7T40P140 CKBSGD1BWP7T40P140 DEL025SGD1BWP7T40P140 BUFFSGD2BWP7T40P140 CKBSGD2BWP7T40P140 BUFFSGD3BWP7T40P140 CKBSGD3BWP7T40P140 BUFFSGD4BWP7T40P140 CKBSGD4BWP7T40P140 BUFFSGD6BWP7T40P140 CKBSGD6BWP7T40P140 BUFFSGD8BWP7T40P140 CKBSGD8BWP7T40P140 DCCKBSGD4BWP7T40P140 BUFFSGD12BWP7T40P140 CKBSGD12BWP7T40P140 BUFFSGD16BWP7T40P140 CKBSGD16BWP7T40P140 DCCKBSGD8BWP7T40P140 DCCKBSGD12BWP7T40P140 DCCKBSGD16BWP7T40P140
+Total number of usable buffers: 23
+List of unusable buffers: GBUFFSGD1BWP7T30P140 GBUFFSGD2BWP7T30P140 GBUFFSGD3BWP7T30P140 GBUFFSGD4BWP7T30P140 GBUFFSGD8BWP7T30P140 BUFFSGD20BWP7T40P140 CKBSGD20BWP7T40P140
+Total number of unusable buffers: 7
+List of usable inverters: CKNSGD0BWP7T40P140 CKNSGD0BWP7T40P140UHVT CKNSGD1BWP7T40P140 CKNSGD1BWP7T40P140UHVT INVSGD0BWP7T40P140 INVSGD0BWP7T40P140UHVT INVSGD1BWP7T40P140 INVSGD1BWP7T40P140UHVT CKNSGD2BWP7T40P140 CKNSGD2BWP7T40P140UHVT INVSGD2BWP7T40P140 INVSGD2BWP7T40P140UHVT CKNSGD3BWP7T40P140 CKNSGD3BWP7T40P140UHVT INVSGD3BWP7T40P140 INVSGD3BWP7T40P140UHVT CKNSGD4BWP7T40P140 CKNSGD4BWP7T40P140UHVT INVSGD4BWP7T40P140 INVSGD4BWP7T40P140UHVT CKNSGD6BWP7T40P140 CKNSGD6BWP7T40P140UHVT INVSGD6BWP7T40P140 INVSGD6BWP7T40P140UHVT CKNSGD8BWP7T40P140 CKNSGD8BWP7T40P140UHVT INVSGD8BWP7T40P140 INVSGD8BWP7T40P140UHVT DCCKNSGD4BWP7T40P140 DCCKNSGD4BWP7T40P140UHVT CKNSGD12BWP7T40P140 CKNSGD12BWP7T40P140UHVT INVSGD12BWP7T40P140 INVSGD12BWP7T40P140UHVT CKNSGD16BWP7T40P140 CKNSGD16BWP7T40P140UHVT INVSGD16BWP7T40P140 INVSGD16BWP7T40P140UHVT DCCKNSGD8BWP7T40P140 DCCKNSGD8BWP7T40P140UHVT DCCKNSGD12BWP7T40P140 DCCKNSGD12BWP7T40P140UHVT DCCKNSGD16BWP7T40P140 DCCKNSGD16BWP7T40P140UHVT
+Total number of usable inverters: 44
+List of unusable inverters: GINVSGD1BWP7T30P140 GINVSGD1BWP7T30P140UHVT GINVSGD2BWP7T30P140 GINVSGD2BWP7T30P140UHVT GINVSGD3BWP7T30P140 GINVSGD3BWP7T30P140UHVT GINVSGD4BWP7T30P140 GINVSGD4BWP7T30P140UHVT GINVSGD8BWP7T30P140 GINVSGD8BWP7T30P140UHVT CKNSGD20BWP7T40P140 CKNSGD20BWP7T40P140UHVT INVSGD20BWP7T40P140 INVSGD20BWP7T40P140UHVT DCCKNSGD20BWP7T40P140 DCCKNSGD20BWP7T40P140UHVT
+Total number of unusable inverters: 16
+List of identified usable delay cells: BUFFSGD0BWP7T40P140UHVT BUFFSGD1BWP7T40P140UHVT CKBSGD0BWP7T40P140UHVT CKBSGD1BWP7T40P140UHVT DEL025SGD1BWP7T40P140UHVT BUFFSGD2BWP7T40P140UHVT CKBSGD2BWP7T40P140UHVT BUFFSGD3BWP7T40P140UHVT CKBSGD3BWP7T40P140UHVT BUFFSGD4BWP7T40P140UHVT CKBSGD4BWP7T40P140UHVT DEL050MSGD1BWP7T40P140 DEL050MSGD1BWP7T40P140UHVT BUFFSGD6BWP7T40P140UHVT CKBSGD6BWP7T40P140UHVT BUFFSGD8BWP7T40P140UHVT CKBSGD8BWP7T40P140UHVT DEL075MSGD1BWP7T40P140 DEL075MSGD1BWP7T40P140UHVT DCCKBSGD4BWP7T40P140UHVT DEL100MSGD1BWP7T40P140 DEL100MSGD1BWP7T40P140UHVT BUFFSGD12BWP7T40P140UHVT CKBSGD12BWP7T40P140UHVT DEL150MSGD1BWP7T40P140 DEL150MSGD1BWP7T40P140UHVT BUFFSGD16BWP7T40P140UHVT CKBSGD16BWP7T40P140UHVT DCCKBSGD8BWP7T40P140UHVT DEL200MSGD1BWP7T40P140 DEL200MSGD1BWP7T40P140UHVT DEL250MSGD1BWP7T40P140 DEL250MSGD1BWP7T40P140UHVT DCCKBSGD12BWP7T40P140UHVT DCCKBSGD16BWP7T40P140UHVT
+Total number of identified usable delay cells: 35
+List of identified unusable delay cells: GBUFFSGD1BWP7T30P140UHVT GBUFFSGD2BWP7T30P140UHVT GBUFFSGD3BWP7T30P140UHVT GBUFFSGD4BWP7T30P140UHVT GBUFFSGD8BWP7T30P140UHVT BUFFSGD20BWP7T40P140UHVT CKBSGD20BWP7T40P140UHVT
+Total number of identified unusable delay cells: 7
+#% End load design ... (date=11/26 23:16:07, total cpu=0:00:52.5, real=0:00:23.0, peak res=3264.0M, current mem=3257.4M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58             3  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200            2  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+WARNING   TECHLIB-302        128  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-1277       192  The %s '%s' has been defined for %s %s '...
+*** Message Summary: 329 warning(s), 0 error(s)
+
+#import 0 vias (num_signal=0 num_non_signal=0 num_extra_signal=0)
+#Extract in post route mode
+#Finish check_net_pin_list step Enter extract_rc_in_nr_cmd
+#Fast data preparation for tQuantus.
+Multithreaded Timing Analysis is initialized with 4 threads
+
+#Start routing data preparation on Thu Nov 26 23:16:09 2026
+#
+# M1           V   Track-Pitch = 0.14000    Line-2-Via Pitch = 0.10000
+# M2           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M3           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M4           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M5           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M6           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M7           V   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+# AP           H   Track-Pitch = 4.50000    Line-2-Via Pitch = 5.00000
+#WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M3's pitch = 0.10000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3535.07 (MB), peak = 3535.91 (MB)
+#Start routing data preparation on Thu Nov 26 23:16:09 2026
+#
+#shield_layer  1: layer_id= 2 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  2: layer_id= 4 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  3: layer_id= 6 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  4: layer_id= 8 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  5: layer_id=10 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  6: layer_id=12 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  7: layer_id=14 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#shield_layer  8: layer_id=16 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+#Bottom routing layer index=1(M1), bottom routing layer for shielding=1(M1), bottom shield layer=1(M1) top shield layer=8(AP)
+#shield_bottom_stripe_layer=1(M1), shield_top_stripe_layer=8(AP)
+#pin_access_rlayer=3(M3) num_routing_layer=8 top_routing_layer=8 top_ripin_layer=8
+#shield_top_dpt_rlayer=-1 top_rlayer=8 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M3's pitch = 0.10000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 3577.77 (MB), peak = 3577.77 (MB)
+#
+#Start tQuantus RC extraction...
+#Start building rc corner(s)...
+#Number of RC Corner = 6
+#Corner rcbest_125C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcbest/qrcTechFile 125.000000 (real) 
+#Corner cbest_125C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cbest/qrcTechFile 125.000000 (real) 
+#Corner rctyp_85C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 85.000000 (real) 
+#Corner rctyp_25C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 25.000000 (real) 
+#Corner rcworst_0C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcworst/qrcTechFile 0.000000 (real) 
+#Corner cworst_0C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cworst/qrcTechFile 0.000000 (real) 
+#(i=8, n=8 2000)
+#M1 -> M1 (1)
+#M2 -> M2 (2)
+#M3 -> M3 (3)
+#M4 -> M4 (4)
+#M5 -> M5 (5)
+#M6 -> M6 (6)
+#M7 -> M7 (7)
+#AP -> AP (8)
+#SADV-On
+# Corner(s) : 
+#rcbest_125C [125.00] 
+#cbest_125C [125.00] 
+#rctyp_85C [85.00] 
+#rctyp_25C [25.00] 
+#rcworst_0C [ 0.00] 
+#cworst_0C [ 0.00]
+# Corner id: 0
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 125.000000
+# Ref. Temp   : 25.000000
+# Corner id: 1
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 125.000000
+# Ref. Temp   : 25.000000
+# Corner id: 2
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 85.000000
+# Ref. Temp   : 25.000000
+# Corner id: 3
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+# Corner id: 4
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+# Corner id: 5
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 25.000000
+# Ref. Temp   : 25.000000
+#SADV-Off
+#total pattern=120 [300, 14605]
+#Reading previously stored rc_model file ( /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/misc/rc_model.bin ) ...
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcbest/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cbest/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcworst/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cworst/qrcTechFile
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcbest/qrcTechFile 125.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cbest/qrcTechFile 125.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 85.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 25.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcworst/qrcTechFile 0.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cworst/qrcTechFile 0.000000 
+#CCE Version read = IQuantus/TQuantus 24.1.0-e481
+#number model r/c [6,5] [300,14605] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 3636.28 (MB), peak = 3670.71 (MB)
+#Start building rc corner(s)...
+#Number of RC Corner = 6
+#Corner rcbest_125C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcbest/qrcTechFile 125.000000 (real) 
+#Corner cbest_125C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cbest/qrcTechFile 125.000000 (real) 
+#Corner rctyp_85C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 85.000000 (real) 
+#Corner rctyp_25C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 25.000000 (real) 
+#Corner rcworst_0C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcworst/qrcTechFile 0.000000 (real) 
+#Corner cworst_0C /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cworst/qrcTechFile 0.000000 (real) 
+#(i=8, n=8 2000)
+#M1 -> M1 (1)
+#M2 -> M2 (2)
+#M3 -> M3 (3)
+#M4 -> M4 (4)
+#M5 -> M5 (5)
+#M6 -> M6 (6)
+#M7 -> M7 (7)
+#AP -> AP (8)
+#SADV-On
+# Corner(s) : 
+#rcbest_125C [125.00] 
+#cbest_125C [125.00] 
+#rctyp_85C [85.00] 
+#rctyp_25C [25.00] 
+#rcworst_0C [ 0.00] 
+#cworst_0C [ 0.00]
+# Corner id: 0
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 125.000000
+# Ref. Temp   : 25.000000
+# Corner id: 1
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 125.000000
+# Ref. Temp   : 25.000000
+# Corner id: 2
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 85.000000
+# Ref. Temp   : 25.000000
+# Corner id: 3
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+# Corner id: 4
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+# Corner id: 5
+# Layout Scale: 0.855000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 25.000000
+# Ref. Temp   : 25.000000
+#SADV-Off
+#total pattern=120 [300, 14605]
+#Reading previously stored rc_model file ( /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/libs/misc/rc_model.bin ) ...
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcbest/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cbest/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcworst/qrcTechFile
+#found CAPMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cworst/qrcTechFile
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcbest/qrcTechFile 125.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cbest/qrcTechFile 125.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 85.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_typical/qrcTechFile 25.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_rcworst/qrcTechFile 0.000000 
+#found RESMODEL /home/tools/design_kits/tsmc/22/digital/CapTbl_qrcdeck_5X1Z/RC_QRC_cln22ulp_1p7m_5x1z_tfr6_ut-alrdl_9corners_shrink_1.1p1a/RC_QRC_cln22ulp_1p07m+ut-alrdl_5x1z_cworst/qrcTechFile 0.000000 
+#CCE Version read = IQuantus/TQuantus 24.1.0-e481
+#number model r/c [6,5] [300,14605] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 3648.78 (MB), peak = 3685.86 (MB)
+#Finish check_net_pin_list step Enter extract
+#Start init net ripin tree building
+#Finish init net ripin tree building
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (MB)
+#Total memory = 3648.78 (MB)
+#Peak memory = 3685.86 (MB)
+#Using multithreading with 4 threads.
+#begin processing metal fill model file
+#end processing metal fill model file
+#Length limit = 200 pitches
+#opt mode = 2
+#Finish check_net_pin_list step Fix net pin list
+#Init Design Signature = 1340888057, RC Model Signature = 46503529
+#Start generate extraction boxes.
+#
+#Extract using 30 x 30 Hboxes
+#4x4 initial hboxes
+#Use area based hbox pruning.
+#0/0 hboxes pruned.
+#Complete generating extraction boxes.
+#Extract 9 hboxes with 4 threads on machine with  Xeon 3.90GHz 46080KB Cache 48CPU...
+#Process 0 special clock nets for rc extraction
+#Total 9757 nets were built. 1686 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Start inst blockage merging.
+#Run Statistics for Extraction:
+#   Cpu time = 00:00:08, elapsed time = 00:00:04 .
+#   Increased memory =   183.59 (MB), total memory =  3836.48 (MB), peak memory =  3836.77 (MB)
+#Register nets and terms for rcdb /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/nr0_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534aAVrBs.rcdb.d
+#Finish registering nets and terms for rcdb.
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3725.92 (MB), peak = 3836.77 (MB)
+#RC Statistics: 53194 Res, 34470 Ground Cap, 22107 XCap (Edge to Edge)
+#WARNING (NREX-102) Net UNCONNECTED is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net UNCONNECTED0 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net UNCONNECTED1 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8641 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8627 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8628 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8630 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8631 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8640 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8552 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8554 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8555 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8564 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8610 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8565 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8611 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8566 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8612 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8613 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net n_8568 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (EMS-27) Message (NREX-102) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#RC V/H edge ratio: 0.65, Avg V/H Edge Length: 6565.60 (32279), Avg L-Edge Length: 6032.91 (18663)
+#Nets and terms are pre-registered for rcdb /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/nr0_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534aAVrBs.rcdb.d.
+#Start writing RC data.
+#Finish writing RC data
+#Finish writing rcdb with 63038 nodes, 53281 edges, and 49000 xcaps
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3716.44 (MB), peak = 3836.77 (MB)
+Restoring parasitic data from file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/nr0_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534aAVrBs.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 3716.441M)
+Following multi-corner parasitics specified:
+	/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/nr0_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534aAVrBs.rcdb.d (rcdb)
+Reading RCDB with compressed RC data.
+		Cell wrapper has rcdb /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/nr0_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534aAVrBs.rcdb.d specified
+Cell wrapper, hinst 
+Reading RCDB with compressed RC data.
+Done read_parasitics... (cpu: 0:00:00.1 real: 0:00:00.0 mem: 3718.820M)
+#
+#Restore RCDB.
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:00:13
+#Elapsed time = 00:00:08
+#Increased memory = 140.80 (MB)
+#Total memory = 3718.57 (MB)
+#Peak memory = 3836.77 (MB)
+#
+#Final Design Signature = 1088971363
+#1686 inserted nodes are removed
+#Restored 0 tie nets, 0 tie snets, 0 partial nets
+#Start Design Signature (0)
+#Finish Inst Signature in MT(47889941)
+#Finish Net Signature in MT(59375653)
+#Finish SNet Signature in MT (104976878)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 3.90GHz 46080KB Cache 48CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  1.25/4, scale score = 0.31.
+#    Increased memory =     0.00 (MB), total memory =  3636.41 (MB), peak memory =  3836.77 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3636.41 (MB), peak memory =  3836.77 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.89/4, scale score = 0.97.
+#    Increased memory =     0.00 (MB), total memory =  3636.41 (MB), peak memory =  3836.77 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3636.41 (MB), peak memory =  3836.77 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.63/4, scale score = 0.91.
+#    Increased memory =     0.00 (MB), total memory =  3636.41 (MB), peak memory =  3836.77 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.42/4, scale score = 0.61.
+#    Increased memory =    -4.80 (MB), total memory =  3636.41 (MB), peak memory =  3836.77 (MB)
+Reading timing constraints file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/scaled_setup.sdc' ...
+Current (total cpu=0:01:24, real=0:00:50.0, peak res=3850.6M, current mem=3599.9M)
+wrapper
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=3613.0M, current mem=3613.0M)
+Current (total cpu=0:01:25, real=0:00:50.0, peak res=3850.6M, current mem=3613.0M)
+Reading latency file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/mmmc/views/SS_0_RC_worst/latency.sdc' ...
+Reading latency file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/mmmc/views/SS_0_C_worst/latency.sdc' ...
+Reading latency file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/mmmc/views/FF_125_RC_best/latency.sdc' ...
+Reading latency file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/mmmc/views/FF_125_C_best/latency.sdc' ...
+Reading latency file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/mmmc/views/TT_25/latency.sdc' ...
+Reading latency file '/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/saves/20261125_125823-129-SGPF-final-spef/finish/mmmc/views/TT_85/latency.sdc' ...
+#Start Design Signature (0)
+#Finish Inst Signature in MT(47889941)
+#Finish Net Signature in MT(59375653)
+#Finish SNet Signature in MT (104976878)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 3.90GHz 46080KB Cache 48CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  1.29/4, scale score = 0.32.
+#    Increased memory =     0.00 (MB), total memory =  3605.93 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3605.93 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.90/4, scale score = 0.98.
+#    Increased memory =     0.00 (MB), total memory =  3605.93 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3605.93 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.64/4, scale score = 0.91.
+#    Increased memory =     0.00 (MB), total memory =  3605.93 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.39/4, scale score = 0.60.
+#    Increased memory =     2.52 (MB), total memory =  3605.93 (MB), peak memory =  3850.55 (MB)
+The design is extracted. Skipping TQuantus.
+*** time_design #1 [begin] () : totSession cpu/real = 0:01:24.6/0:00:49.3 (1.7), mem = 3606.2M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+#Start Design Signature (0)
+#Finish Inst Signature in MT(47889941)
+#Finish Net Signature in MT(59375653)
+#Finish SNet Signature in MT (104976878)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 3.90GHz 46080KB Cache 48CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  1.27/4, scale score = 0.32.
+#    Increased memory =     0.00 (MB), total memory =  3605.76 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3605.75 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.88/4, scale score = 0.97.
+#    Increased memory =     0.00 (MB), total memory =  3605.75 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3605.75 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.64/4, scale score = 0.91.
+#    Increased memory =     0.00 (MB), total memory =  3605.75 (MB), peak memory =  3850.55 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.53/4, scale score = 0.63.
+#    Increased memory =    -0.73 (MB), total memory =  3605.75 (MB), peak memory =  3850.55 (MB)
+The design is extracted. Skipping TQuantus.
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE DB initialization (MEM=3737.566406 CPU=0:00:00.0 REAL=0:00:00.0) 
+AAE_INFO: resetNetProps viewIdx 1 
+AAE_INFO: resetNetProps viewIdx 2 
+AAE_INFO: resetNetProps viewIdx 3 
+AAE_INFO: resetNetProps viewIdx 4 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: wrapper
+# Design Mode: 22nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+The view TT_85 specified is configured only as a leakage view which is insufficent for analyzing delay or noise. You need to specify an active Setup or Hold view and then rerun the command.
+The view TT_85 specified is configured only as a leakage view which is insufficent for analyzing delay or noise. You need to specify an active Setup or Hold view and then rerun the command.
+Start delay calculation (fullDC) (4 T). (MEM=3548.72)
+Reading RCDB with compressed RC data.
+AAE_INFO: 4 threads acquired from CTE.
+AAE_INFO: 4 threads acquired from CTE.
+AAE_INFO: 4 threads acquired from CTE.
+AAE_INFO: 4 threads acquired from CTE.
+AAE_INFO: 4 threads acquired from CTE.
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -noisy_waveform -threshold 0' after timing analysis. Delay report is enabled by setting 'set_db si_delay_enable_report true' before timing analysis.
+Type 'man IMPESI-3140' for more detail.
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  100.0 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  100.0 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  100.0 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3885.96 CPU=0:00:12.7 REAL=0:00:04.0)
+End delay calculation (fullDC). (MEM=3514.58 CPU=0:00:13.9 REAL=0:00:04.0)
+Save waveform /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/.AAE_6uGA52/.AAE_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3542.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.3, REAL = 0:00:01.0, MEM = 3551.6M)
+Starting SI iteration 2
+The view TT_85 specified is configured only as a leakage view which is insufficent for analyzing delay or noise. You need to specify an active Setup or Hold view and then rerun the command.
+The view TT_85 specified is configured only as a leakage view which is insufficent for analyzing delay or noise. You need to specify an active Setup or Hold view and then rerun the command.
+Start delay calculation (fullDC) (4 T). (MEM=3546.22)
+AAE_INFO: 4 threads acquired from CTE.
+Glitch Analysis: View SS_0_C_worst -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View SS_0_C_worst -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  10.2 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Glitch Analysis: View FF_125_RC_best -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View FF_125_RC_best -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  9.4 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Glitch Analysis: View FF_125_C_best -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View FF_125_C_best -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  6.4 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Glitch Analysis: View TT_25 -- Total Number of Nets Skipped = 1. 
+Glitch Analysis: View TT_25 -- Total Number of Nets Analyzed = 9853. 
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  7.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3630.7 CPU=0:00:03.0 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=3630.7 CPU=0:00:03.0 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:20.4 real=0:00:07.0 totSessionCpu=0:01:46 mem=3609.6M)
+** INFO: Initializing Glitch Interface
+** INFO: Initializing Glitch Interface
+
+OptSummary:
+
+------------------------------------------------------------------
+         time_design Summary
+------------------------------------------------------------------
+
+Setup views included:
+ SS_0_C_worst FF_125_RC_best FF_125_C_best TT_25 
+
++--------------------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):|  0.209  |  3.077  | 11.416  |  0.209  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |    0    |
+|          All Paths:|  4345   |  1055   |    3    |  4341   |
++--------------------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.855%
+       (97.098% with Fillers)
+------------------------------------------------------------------
+Reported timing to dir /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF
+Total CPU time: 24.28 sec
+Total Real time: 9.0 sec
+Total Memory Usage: 3724.941406 Mbytes
+Reset AAE Options
+*** time_design #1 [finish] () : cpu/real = 0:00:24.3/0:00:09.6 (2.5), totSession cpu/real = 0:01:48.9/0:00:58.9 (1.8), mem = 3724.9M
+*** time_design #2 [begin] () : totSession cpu/real = 0:01:48.9/0:00:58.9 (1.8), mem = 3724.9M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+#Start Design Signature (0)
+#Finish Inst Signature in MT(47889941)
+#Finish Net Signature in MT(59375653)
+#Finish SNet Signature in MT (104976878)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 3.90GHz 46080KB Cache 48CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  1.26/4, scale score = 0.32.
+#    Increased memory =     0.00 (MB), total memory =  3722.77 (MB), peak memory =  3886.87 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3722.77 (MB), peak memory =  3886.87 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.88/4, scale score = 0.97.
+#    Increased memory =     0.77 (MB), total memory =  3722.77 (MB), peak memory =  3886.87 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3722.00 (MB), peak memory =  3886.87 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.64/4, scale score = 0.91.
+#    Increased memory =     0.77 (MB), total memory =  3722.77 (MB), peak memory =  3886.87 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.40/4, scale score = 0.60.
+#    Increased memory =     0.97 (MB), total memory =  3722.00 (MB), peak memory =  3886.87 (MB)
+The design is extracted. Skipping TQuantus.
+
+Optimization is working on the following views:
+  Setup views:  SS_0_C_worst TT_25 FF_125_RC_best FF_125_C_best TT_85
+  Hold  views: FF_125_RC_best 
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 2 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: wrapper
+# Design Mode: 22nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Start delay calculation (fullDC) (4 T). (MEM=3708.92)
+*** Calculating scaling factor for lib_FF_125 libraries using the default operating condition of each library.
+Reading RCDB with compressed RC data.
+AAE_INFO: 4 threads acquired from CTE.
+AAE_INFO: 4 threads acquired from CTE.
+AAE_INFO: 4 threads acquired from CTE.
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  100.0 percent of the nets selected for SI analysis
+AAE_INFO: 4 threads acquired from CTE.
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3797.45 CPU=0:00:06.2 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=3797.45 CPU=0:00:06.5 REAL=0:00:02.0)
+Save waveform /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF/innovus_temp_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534_server_ci_inovador_weber_Ri75DK/.AAE_6uGA52/.AAE_2578509_d1f02448-d2ea-480b-ab63-55078b9b9534/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3795.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:01.0, MEM = 3795.6M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (4 T). (MEM=3769.28)
+AAE_INFO: 4 threads acquired from CTE.
+Glitch Analysis: View FF_125_RC_best -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View FF_125_RC_best -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 9853
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 9855,  9.4 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3782.64 CPU=0:00:00.8 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3782.64 CPU=0:00:00.8 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:09.5 real=0:00:03.0 totSessionCpu=0:01:59 mem=3759.4M)
+
+OptSummary:
+
+------------------------------------------------------------------
+         time_design Summary
+------------------------------------------------------------------
+
+Hold views included:
+ FF_125_RC_best 
+
++--------------------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):|  0.101  |  0.101  |  0.171  |  1.977  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |    0    |
+|          All Paths:|  4345   |  1055   |    3    |  4341   |
++--------------------+---------+---------+---------+---------+
+
+Density: 71.855%
+       (97.098% with Fillers)
+------------------------------------------------------------------
+Reported timing to dir /home/weber/PESSOAL/intra-smooth-filter-VVC/backend/syn/work/runs/20261126_231344-min-period-plus0p5ns/timing_validated/129-SGPF
+Total CPU time: 10.55 sec
+Total Real time: 4.0 sec
+Total Memory Usage: 3639.839844 Mbytes
+Reset AAE Options
+*** time_design #2 [finish] () : cpu/real = 0:00:10.6/0:00:04.0 (2.6), totSession cpu/real = 0:01:59.5/0:01:02.9 (1.9), mem = 3639.8M
+SCALED_TIMING_COMPLETE 12.4
+@file 3: if {[catch {
+@file 4:   set_multi_cpu_usage -local_cpu 4
+@file 5:   read_db $::env(SCALED_TIMING_DB)
+@file 6:   set_db extract_rc_engine post_route
+@file 7:   set_db extract_rc_effort_level medium
+@file 8:   extract_rc
+@file 9:   set slack [setup_at_period $::env(SCALED_TIMING_PERIOD_NS) scaled_setup]
+@file 10:   time_design -post_route -hold -report_dir $::env(SCALED_TIMING_OUTPUT) -report_prefix scaled_hold
+@file 11:   set text [exec gzip -dc [file join $::env(SCALED_TIMING_OUTPUT) scaled_hold_hold.summary.gz]]
+@file 12:   if {![regexp {WNS \(ns\):\|\s*([-0-9.]+)} $text -> hold_slack]} {error "Missing hold slack"}
+@file 13:   if {$slack < 0 || $hold_slack < 0} {error "Target fails timing: setup=$slack hold=$hold_slack"}
+@file 14:   puts "SCALED_TIMING_COMPLETE $::env(SCALED_TIMING_PERIOD_NS)"
+@file 15: } detail options]} {...}
+@file 20: exit 0
+*** Message Summary: 429 warning(s), 0 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 3633.844M, initial mem = 954.457M) ***
+--- Ending "Innovus" (totcpu=0:01:59, real=0:01:03, mem=3633.8M) ---
+

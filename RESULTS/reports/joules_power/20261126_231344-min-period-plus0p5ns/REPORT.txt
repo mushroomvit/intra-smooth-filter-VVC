@@ -1,0 +1,35 @@
+Routed timing and scaled-activity Joules power
+
+Requested operating point: refined minimum passing period PLUS 0.5 ns.
+Setup and hold must pass in fresh routed analysis at every selected period before power is launched.
+Initial minimum-period estimate = original routed SDC period - worst setup slack across all path groups (includes input/output paths).
+Refinement: fresh routed SI timing at successive periods until |setup WNS| <= 0.002 ns, then a passing candidate with 0.003 ns report-resolution margin. The target is this passing period plus 0.5 ns.
+Timing-report precision is 0.001 ns; these limits apply to the retained constraints and active MMMC views.
+
+Design       Tmin ns    Target ns   Target MHz  Setup ns  Hold ns   Mean uW   Max uW
+FPF            11.953     12.453      80.302     0.363    0.130  1271.133  1368.647
+129-SGPF       11.900     12.400      80.645     0.209    0.101   550.879   644.882
+65-SGPF        11.683     12.183      82.082     0.262    0.101   382.600   422.283
+MPF            10.944     11.444      87.382     0.184    0.092   216.865   231.402
+
+All 120 cases were recomputed in standalone Joules using the final Innovus netlists, buffers, clock tree and matched detailed SPEF at TT_25, 0.8 V, 25 C.
+Frequency limits and reported setup/hold slack use the original active MMMC timing views; power uses TT_25.
+Joules compute_power -frequency_scale_factor scales the complete stimulus time base by source period / target period. The per-case SDC uses the target period. No second scale_to_sdc_frequency factor is applied.
+Source VCDs remain unchanged. source_clock_ps and source_duration_ms identify the raw waveform; clock_ps and duration_ms describe the scaled workload. Energy = total_uW * effective duration_ms (nJ).
+The three source clock rates remain as separate cases; all three are normalized to the same target frequency for each design.
+Largest total-power spread across the three normalized source rates for the same workload: 0.000350389%. See source_clock_comparison.csv.
+Activity comes from RTL VCDs propagated through the routed netlist, not SDF gate-level simulation.
+
+Files:
+  clock_plan.csv/json: original timing, estimated minimum periods, requested clocks and report sources.
+  original_timing/<design>/: original setup/hold summaries.
+  limit_search/<design>/: SI-aware period search and verified passing minimum.
+  timing_validated/<design>/: fresh setup/hold reports at the final target, retaining original mode and latency constraints.
+  power/power_summary.csv/json: 120 cases, switching/internal/leakage/total in uW and effective energy.
+  power/power_detail.csv and power_detail_wide.csv: detailed sequential, logic, clock sequential and clock combinational power.
+  power/POWER_BREAKDOWN.md and POWER_BREAKDOWN_ALL_CASES.md: per-category tables.
+  power/<design>/<scenario>/: native reports, target workload SDC, annotation and conserved category matrices.
+  power/provenance.json: matched netlist/SPEF hashes, activity source and scaling factors.
+  summary.csv/json: one consumption and timing summary per design.
+  baseline_comparison.csv: fresh native power versus the old report after accounting for frequency scaling (a validation reference, not the source of new power values).
+  scripts/: reusable analysis scripts; native command logs are retained per design.

@@ -1,0 +1,16 @@
+{
+  "tie_cells_classified_as_logic": [],
+  "clock_partition_difference_uW": {
+    "switching": 0.8353456389999963,
+    "internal": 0.002047532519910078,
+    "leakage": 0.0,
+    "total": 0.8373931750000736
+  },
+  "native_clock_comb": {
+    "switching": 182.4816504871,
+    "internal": 69.38908221418,
+    "leakage": 0.2121277290002,
+    "total": 252.08286043
+  },
+  "clock_definition": "Clock-sequential is native clock_seq; clock-combinational is aggregate clock minus clock_seq, including clock-network contributions omitted by the cell-only clock_comb category."
+}

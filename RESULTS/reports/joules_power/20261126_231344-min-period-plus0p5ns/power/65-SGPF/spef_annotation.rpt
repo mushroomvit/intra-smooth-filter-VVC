@@ -1,0 +1,67 @@
+----------------- report_spef_annotation-----------------
+Type      Count  Annotated       %  Unannotated  %      
+---------------------------------------------------------
+Normal     5058       5058  100.00            0  0.00   
+Unloaded     49          0    0.00           49  100.00 
+Undriven      0          0    0.00            0  0.00   
+Constant      0          0    0.00            0  0.00   
+Total      5107       5058   99.04           49  0.96   
+---------------------------------------------------------
+
+Net category : unloaded
+-----------------------------
+WireCap SinkCap LoadCap Net
+-----------------------------
+                       /wrapper/UNCONNECTED
+                       /wrapper/UNCONNECTED0
+                       /wrapper/UNCONNECTED1
+                       /wrapper/UNCONNECTED2
+                       /wrapper/UNCONNECTED3
+                       /wrapper/UNCONNECTED4
+                       /wrapper/UNCONNECTED5
+                       /wrapper/UNCONNECTED6
+                       /wrapper/UNCONNECTED7
+                       /wrapper/UNCONNECTED8
+                       /wrapper/UNCONNECTED9
+                       /wrapper/UNCONNECTED10
+                       /wrapper/UNCONNECTED11
+                       /wrapper/UNCONNECTED12
+                       /wrapper/UNCONNECTED13
+                       /wrapper/UNCONNECTED14
+                       /wrapper/UNCONNECTED15
+                       /wrapper/UNCONNECTED16
+                       /wrapper/UNCONNECTED17
+                       /wrapper/UNCONNECTED18
+                       /wrapper/UNCONNECTED19
+                       /wrapper/UNCONNECTED20
+                       /wrapper/UNCONNECTED21
+                       /wrapper/UNCONNECTED22
+                       /wrapper/UNCONNECTED23
+                       /wrapper/UNCONNECTED24
+                       /wrapper/UNCONNECTED25
+                       /wrapper/UNCONNECTED26
+                       /wrapper/UNCONNECTED27
+                       /wrapper/UNCONNECTED28
+                       /wrapper/UNCONNECTED29
+                       /wrapper/UNCONNECTED30
+                       /wrapper/UNCONNECTED31
+                       /wrapper/UNCONNECTED32
+                       /wrapper/UNCONNECTED33
+                       /wrapper/UNCONNECTED34
+                       /wrapper/UNCONNECTED35
+                       /wrapper/UNCONNECTED36
+                       /wrapper/UNCONNECTED37
+                       /wrapper/UNCONNECTED38
+                       /wrapper/UNCONNECTED39
+                       /wrapper/UNCONNECTED40
+                       /wrapper/UNCONNECTED41
+                       /wrapper/UNCONNECTED42
+                       /wrapper/UNCONNECTED43
+                       /wrapper/UNCONNECTED44
+                       /wrapper/UNCONNECTED45
+                       /wrapper/UNCONNECTED46
+                       /wrapper/UNCONNECTED47
+-----------------------------
+0.000   0.000   0.000   Sum
+0.000   0.000   0.000   Avg
+-----------------------------

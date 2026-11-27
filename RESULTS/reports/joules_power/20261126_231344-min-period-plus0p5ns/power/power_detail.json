@@ -1,0 +1,4808 @@
+{
+  "unit": "uW",
+  "clock_combinational_definition": "Aggregate native clock minus native clock_seq; raw clock_comb and signed partition differences are preserved per case",
+  "tie_policy": "Pad power is included in logic only after leaf-level verification that all such cells are TIE cells",
+  "clock_accounting": "Native Joules -assign2clk register latch; clock pin power assigned to clock_seq",
+  "records": [
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.31638319597,
+      "internal_uW": 11.87614032656,
+      "leakage_uW": 0.2501043459998,
+      "total_uW": 31.4426278686
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 23.544824195,
+      "internal_uW": 12.00918878397,
+      "leakage_uW": 0.5414947999997,
+      "total_uW": 36.095507779
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 896.914478394,
+      "leakage_uW": 0.0,
+      "total_uW": 896.914478394
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493319,
+      "internal_uW": 69.3895932931,
+      "leakage_uW": 0.212127729,
+      "total_uW": 252.918670356
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 40.22841317506,
+      "internal_uW": 22.58053757948,
+      "leakage_uW": 0.2506052410002,
+      "total_uW": 63.0595559956
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 33.32234182893,
+      "internal_uW": 16.38041419101,
+      "leakage_uW": 0.5406390359996,
+      "total_uW": 50.2433950559
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3849530732,
+      "leakage_uW": 0.0,
+      "total_uW": 897.384953073
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493321,
+      "internal_uW": 69.38767786860001,
+      "leakage_uW": 0.212127729,
+      "total_uW": 252.91675492699994
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 35.49771313396,
+      "internal_uW": 19.08063637985,
+      "leakage_uW": 0.2504779490003,
+      "total_uW": 54.8288274628
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 23.58082196995,
+      "internal_uW": 11.68354918999,
+      "leakage_uW": 0.5381725599995,
+      "total_uW": 35.80254372
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3651308064,
+      "leakage_uW": 0.0,
+      "total_uW": 897.365130806
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493317,
+      "internal_uW": 69.38912094270006,
+      "leakage_uW": 0.2121277289993,
+      "total_uW": 252.91819800400003
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 59.221633036,
+      "internal_uW": 31.67067672432,
+      "leakage_uW": 0.2511387269999,
+      "total_uW": 91.1434484873
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 40.50505384315,
+      "internal_uW": 19.57985048698,
+      "leakage_uW": 0.5405529560013,
+      "total_uW": 60.6254572862
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 898.0939581797,
+      "leakage_uW": 0.0,
+      "total_uW": 898.09395818
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.316949332,
+      "internal_uW": 69.3884481437999,
+      "leakage_uW": 0.2121277289999,
+      "total_uW": 252.9175252000001
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.59558573199,
+      "internal_uW": 17.43196075082,
+      "leakage_uW": 0.2503433230005,
+      "total_uW": 48.2778898058
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 26.65805072105,
+      "internal_uW": 13.26983362698,
+      "leakage_uW": 0.539893734,
+      "total_uW": 40.4677780821
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.1661500164,
+      "leakage_uW": 0.0,
+      "total_uW": 897.166150016
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493317,
+      "internal_uW": 69.38579576429993,
+      "leakage_uW": 0.2121277290001,
+      "total_uW": 252.9148728240001
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 46.21966988505,
+      "internal_uW": 25.8895352271,
+      "leakage_uW": 0.2508919040006,
+      "total_uW": 72.3600970162
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.83650093997,
+      "internal_uW": 19.04192722497,
+      "leakage_uW": 0.5423566250007,
+      "total_uW": 58.42078479
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.6333195547,
+      "leakage_uW": 0.0,
+      "total_uW": 897.633319555
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493322,
+      "internal_uW": 69.38928423789991,
+      "leakage_uW": 0.2121277290002,
+      "total_uW": 252.91836129499995
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 36.94624759804,
+      "internal_uW": 21.34483706627,
+      "leakage_uW": 0.2506670150002,
+      "total_uW": 58.5417516793
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 34.95951461102,
+      "internal_uW": 17.48631625203,
+      "leakage_uW": 0.5431581189984,
+      "total_uW": 52.988988982
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3641932361,
+      "leakage_uW": 0.0,
+      "total_uW": 897.364193236
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493322,
+      "internal_uW": 69.38752717,
+      "leakage_uW": 0.2121277290001,
+      "total_uW": 252.91660423399992
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 47.38015361494,
+      "internal_uW": 26.87999919151,
+      "leakage_uW": 0.2509826139998,
+      "total_uW": 74.5111354204
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 42.04553561295,
+      "internal_uW": 20.768268244,
+      "leakage_uW": 0.5440524210003,
+      "total_uW": 63.3578562779
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.6943715979,
+      "leakage_uW": 0.0,
+      "total_uW": 897.694371598
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493316,
+      "internal_uW": 69.39117868489996,
+      "leakage_uW": 0.2121277289998,
+      "total_uW": 252.920255742
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.89404965312,
+      "internal_uW": 18.55443910142,
+      "leakage_uW": 0.2505734300008,
+      "total_uW": 50.6990621845
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 30.86555975503,
+      "internal_uW": 15.27612263201,
+      "leakage_uW": 0.5429109950001,
+      "total_uW": 46.684593382
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.2439532051,
+      "leakage_uW": 0.0,
+      "total_uW": 897.243953205
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493321,
+      "internal_uW": 69.38921983780006,
+      "leakage_uW": 0.2121277290001,
+      "total_uW": 252.9182968949999
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 73.42198160686,
+      "internal_uW": 41.45066889624,
+      "leakage_uW": 0.251973668,
+      "total_uW": 115.124624171
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 68.29498911088,
+      "internal_uW": 33.01906698496,
+      "leakage_uW": 0.5522235119982,
+      "total_uW": 101.866279608
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 898.7365291695,
+      "leakage_uW": 0.0,
+      "total_uW": 898.73652917
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169493314,
+      "internal_uW": 69.38803949659996,
+      "leakage_uW": 0.2121277290003,
+      "total_uW": 252.91711656000007
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.31651205797,
+      "internal_uW": 11.87625580265,
+      "leakage_uW": 0.2501043459994,
+      "total_uW": 31.4428722066
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 23.54510585297,
+      "internal_uW": 12.00928739795,
+      "leakage_uW": 0.5414947999988,
+      "total_uW": 36.0958880509
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 896.9167879146,
+      "leakage_uW": 0.0,
+      "total_uW": 896.916787915
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961254,
+      "internal_uW": 69.38843853189996,
+      "leakage_uW": 0.212127728999,
+      "total_uW": 252.9175623850001
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 40.22853648403,
+      "internal_uW": 22.5806085377,
+      "leakage_uW": 0.2506052410002,
+      "total_uW": 63.0597502627
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 33.322586877,
+      "internal_uW": 16.38049150299,
+      "leakage_uW": 0.5406390359996,
+      "total_uW": 50.243717416
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3849530732,
+      "leakage_uW": 0.0,
+      "total_uW": 897.384953073
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961262,
+      "internal_uW": 69.38767786860001,
+      "leakage_uW": 0.2121277290002,
+      "total_uW": 252.916801727
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 35.49784155403,
+      "internal_uW": 19.08076549791,
+      "leakage_uW": 0.2504779490003,
+      "total_uW": 54.8290850009
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 23.58108043407,
+      "internal_uW": 11.68363665499,
+      "leakage_uW": 0.5381725599995,
+      "total_uW": 35.8028896491
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3640548226,
+      "leakage_uW": 0.0,
+      "total_uW": 897.364054823
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961258,
+      "internal_uW": 69.39019692650004,
+      "leakage_uW": 0.2121277289997,
+      "total_uW": 252.91932077700005
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 59.221940414,
+      "internal_uW": 31.67078510426,
+      "leakage_uW": 0.2511387270003,
+      "total_uW": 91.1438642453
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 40.50513660597,
+      "internal_uW": 19.57989006698,
+      "leakage_uW": 0.5405529559998,
+      "total_uW": 60.625579629
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 898.0939581797,
+      "leakage_uW": 0.0,
+      "total_uW": 898.09395818
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961257,
+      "internal_uW": 69.3920608082999,
+      "leakage_uW": 0.2121277290003,
+      "total_uW": 252.92118466
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.59571565987,
+      "internal_uW": 17.43201374692,
+      "leakage_uW": 0.2503433229992,
+      "total_uW": 48.2780727298
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 26.65811323399,
+      "internal_uW": 13.26986426997,
+      "leakage_uW": 0.539893733998,
+      "total_uW": 40.467871238
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.1646901055,
+      "leakage_uW": 0.0,
+      "total_uW": 897.164690105
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961251,
+      "internal_uW": 69.38893734450005,
+      "leakage_uW": 0.2121277289999,
+      "total_uW": 252.91806119499995
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 46.21999016091,
+      "internal_uW": 25.88983050851,
+      "leakage_uW": 0.2508919040003,
+      "total_uW": 72.3607125734
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.83679470787,
+      "internal_uW": 19.04202718802,
+      "leakage_uW": 0.5423566250007,
+      "total_uW": 58.4211785209
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.6333195547,
+      "leakage_uW": 0.0,
+      "total_uW": 897.633319555
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961261,
+      "internal_uW": 69.3911297466999,
+      "leakage_uW": 0.2121277290002,
+      "total_uW": 252.92025360500008
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 36.94665265599,
+      "internal_uW": 21.34505184841,
+      "leakage_uW": 0.2506670150003,
+      "total_uW": 58.5423715194
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 34.95977404297,
+      "internal_uW": 17.48640834102,
+      "leakage_uW": 0.5431581189995,
+      "total_uW": 52.989340503
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3684888784,
+      "leakage_uW": 0.0,
+      "total_uW": 897.368488878
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961262,
+      "internal_uW": 69.38323152660007,
+      "leakage_uW": 0.2121277289998,
+      "total_uW": 252.9123553820001
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 47.38048284192,
+      "internal_uW": 26.8801741422,
+      "leakage_uW": 0.2509826139997,
+      "total_uW": 74.5116395981
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 42.04591704897,
+      "internal_uW": 20.76841162402,
+      "leakage_uW": 0.5440524209999,
+      "total_uW": 63.358381094
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.6964961349,
+      "leakage_uW": 0.0,
+      "total_uW": 897.696496135
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961263,
+      "internal_uW": 69.38908741059993,
+      "leakage_uW": 0.2121277290001,
+      "total_uW": 252.91821126500008
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.89435447204,
+      "internal_uW": 18.55460656954,
+      "leakage_uW": 0.2505734300004,
+      "total_uW": 50.6995344715
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 30.86571931804,
+      "internal_uW": 15.276199162,
+      "leakage_uW": 0.5429109950001,
+      "total_uW": 46.684829475
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.2463456068,
+      "leakage_uW": 0.0,
+      "total_uW": 897.246345607
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961263,
+      "internal_uW": 69.38921983780006,
+      "leakage_uW": 0.2121277290003,
+      "total_uW": 252.918343693
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 73.4222623491,
+      "internal_uW": 41.45100069017,
+      "leakage_uW": 0.2519736680004,
+      "total_uW": 115.125236707
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 68.29539146202,
+      "internal_uW": 33.01921295502,
+      "leakage_uW": 0.5522235120015,
+      "total_uW": 101.866827929
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 898.7365291722,
+      "leakage_uW": 0.0,
+      "total_uW": 898.736529172
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3169961262,
+      "internal_uW": 69.38803949680005,
+      "leakage_uW": 0.2121277290003,
+      "total_uW": 252.91716334800003
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.31660888597,
+      "internal_uW": 11.87627930237,
+      "leakage_uW": 0.250104348,
+      "total_uW": 31.4429925364
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 23.5451967099,
+      "internal_uW": 12.00933111398,
+      "leakage_uW": 0.5414948029982,
+      "total_uW": 36.0960226269
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 896.917170668,
+      "leakage_uW": 0.0,
+      "total_uW": 896.917170668
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052586,
+      "internal_uW": 69.38797247349999,
+      "leakage_uW": 0.2121277289997,
+      "total_uW": 252.917105462
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 40.22865868304,
+      "internal_uW": 22.58072165731,
+      "leakage_uW": 0.2506052410002,
+      "total_uW": 63.0599855813
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 33.32255927304,
+      "internal_uW": 16.38048736597,
+      "leakage_uW": 0.5406390360005,
+      "total_uW": 50.243685675
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3848459556,
+      "leakage_uW": 0.0,
+      "total_uW": 897.384845956
+    },
+    {
+      "design": "FPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052588,
+      "internal_uW": 69.38742601299998,
+      "leakage_uW": 0.2121277290001,
+      "total_uW": 252.91655900399985
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 35.49791848805,
+      "internal_uW": 19.08081191641,
+      "leakage_uW": 0.2504779490005,
+      "total_uW": 54.8292083534
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 23.58112927601,
+      "internal_uW": 11.683663051,
+      "leakage_uW": 0.5381725600011,
+      "total_uW": 35.802964887
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.3669675693,
+      "leakage_uW": 0.0,
+      "total_uW": 897.366967569
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052594,
+      "internal_uW": 69.38571206660004,
+      "leakage_uW": 0.2121277290003,
+      "total_uW": 252.91484505099993
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 59.22214477413,
+      "internal_uW": 31.67089231129,
+      "leakage_uW": 0.251138727,
+      "total_uW": 91.1441758124
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 40.50522537608,
+      "internal_uW": 19.57992606597,
+      "leakage_uW": 0.5405529560008,
+      "total_uW": 60.6257043981
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 898.0948379536,
+      "leakage_uW": 0.0,
+      "total_uW": 898.094837954
+    },
+    {
+      "design": "FPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052593,
+      "internal_uW": 69.38846471470004,
+      "leakage_uW": 0.2121277290007,
+      "total_uW": 252.91759770599992
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.59579095202,
+      "internal_uW": 17.43208321642,
+      "leakage_uW": 0.2503433230001,
+      "total_uW": 48.2782174914
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 26.658255377,
+      "internal_uW": 13.26991048699,
+      "leakage_uW": 0.5398937340007,
+      "total_uW": 40.468059598
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.1639073607,
+      "leakage_uW": 0.0,
+      "total_uW": 897.163907361
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052592,
+      "internal_uW": 69.38834108809999,
+      "leakage_uW": 0.2121277290002,
+      "total_uW": 252.91747407900004
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 46.220110461,
+      "internal_uW": 25.88987159086,
+      "leakage_uW": 0.2508919040002,
+      "total_uW": 72.3608739559
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.83685956999,
+      "internal_uW": 19.04205528601,
+      "leakage_uW": 0.542356625,
+      "total_uW": 58.421271481
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.6353476666,
+      "leakage_uW": 0.0,
+      "total_uW": 897.635347667
+    },
+    {
+      "design": "FPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052592,
+      "internal_uW": 69.38533841540004,
+      "leakage_uW": 0.2121277289997,
+      "total_uW": 252.914471403
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 36.94682250909,
+      "internal_uW": 21.34514408572,
+      "leakage_uW": 0.2506670150001,
+      "total_uW": 58.5426336098
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 34.95998578809,
+      "internal_uW": 17.4864853851,
+      "leakage_uW": 0.5431581190014,
+      "total_uW": 52.9896292922
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.363942065,
+      "leakage_uW": 0.0,
+      "total_uW": 897.363942065
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052599,
+      "internal_uW": 69.38989264220004,
+      "leakage_uW": 0.212127729001,
+      "total_uW": 252.91902563500003
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 47.38062954901,
+      "internal_uW": 26.88031287043,
+      "leakage_uW": 0.250982614,
+      "total_uW": 74.5119250334
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 42.04592237589,
+      "internal_uW": 20.76842557999,
+      "leakage_uW": 0.5440524209989,
+      "total_uW": 63.3584003769
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.69703847,
+      "leakage_uW": 0.0,
+      "total_uW": 897.69703847
+    },
+    {
+      "design": "FPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052589,
+      "internal_uW": 69.38874760639999,
+      "leakage_uW": 0.2121277290002,
+      "total_uW": 252.91788058999987
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.89443472,
+      "internal_uW": 18.55462491246,
+      "leakage_uW": 0.2505734300004,
+      "total_uW": 50.6996330625
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 30.86577383906,
+      "internal_uW": 15.27622538296,
+      "leakage_uW": 0.5429109950006,
+      "total_uW": 46.6849102171
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 897.2454883001,
+      "leakage_uW": 0.0,
+      "total_uW": 897.2454883
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052587,
+      "internal_uW": 69.38567960940009,
+      "leakage_uW": 0.2121277289997,
+      "total_uW": 252.9148126
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 73.4224106328,
+      "internal_uW": 41.45102057107,
+      "leakage_uW": 0.2519736679996,
+      "total_uW": 115.125404872
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "logic",
+      "switching_uW": 68.29565108574,
+      "internal_uW": 33.01930785399,
+      "leakage_uW": 0.5522235119998,
+      "total_uW": 101.867182452
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.0,
+      "internal_uW": 898.7345982911,
+      "leakage_uW": 0.0,
+      "total_uW": 898.734598291
+    },
+    {
+      "design": "FPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-FPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 183.3170052591,
+      "internal_uW": 69.3908507863,
+      "leakage_uW": 0.2121277289997,
+      "total_uW": 252.91998377900006
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 46.84164572706,
+      "internal_uW": 46.53513368382,
+      "leakage_uW": 0.1258774090002,
+      "total_uW": 93.5026568199
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 87.74831922718,
+      "internal_uW": 80.5391333521,
+      "leakage_uW": 0.22983771100019998,
+      "total_uW": 168.51729029
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5855911240008,
+      "internal_uW": 172.5409019652,
+      "leakage_uW": 0.005258355,
+      "total_uW": 173.131751444
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7100921029892,
+      "internal_uW": 11.490659021800013,
+      "leakage_uW": 0.08778848800012,
+      "total_uW": 42.28853961299998
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 56.32816481783,
+      "internal_uW": 61.10272358362,
+      "leakage_uW": 0.1258316369998,
+      "total_uW": 117.556720038
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 121.6927908908,
+      "internal_uW": 99.83373930787,
+      "leakage_uW": 0.23179851600049997,
+      "total_uW": 221.758328715
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5722159259998,
+      "internal_uW": 172.9636914568,
+      "leakage_uW": 0.005248158999991,
+      "total_uW": 173.541155542
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7826381359302,
+      "internal_uW": 11.51879219609998,
+      "leakage_uW": 0.08779830399987901,
+      "total_uW": 42.389228635999984
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 47.19792527797,
+      "internal_uW": 52.5376290282,
+      "leakage_uW": 0.1257866999999,
+      "total_uW": 99.8613410062
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 106.8307496921,
+      "internal_uW": 89.50742256204,
+      "leakage_uW": 0.2307177119999,
+      "total_uW": 196.568889966
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5717091299996,
+      "internal_uW": 172.5318182184,
+      "leakage_uW": 0.005247404999997,
+      "total_uW": 173.108774753
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7141944370104,
+      "internal_uW": 11.492490335500008,
+      "leakage_uW": 0.087789509999913,
+      "total_uW": 42.294474283
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 58.87935950377,
+      "internal_uW": 66.68880172265,
+      "leakage_uW": 0.1257735849997,
+      "total_uW": 125.693934811
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 135.5782243667,
+      "internal_uW": 111.5042724788,
+      "leakage_uW": 0.23106330899969996,
+      "total_uW": 247.313560155
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5789211349977,
+      "internal_uW": 174.8948136754,
+      "leakage_uW": 0.005254745000004,
+      "total_uW": 175.478989555
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 31.131981805052302,
+      "internal_uW": 11.6545103089,
+      "leakage_uW": 0.087839070999716,
+      "total_uW": 42.87433118499999
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 49.40671573296,
+      "internal_uW": 54.53175155307,
+      "leakage_uW": 0.125822624,
+      "total_uW": 104.06428991
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 111.3102518502,
+      "internal_uW": 91.77558959207,
+      "leakage_uW": 0.23050800599959997,
+      "total_uW": 203.316349448
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5719275149998,
+      "internal_uW": 172.5257222364,
+      "leakage_uW": 0.005247582999998,
+      "total_uW": 173.102897334
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7141944370102,
+      "internal_uW": 11.492316893100025,
+      "leakage_uW": 0.087789509999732,
+      "total_uW": 42.294300840000005
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 56.77699323881,
+      "internal_uW": 62.50879149251,
+      "leakage_uW": 0.1258062509996,
+      "total_uW": 119.411590982
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 126.3216387306,
+      "internal_uW": 104.4014450416,
+      "leakage_uW": 0.23163211999919994,
+      "total_uW": 230.954715893
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5724648269979,
+      "internal_uW": 173.0898107111,
+      "leakage_uW": 0.005248351999978,
+      "total_uW": 173.66752389
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.806604150842098,
+      "internal_uW": 11.528082342200008,
+      "leakage_uW": 0.087800240999652,
+      "total_uW": 42.42248673399999
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 52.75569361008,
+      "internal_uW": 58.6371733297,
+      "leakage_uW": 0.1256084539999,
+      "total_uW": 111.518475394
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 119.9727760339,
+      "internal_uW": 98.47214928405,
+      "leakage_uW": 0.22920511299989998,
+      "total_uW": 218.674130431
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5726165210004,
+      "internal_uW": 172.4870588159,
+      "leakage_uW": 0.005248120999988,
+      "total_uW": 173.064923458
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7180807719796,
+      "internal_uW": 11.493575310099999,
+      "leakage_uW": 0.087789509999862,
+      "total_uW": 42.299445591999984
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 59.34105991395,
+      "internal_uW": 65.13257346721,
+      "leakage_uW": 0.1256214750001,
+      "total_uW": 124.599254856
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 131.8596423699,
+      "internal_uW": 109.4048481283,
+      "leakage_uW": 0.22994726900020002,
+      "total_uW": 241.49443776700002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5737750199998,
+      "internal_uW": 173.2581781353,
+      "leakage_uW": 0.005249566000011,
+      "total_uW": 173.837202721
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.850649840000198,
+      "internal_uW": 11.545002418699994,
+      "leakage_uW": 0.087805989999879,
+      "total_uW": 42.483458248999995
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 45.59967334998,
+      "internal_uW": 51.85416442382,
+      "leakage_uW": 0.1254652269999,
+      "total_uW": 97.5793030008
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 108.6197893969,
+      "internal_uW": 89.17714111485,
+      "leakage_uW": 0.22664626599979998,
+      "total_uW": 198.023576778
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5721604799991,
+      "internal_uW": 172.3468618795,
+      "leakage_uW": 0.005247698999995,
+      "total_uW": 172.924270059
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.710092102950902,
+      "internal_uW": 11.490652025700001,
+      "leakage_uW": 0.087788487999955,
+      "total_uW": 42.288532616
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 66.09902030775,
+      "internal_uW": 73.41213525426,
+      "leakage_uW": 0.125468374999,
+      "total_uW": 139.636623937
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 151.9844125849,
+      "internal_uW": 127.01719559,
+      "leakage_uW": 0.22824581899919996,
+      "total_uW": 279.229853994
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5952469179981,
+      "internal_uW": 181.0066854916,
+      "leakage_uW": 0.005271848999982,
+      "total_uW": 181.607204259
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 32.236150014891905,
+      "internal_uW": 12.083363502499992,
+      "leakage_uW": 0.087972877999678,
+      "total_uW": 44.40748639499998
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 46.84176065504,
+      "internal_uW": 46.53530690548,
+      "leakage_uW": 0.1258774089997,
+      "total_uW": 93.5029449695
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 87.74865412485,
+      "internal_uW": 80.53934350004,
+      "leakage_uW": 0.22983771100019998,
+      "total_uW": 168.51783533600002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5855912719996,
+      "internal_uW": 172.5409019652,
+      "leakage_uW": 0.005258355,
+      "total_uW": 173.131751592
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7100999649804,
+      "internal_uW": 11.490659021800013,
+      "leakage_uW": 0.08778848799969,
+      "total_uW": 42.288547475
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 56.32828313511,
+      "internal_uW": 61.10290078507,
+      "leakage_uW": 0.1258316370001,
+      "total_uW": 117.557015557
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 121.6930404201,
+      "internal_uW": 99.83392562626,
+      "leakage_uW": 0.23179851600040002,
+      "total_uW": 221.758764562
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5722160710017,
+      "internal_uW": 172.9636914573,
+      "leakage_uW": 0.005248159000024,
+      "total_uW": 173.541155687
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.782645999028297,
+      "internal_uW": 11.51914659869999,
+      "leakage_uW": 0.087798304000106,
+      "total_uW": 42.38959090199998
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 47.19804469906,
+      "internal_uW": 52.53770563791,
+      "leakage_uW": 0.1257867000003,
+      "total_uW": 99.861537037
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 106.8310363743,
+      "internal_uW": 89.50761130225,
+      "leakage_uW": 0.23071771200090005,
+      "total_uW": 196.569365389
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5717092760016,
+      "internal_uW": 172.532346789,
+      "leakage_uW": 0.005247405000014,
+      "total_uW": 173.10930347
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7142023011384,
+      "internal_uW": 11.4924717854,
+      "leakage_uW": 0.087789510000176,
+      "total_uW": 42.294463596000014
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 58.87948051498,
+      "internal_uW": 66.6887121664,
+      "leakage_uW": 0.1257735849999,
+      "total_uW": 125.693966266
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 135.5785152307,
+      "internal_uW": 111.5044659531,
+      "leakage_uW": 0.2310633090001,
+      "total_uW": 247.314044493
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5789212849996,
+      "internal_uW": 174.8950150285,
+      "leakage_uW": 0.005254744999997,
+      "total_uW": 175.479191059
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 31.1319899220004,
+      "internal_uW": 11.654541641799995,
+      "leakage_uW": 0.08783907100015301,
+      "total_uW": 42.874370634
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 49.40684996495,
+      "internal_uW": 54.53187360402,
+      "leakage_uW": 0.125822624,
+      "total_uW": 104.064546193
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 111.310521793,
+      "internal_uW": 91.77577531699,
+      "leakage_uW": 0.23050800599959997,
+      "total_uW": 203.316805116
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.57192766,
+      "internal_uW": 172.5251119817,
+      "leakage_uW": 0.005247582999998,
+      "total_uW": 173.102287225
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.71420230093,
+      "internal_uW": 11.49231689299998,
+      "leakage_uW": 0.087789509999972,
+      "total_uW": 42.294308704
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 56.7771080929,
+      "internal_uW": 62.50911964969,
+      "leakage_uW": 0.1258062509999,
+      "total_uW": 119.412033994
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 126.3220438238,
+      "internal_uW": 104.4016610047,
+      "leakage_uW": 0.23163211999969996,
+      "total_uW": 230.955336949
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5724649739997,
+      "internal_uW": 173.090400601,
+      "leakage_uW": 0.005248351999985,
+      "total_uW": 173.668113927
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.8066120140303,
+      "internal_uW": 11.528066413200008,
+      "leakage_uW": 0.087800240999825,
+      "total_uW": 42.422478668
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 52.75581175601,
+      "internal_uW": 58.63724214352,
+      "leakage_uW": 0.1256084540001,
+      "total_uW": 111.518662354
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 119.9731791473,
+      "internal_uW": 98.47237075674,
+      "leakage_uW": 0.2292051130002,
+      "total_uW": 218.67475501700002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5726166670003,
+      "internal_uW": 172.4871474405,
+      "leakage_uW": 0.005248121000001,
+      "total_uW": 173.065012228
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7180886370197,
+      "internal_uW": 11.493860406400017,
+      "leakage_uW": 0.08778951000012901,
+      "total_uW": 42.29973855399999
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 59.34118039995,
+      "internal_uW": 65.13264905063,
+      "leakage_uW": 0.1256214749999,
+      "total_uW": 124.599450926
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 131.8600083859,
+      "internal_uW": 109.4050704377,
+      "leakage_uW": 0.22994726899989998,
+      "total_uW": 241.495026093
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5737751709998,
+      "internal_uW": 173.2578002176,
+      "leakage_uW": 0.005249565999997,
+      "total_uW": 173.836824955
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.8506579579902,
+      "internal_uW": 11.545380336199997,
+      "leakage_uW": 0.087805989999763,
+      "total_uW": 42.483844284000014
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 45.59979330099,
+      "internal_uW": 51.8545232712,
+      "leakage_uW": 0.1254652269999,
+      "total_uW": 97.5797817992
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 108.6201674801,
+      "internal_uW": 89.17735337093,
+      "leakage_uW": 0.22664626599979998,
+      "total_uW": 198.02416711700002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5721606250003,
+      "internal_uW": 172.3468618795,
+      "leakage_uW": 0.005247698999995,
+      "total_uW": 172.924270204
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7100999649897,
+      "internal_uW": 11.490652025700001,
+      "leakage_uW": 0.087788487999955,
+      "total_uW": 42.28854047799999
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 66.09913881501,
+      "internal_uW": 73.41225593132,
+      "leakage_uW": 0.125468375,
+      "total_uW": 139.636863121
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 151.984711426,
+      "internal_uW": 127.017396597,
+      "leakage_uW": 0.22824581900020002,
+      "total_uW": 279.230353842
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.595247069001,
+      "internal_uW": 181.0069268459,
+      "leakage_uW": 0.005271849000004,
+      "total_uW": 181.607445764
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 32.236158132919,
+      "internal_uW": 12.082880795499989,
+      "leakage_uW": 0.087972878000046,
+      "total_uW": 44.407011805999986
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 46.84181427999,
+      "internal_uW": 46.53539628583,
+      "leakage_uW": 0.1258774089998,
+      "total_uW": 93.5030879748
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 87.74880498082,
+      "internal_uW": 80.53942042276,
+      "leakage_uW": 0.22983771100009995,
+      "total_uW": 168.51806311500002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5855913019983,
+      "internal_uW": 172.5410683053,
+      "leakage_uW": 0.005258354999998,
+      "total_uW": 173.131917962
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7101014899917,
+      "internal_uW": 11.490442143100012,
+      "leakage_uW": 0.087788487999842,
+      "total_uW": 42.288332121000025
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 56.32834130502,
+      "internal_uW": 61.10297043776,
+      "leakage_uW": 0.1258316369997,
+      "total_uW": 117.55714338
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 121.6932319749,
+      "internal_uW": 99.83403009596,
+      "leakage_uW": 0.23179851599979998,
+      "total_uW": 221.75906058700002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5722161000001,
+      "internal_uW": 172.9640420694,
+      "leakage_uW": 0.005248159000001,
+      "total_uW": 173.541506328
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7826475240099,
+      "internal_uW": 11.518618533300014,
+      "leakage_uW": 0.087798304000299,
+      "total_uW": 42.389064362
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 47.1981020371,
+      "internal_uW": 52.53794045398,
+      "leakage_uW": 0.1257867000001,
+      "total_uW": 99.8618291911
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 106.8311862829,
+      "internal_uW": 89.5077075891,
+      "leakage_uW": 0.23071771200020003,
+      "total_uW": 196.569611584
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5717093059998,
+      "internal_uW": 172.5317262786,
+      "leakage_uW": 0.005247405000018,
+      "total_uW": 173.10868299
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7142038240202,
+      "internal_uW": 11.49234070510002,
+      "leakage_uW": 0.087789510000132,
+      "total_uW": 42.294334039000006
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 58.87953877981,
+      "internal_uW": 66.6890205442,
+      "leakage_uW": 0.1257735849992,
+      "total_uW": 125.694332909
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 135.5787422038,
+      "internal_uW": 111.5045823761,
+      "leakage_uW": 0.23106330899979996,
+      "total_uW": 247.31438788900002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5789213129985,
+      "internal_uW": 174.8950140426,
+      "leakage_uW": 0.005254744999992,
+      "total_uW": 175.479190101
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 31.1319914469615,
+      "internal_uW": 11.654923693100017,
+      "leakage_uW": 0.087839070999798,
+      "total_uW": 42.87475421100001
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 49.40692442292,
+      "internal_uW": 54.53206105556,
+      "leakage_uW": 0.1258226239999,
+      "total_uW": 104.064808103
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 111.310639653,
+      "internal_uW": 91.77587264184,
+      "leakage_uW": 0.23050800599969998,
+      "total_uW": 203.317020301
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5719276900003,
+      "internal_uW": 172.52570293,
+      "leakage_uW": 0.005247582999986,
+      "total_uW": 173.102878203
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7142038240397,
+      "internal_uW": 11.492348468300008,
+      "leakage_uW": 0.087789509999844,
+      "total_uW": 42.29434180200002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 56.77716822106,
+      "internal_uW": 62.50900466585,
+      "leakage_uW": 0.1258062510003,
+      "total_uW": 119.411979138
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 126.3222395791,
+      "internal_uW": 104.4017712893,
+      "leakage_uW": 0.2316321200004,
+      "total_uW": 230.95564298800002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5724650069992,
+      "internal_uW": 173.0901796502,
+      "leakage_uW": 0.005248352000004,
+      "total_uW": 173.667893009
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.8066137920508,
+      "internal_uW": 11.52818875989999,
+      "leakage_uW": 0.08780024100026601,
+      "total_uW": 42.42260279299998
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 52.75587258077,
+      "internal_uW": 58.6373806372,
+      "leakage_uW": 0.1256084539995,
+      "total_uW": 111.518861672
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 119.9733170675,
+      "internal_uW": 98.47246611163,
+      "leakage_uW": 0.22920511299869994,
+      "total_uW": 218.67498829200002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5726166959979,
+      "internal_uW": 172.4866685951,
+      "leakage_uW": 0.005248120999977,
+      "total_uW": 173.064533412
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7180901609021,
+      "internal_uW": 11.494460749799998,
+      "leakage_uW": 0.087789509999703,
+      "total_uW": 42.30034042099999
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 59.34124123994,
+      "internal_uW": 65.1327106373,
+      "leakage_uW": 0.1256214749999,
+      "total_uW": 124.599573352
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 131.860156041,
+      "internal_uW": 109.405166067,
+      "leakage_uW": 0.22994726899979998,
+      "total_uW": 241.495269377
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5737751989999,
+      "internal_uW": 173.2581207876,
+      "leakage_uW": 0.005249565999993,
+      "total_uW": 173.837145553
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.8506594809601,
+      "internal_uW": 11.545590533199999,
+      "leakage_uW": 0.08780599000004699,
+      "total_uW": 42.484056003999996
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 45.59985374703,
+      "internal_uW": 51.8544795182,
+      "leakage_uW": 0.1254652270002,
+      "total_uW": 97.5797984922
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 108.620252295,
+      "internal_uW": 89.17744451673,
+      "leakage_uW": 0.2266462660003,
+      "total_uW": 198.02434307800002
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5721606540004,
+      "internal_uW": 172.3472229218,
+      "leakage_uW": 0.005247699000001,
+      "total_uW": 172.924631275
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 30.7101014900296,
+      "internal_uW": 11.490390496299995,
+      "leakage_uW": 0.08778848800001901,
+      "total_uW": 42.288280474000004
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 66.09920197698,
+      "internal_uW": 73.41215300635,
+      "leakage_uW": 0.1254683750001,
+      "total_uW": 139.636823358
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 151.9848573842,
+      "internal_uW": 127.017498599,
+      "leakage_uW": 0.22824581900010002,
+      "total_uW": 279.23060180199997
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.5952470960019,
+      "internal_uW": 181.0068140463,
+      "leakage_uW": 0.005271849000013,
+      "total_uW": 181.607332991
+    },
+    {
+      "design": "129-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-129-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 32.2361596550081,
+      "internal_uW": 12.082833249499998,
+      "leakage_uW": 0.087972878000217,
+      "total_uW": 44.406965783000004
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.58500308598,
+      "internal_uW": 28.25595014283,
+      "leakage_uW": 0.06357838299988,
+      "total_uW": 53.9045316118
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 51.1262099779,
+      "internal_uW": 57.29069798901,
+      "leakage_uW": 0.08651373499976998,
+      "total_uW": 108.503421702
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.831843149999,
+      "internal_uW": 149.4413975218,
+      "leakage_uW": 0.006408328000007,
+      "total_uW": 151.279649
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.773789978991,
+      "internal_uW": 7.834696885199975,
+      "leakage_uW": 0.035659542999973,
+      "total_uW": 30.644146406999994
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.77573369898,
+      "internal_uW": 36.14014548304,
+      "leakage_uW": 0.06352682700012,
+      "total_uW": 66.979406009
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 69.03458038213,
+      "internal_uW": 69.03960733799,
+      "leakage_uW": 0.08683746600000002,
+      "total_uW": 138.16102518600002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.851677132009,
+      "internal_uW": 148.3572431106,
+      "leakage_uW": 0.006421771,
+      "total_uW": 150.215342014
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.624624371931,
+      "internal_uW": 7.787996977000006,
+      "leakage_uW": 0.03564457900004,
+      "total_uW": 30.448265928000012
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.08355801399,
+      "internal_uW": 31.02924037386,
+      "leakage_uW": 0.06354533700006,
+      "total_uW": 56.1763437249
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 60.75638009906,
+      "internal_uW": 60.00026357703,
+      "leakage_uW": 0.08662488799999002,
+      "total_uW": 120.843268564
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.848541467001,
+      "internal_uW": 147.4415600806,
+      "leakage_uW": 0.006417911000004,
+      "total_uW": 149.296519459
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.522350831049,
+      "internal_uW": 7.755862550199993,
+      "leakage_uW": 0.035634355000055996,
+      "total_uW": 30.313847736000014
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.20263576895,
+      "internal_uW": 40.17828760335,
+      "leakage_uW": 0.06359986099981,
+      "total_uW": 71.4445232332
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 77.15584610282,
+      "internal_uW": 73.45510577786,
+      "leakage_uW": 0.08687362299972998,
+      "total_uW": 150.697825504
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.843406990996,
+      "internal_uW": 145.1154827749,
+      "leakage_uW": 0.006408083999992,
+      "total_uW": 146.96529785
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.259132962914,
+      "internal_uW": 7.6730425148000165,
+      "leakage_uW": 0.035608194999818,
+      "total_uW": 29.967783672999985
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 27.004210626,
+      "internal_uW": 32.21337323328,
+      "leakage_uW": 0.06353548300004,
+      "total_uW": 59.2811193423
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 63.59625104831,
+      "internal_uW": 63.88320631587,
+      "leakage_uW": 0.08646700199976001,
+      "total_uW": 127.56592436599999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.852967846001,
+      "internal_uW": 149.0793011154,
+      "leakage_uW": 0.006423783999992,
+      "total_uW": 150.938692745
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.709692774029,
+      "internal_uW": 7.815061429600007,
+      "leakage_uW": 0.035653230000018,
+      "total_uW": 30.560407434000012
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.30892243202,
+      "internal_uW": 37.97389267264,
+      "leakage_uW": 0.06354553399991,
+      "total_uW": 69.3463606386
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 73.18699722888,
+      "internal_uW": 71.85388397693,
+      "leakage_uW": 0.08672898499991998,
+      "total_uW": 145.127610191
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.848448015,
+      "internal_uW": 147.2304826143,
+      "leakage_uW": 0.006417375999995,
+      "total_uW": 149.085348005
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.496175957920002,
+      "internal_uW": 7.748640611500008,
+      "leakage_uW": 0.035631749999995,
+      "total_uW": 30.280448320000005
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.37991637801,
+      "internal_uW": 35.77133834867,
+      "leakage_uW": 0.06344748700011,
+      "total_uW": 66.2147022137
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 69.85262377792,
+      "internal_uW": 70.20682726512,
+      "leakage_uW": 0.08653200700008,
+      "total_uW": 140.14598305
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.849415494001,
+      "internal_uW": 148.5938515836,
+      "leakage_uW": 0.006420727000002,
+      "total_uW": 150.449687805
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.653768276009,
+      "internal_uW": 7.796972229899978,
+      "leakage_uW": 0.035648029000138,
+      "total_uW": 30.486388535000003
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 33.30572923801,
+      "internal_uW": 39.77784893591,
+      "leakage_uW": 0.06347320200014,
+      "total_uW": 73.1470513759
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 76.18239931588,
+      "internal_uW": 75.80076905003,
+      "leakage_uW": 0.08675809500018002,
+      "total_uW": 152.06992646100002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.847354388999,
+      "internal_uW": 147.1000196259,
+      "leakage_uW": 0.00641642500002,
+      "total_uW": 148.95379044
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.482322746011,
+      "internal_uW": 7.742921775400021,
+      "leakage_uW": 0.035630347999959996,
+      "total_uW": 30.26087486899999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.95327564315,
+      "internal_uW": 31.36433785776,
+      "leakage_uW": 0.06341163300019,
+      "total_uW": 57.381025134
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 62.94610572909,
+      "internal_uW": 62.67640683124,
+      "leakage_uW": 0.08595304700023004,
+      "total_uW": 125.708465607
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.850210344002,
+      "internal_uW": 148.5361141176,
+      "leakage_uW": 0.006421169000013,
+      "total_uW": 150.392745631
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.647415944078,
+      "internal_uW": 7.7950611379000065,
+      "leakage_uW": 0.035647198000087,
+      "total_uW": 30.478124280000003
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 35.68549595697,
+      "internal_uW": 44.42304502659,
+      "leakage_uW": 0.06351151300005,
+      "total_uW": 80.1720524966
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 83.85337605298,
+      "internal_uW": 83.07534060101,
+      "leakage_uW": 0.08646472200005,
+      "total_uW": 167.01518137600002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.839893719001,
+      "internal_uW": 143.518220401,
+      "leakage_uW": 0.006400194,
+      "total_uW": 145.364514314
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.078877628969,
+      "internal_uW": 7.615981267400002,
+      "leakage_uW": 0.03559041,
+      "total_uW": 29.730449305999997
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.585055312,
+      "internal_uW": 28.25604411752,
+      "leakage_uW": 0.06357838299998,
+      "total_uW": 53.9046778125
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 51.12639730403,
+      "internal_uW": 57.29081753196,
+      "leakage_uW": 0.08651373499996,
+      "total_uW": 108.503728571
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.831843622996,
+      "internal_uW": 149.4411838432,
+      "leakage_uW": 0.006408328000001,
+      "total_uW": 151.279435794
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.773795864004,
+      "internal_uW": 7.834663024799994,
+      "leakage_uW": 0.035659542999989004,
+      "total_uW": 30.644118432
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.77578596804,
+      "internal_uW": 36.14031417856,
+      "leakage_uW": 0.06352682700012,
+      "total_uW": 66.9796269736
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 69.03473080522,
+      "internal_uW": 69.03971740202,
+      "leakage_uW": 0.08683746600000002,
+      "total_uW": 138.161285673
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.851677614003,
+      "internal_uW": 148.3572431106,
+      "leakage_uW": 0.006421771,
+      "total_uW": 150.215342496
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.624630268017,
+      "internal_uW": 7.787996977000006,
+      "leakage_uW": 0.03564457900004,
+      "total_uW": 30.44827182399999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.08361281711,
+      "internal_uW": 31.02929670402,
+      "leakage_uW": 0.0635453370002,
+      "total_uW": 56.1764548581
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 60.75653026713,
+      "internal_uW": 60.00038407119,
+      "leakage_uW": 0.08662488800032006,
+      "total_uW": 120.84353922599999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.848541943004,
+      "internal_uW": 147.4417161433,
+      "leakage_uW": 0.006417911000026,
+      "total_uW": 149.296675997
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.522356638046,
+      "internal_uW": 7.755245658500002,
+      "leakage_uW": 0.035634355000174,
+      "total_uW": 30.313236652
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.202688162,
+      "internal_uW": 40.17824219142,
+      "leakage_uW": 0.06359986100017,
+      "total_uW": 71.4445302144
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 77.1559823402,
+      "internal_uW": 73.4552136309,
+      "leakage_uW": 0.08687362299992,
+      "total_uW": 150.698069594
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.843407472999,
+      "internal_uW": 145.1154827753,
+      "leakage_uW": 0.006408083999984,
+      "total_uW": 146.965298332
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.259138793001,
+      "internal_uW": 7.673269574800003,
+      "leakage_uW": 0.035608195000015996,
+      "total_uW": 29.968016562999992
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 27.00426407192,
+      "internal_uW": 32.21350965642,
+      "leakage_uW": 0.06353548299984,
+      "total_uW": 59.2813092113
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 63.59643297189,
+      "internal_uW": 63.88333026087,
+      "leakage_uW": 0.08646700199985997,
+      "total_uW": 127.56623023499999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.852968334997,
+      "internal_uW": 149.0790604733,
+      "leakage_uW": 0.006423783999985,
+      "total_uW": 150.938452592
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.709698773903,
+      "internal_uW": 7.81508006430002,
+      "leakage_uW": 0.035653229999955,
+      "total_uW": 30.560432069
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.30897776203,
+      "internal_uW": 37.97401889255,
+      "leakage_uW": 0.06354553400004,
+      "total_uW": 69.3465421885
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 73.18717122001,
+      "internal_uW": 71.8540141368,
+      "leakage_uW": 0.08672898499978997,
+      "total_uW": 145.127914342
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.848448491998,
+      "internal_uW": 147.230987494,
+      "leakage_uW": 0.006417375999983,
+      "total_uW": 149.085853362
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.496181765972,
+      "internal_uW": 7.747630852100002,
+      "leakage_uW": 0.035631750000007,
+      "total_uW": 30.279444368000014
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.37997259702,
+      "internal_uW": 35.77133834867,
+      "leakage_uW": 0.0634474869998,
+      "total_uW": 66.2147584327
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 69.85275428503,
+      "internal_uW": 70.20694118017,
+      "leakage_uW": 0.08653200700008,
+      "total_uW": 140.14622747200002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.849415976001,
+      "internal_uW": 148.5935419956,
+      "leakage_uW": 0.006420727000033,
+      "total_uW": 150.449378699
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.653774175019,
+      "internal_uW": 7.7972818179,
+      "leakage_uW": 0.035648028999976995,
+      "total_uW": 30.48670402100001
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 33.30578396997,
+      "internal_uW": 39.7779874257,
+      "leakage_uW": 0.06347320199994,
+      "total_uW": 73.1472445977
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 76.18259432501,
+      "internal_uW": 75.80090312908,
+      "leakage_uW": 0.08675809499967,
+      "total_uW": 152.07025554900002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.847354866,
+      "internal_uW": 147.0998574546,
+      "leakage_uW": 0.006416424999997,
+      "total_uW": 148.953628746
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.48232855301,
+      "internal_uW": 7.7428951155999926,
+      "leakage_uW": 0.035630347999973,
+      "total_uW": 30.260854015999996
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.95332801903,
+      "internal_uW": 31.36432300002,
+      "leakage_uW": 0.06341163299993,
+      "total_uW": 57.381062652
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 62.94625763613,
+      "internal_uW": 62.67651705708,
+      "leakage_uW": 0.08595304699999001,
+      "total_uW": 125.70872774
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.850210834,
+      "internal_uW": 148.5360255736,
+      "leakage_uW": 0.006421169000013,
+      "total_uW": 150.392657577
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.647421955010003,
+      "internal_uW": 7.795246599400002,
+      "leakage_uW": 0.035647198000106996,
+      "total_uW": 30.478315752000015
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 35.68554905782,
+      "internal_uW": 44.42313171,
+      "leakage_uW": 0.06351151299993,
+      "total_uW": 80.1721922808
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 83.85349354173,
+      "internal_uW": 83.07544609288,
+      "leakage_uW": 0.08646472199975996,
+      "total_uW": 167.01540435700002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.839894197996,
+      "internal_uW": 143.5179150549,
+      "leakage_uW": 0.006400193999993,
+      "total_uW": 145.364209447
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.078883364904,
+      "internal_uW": 7.615996128500001,
+      "leakage_uW": 0.035590409999917,
+      "total_uW": 29.730469903
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.58508353997,
+      "internal_uW": 28.25608441403,
+      "leakage_uW": 0.06357838300014,
+      "total_uW": 53.904746337
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 51.12650276212,
+      "internal_uW": 57.29088002508,
+      "leakage_uW": 0.08651373500021002,
+      "total_uW": 108.50389652199999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.831843712995,
+      "internal_uW": 149.4413882276,
+      "leakage_uW": 0.006408328000014,
+      "total_uW": 151.279640269
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.773796975055,
+      "internal_uW": 7.834950413100017,
+      "leakage_uW": 0.035659543000076,
+      "total_uW": 30.644406930999992
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.77581333499,
+      "internal_uW": 36.14024287116,
+      "leakage_uW": 0.06352682699998,
+      "total_uW": 66.9795830332
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 69.03484902007,
+      "internal_uW": 69.0397861841,
+      "leakage_uW": 0.08683746600032,
+      "total_uW": 138.16147267000002
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.851677705998,
+      "internal_uW": 148.3570679566,
+      "leakage_uW": 0.006421771000001,
+      "total_uW": 150.215167434
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.624631379012,
+      "internal_uW": 7.788113520300016,
+      "leakage_uW": 0.035644579000009,
+      "total_uW": 30.448389477999996
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.08363943398,
+      "internal_uW": 31.02925766271,
+      "leakage_uW": 0.06354533699984,
+      "total_uW": 56.1764424337
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 60.75660916607,
+      "internal_uW": 60.00044312199,
+      "leakage_uW": 0.08662488799987998,
+      "total_uW": 120.843677176
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.848542043999,
+      "internal_uW": 147.4415918454,
+      "leakage_uW": 0.006417910999992,
+      "total_uW": 149.2965518
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.522357861981,
+      "internal_uW": 7.755900354899978,
+      "leakage_uW": 0.035634355000018,
+      "total_uW": 30.313892571999986
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.20271647297,
+      "internal_uW": 40.17829175016,
+      "leakage_uW": 0.06359986100003,
+      "total_uW": 71.4446080842
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 77.15609129407,
+      "internal_uW": 73.45528209601,
+      "leakage_uW": 0.08687362300005001,
+      "total_uW": 150.698247013
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.843407567002,
+      "internal_uW": 145.1156437808,
+      "leakage_uW": 0.006408084000003,
+      "total_uW": 146.965459432
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.259139912978,
+      "internal_uW": 7.672555090199978,
+      "leakage_uW": 0.035608195000017,
+      "total_uW": 29.967303198000025
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 27.00429118889,
+      "internal_uW": 32.21349117741,
+      "leakage_uW": 0.0635354829998,
+      "total_uW": 59.2813178493
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 63.59650400491,
+      "internal_uW": 63.88339001003,
+      "leakage_uW": 0.08646700199988998,
+      "total_uW": 127.56636101699999
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.852968416997,
+      "internal_uW": 149.079495007,
+      "leakage_uW": 0.006423783999987,
+      "total_uW": 150.938887208
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.709699780902998,
+      "internal_uW": 7.814909288199999,
+      "leakage_uW": 0.035653229999853,
+      "total_uW": 30.560262298999987
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 31.30900558602,
+      "internal_uW": 37.97406331306,
+      "leakage_uW": 0.06354553400016,
+      "total_uW": 69.3466144331
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 73.18728609322,
+      "internal_uW": 71.85408733893,
+      "leakage_uW": 0.08672898499989001,
+      "total_uW": 145.128102417
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.848448582999,
+      "internal_uW": 147.2311928649,
+      "leakage_uW": 0.006417376000012,
+      "total_uW": 149.086058824
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.496182876021,
+      "internal_uW": 7.747598173699998,
+      "leakage_uW": 0.035631750000008,
+      "total_uW": 30.279412800000017
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 30.37999986513,
+      "internal_uW": 35.77135237623,
+      "leakage_uW": 0.06344748700023,
+      "total_uW": 66.2147997283
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 69.85280530917,
+      "internal_uW": 70.20699041114,
+      "leakage_uW": 0.08653200700030005,
+      "total_uW": 140.146327727
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.849416066001,
+      "internal_uW": 148.5941381768,
+      "leakage_uW": 0.006420727000015,
+      "total_uW": 150.44997497
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.653775284109003,
+      "internal_uW": 7.79689340980002,
+      "leakage_uW": 0.035648029000054995,
+      "total_uW": 30.486316722999987
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 33.30581164093,
+      "internal_uW": 39.77810456829,
+      "leakage_uW": 0.06347320199979,
+      "total_uW": 73.1473894112
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 76.18269399274,
+      "internal_uW": 75.80096711384,
+      "leakage_uW": 0.08675809499977996,
+      "total_uW": 152.070419202
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.847354957998,
+      "internal_uW": 147.0999634083,
+      "leakage_uW": 0.006416424999976,
+      "total_uW": 148.953734791
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.482329663902,
+      "internal_uW": 7.743556816600005,
+      "leakage_uW": 0.035630347999914,
+      "total_uW": 30.261516829000016
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 25.95335462104,
+      "internal_uW": 31.36435456385,
+      "leakage_uW": 0.06341163300004,
+      "total_uW": 57.3811208179
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 62.946338219,
+      "internal_uW": 62.67657439806,
+      "leakage_uW": 0.08595304700022001,
+      "total_uW": 125.708865664
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.850210926001,
+      "internal_uW": 148.5362201846,
+      "leakage_uW": 0.006421169000003,
+      "total_uW": 150.39285228
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.647423065989,
+      "internal_uW": 7.795326116199988,
+      "leakage_uW": 0.035647198000007,
+      "total_uW": 30.478396379999992
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 35.68557675297,
+      "internal_uW": 44.42322891637,
+      "leakage_uW": 0.06351151299987,
+      "total_uW": 80.1723171824
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "logic",
+      "switching_uW": 83.85357889285,
+      "internal_uW": 83.07550552073,
+      "leakage_uW": 0.08646472199976997,
+      "total_uW": 167.015549136
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 1.839894290997,
+      "internal_uW": 143.517830173,
+      "leakage_uW": 0.006400193999985,
+      "total_uW": 145.364124658
+    },
+    {
+      "design": "65-SGPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_141943-65-SGPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 22.078884485983004,
+      "internal_uW": 7.616070240800013,
+      "leakage_uW": 0.035590409999925,
+      "total_uW": 29.73054513699998
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 16.26954261398,
+      "internal_uW": 20.64487949592,
+      "leakage_uW": 0.03325138399999,
+      "total_uW": 36.9476734939
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 32.10421725099,
+      "internal_uW": 41.72583944397,
+      "leakage_uW": 0.040194785999979984,
+      "total_uW": 73.870251481
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9807433960001,
+      "internal_uW": 82.55339759636,
+      "leakage_uW": 0.006402025999988,
+      "total_uW": 83.5405430184
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 12.288725417979899,
+      "internal_uW": 4.3790569848199965,
+      "leakage_uW": 0.018610352999982,
+      "total_uW": 16.686392755599996
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 16.90784303706,
+      "internal_uW": 23.4366899286,
+      "leakage_uW": 0.03329500299998,
+      "total_uW": 40.3778279687
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 36.728710139,
+      "internal_uW": 42.42336531602,
+      "leakage_uW": 0.04037853000000001,
+      "total_uW": 79.192453985
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9520031730014,
+      "internal_uW": 77.71206800968,
+      "leakage_uW": 0.006369404999998,
+      "total_uW": 78.6704405877
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.635664410008602,
+      "internal_uW": 4.123524187870004,
+      "leakage_uW": 0.018538602999952,
+      "total_uW": 15.777727200800001
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 14.50696052299,
+      "internal_uW": 20.64690089699,
+      "leakage_uW": 0.03329520899998,
+      "total_uW": 35.187156629
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 32.83085876099,
+      "internal_uW": 38.48490412599,
+      "leakage_uW": 0.04031579400001,
+      "total_uW": 71.356078681
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9465524700024,
+      "internal_uW": 76.99882057173,
+      "leakage_uW": 0.006363136000002,
+      "total_uW": 77.9517361777
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.5166341420176,
+      "internal_uW": 4.084546385680014,
+      "leakage_uW": 0.018526582999978,
+      "total_uW": 15.619707110700006
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.59331300499,
+      "internal_uW": 25.37025387727,
+      "leakage_uW": 0.03334554400001,
+      "total_uW": 42.9969124263
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.83896884197,
+      "internal_uW": 45.25461787293,
+      "leakage_uW": 0.04037881799988999,
+      "total_uW": 84.13396553289999
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.949018746,
+      "internal_uW": 77.61973548299,
+      "leakage_uW": 0.006360940999994,
+      "total_uW": 78.57511517
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.740845171,
+      "internal_uW": 4.131815816650004,
+      "leakage_uW": 0.018544849999936,
+      "total_uW": 15.891205837599998
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 15.22189021297,
+      "internal_uW": 21.42342201856,
+      "leakage_uW": 0.033289599,
+      "total_uW": 36.6786018306
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 34.74267653196,
+      "internal_uW": 40.15256380399,
+      "leakage_uW": 0.04037329899997999,
+      "total_uW": 74.935613635
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9523885699981,
+      "internal_uW": 77.79610392723,
+      "leakage_uW": 0.006369711999973,
+      "total_uW": 78.7548622092
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.6155020250219,
+      "internal_uW": 4.125182928289988,
+      "leakage_uW": 0.018537894000007,
+      "total_uW": 15.759222847299995
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.602238886,
+      "internal_uW": 24.67644441045,
+      "leakage_uW": 0.03330838400011,
+      "total_uW": 42.3119916805
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.43655308303,
+      "internal_uW": 44.61339233303,
+      "leakage_uW": 0.04046940600012003,
+      "total_uW": 83.090414822
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9539008930012,
+      "internal_uW": 77.94472430049,
+      "leakage_uW": 0.006370336000014,
+      "total_uW": 78.9049955295
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.7138076590088,
+      "internal_uW": 4.14016545345001,
+      "leakage_uW": 0.018544768000016,
+      "total_uW": 15.872517880399997
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.99814207801,
+      "internal_uW": 24.78094432546,
+      "leakage_uW": 0.03323877000014,
+      "total_uW": 42.8123251735
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 39.25206128212,
+      "internal_uW": 45.79389474196,
+      "leakage_uW": 0.04031047900014,
+      "total_uW": 85.08626650309999
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.967855287999,
+      "internal_uW": 79.5830889074,
+      "leakage_uW": 0.006386458999988,
+      "total_uW": 80.5573306544
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.948628849000999,
+      "internal_uW": 4.229137392390001,
+      "leakage_uW": 0.018570247000012,
+      "total_uW": 16.196336488399993
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.38375202099,
+      "internal_uW": 26.60706153352,
+      "leakage_uW": 0.03326256600008,
+      "total_uW": 46.0240761205
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 41.06016355994,
+      "internal_uW": 48.26546175386,
+      "leakage_uW": 0.040285698000029985,
+      "total_uW": 89.3659110118
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9622508459995,
+      "internal_uW": 78.9302807983,
+      "leakage_uW": 0.006378410999992,
+      "total_uW": 79.8989100553
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.8956233169905,
+      "internal_uW": 4.198606732450003,
+      "leakage_uW": 0.018563058999988,
+      "total_uW": 16.1127931085
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 15.15427814702,
+      "internal_uW": 21.55777389028,
+      "leakage_uW": 0.03321689100009,
+      "total_uW": 36.7452689283
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 35.11104446402,
+      "internal_uW": 40.6398525191,
+      "leakage_uW": 0.040374155999960006,
+      "total_uW": 75.79127113909999
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9642975450013,
+      "internal_uW": 79.11900618888,
+      "leakage_uW": 0.006382731999999,
+      "total_uW": 80.0896864659
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.8770938700087,
+      "internal_uW": 4.205194752780002,
+      "leakage_uW": 0.018563119000061,
+      "total_uW": 16.1008517418
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.34124408104,
+      "internal_uW": 26.97750802761,
+      "leakage_uW": 0.03328086300002,
+      "total_uW": 46.3520329716
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 41.18788550603,
+      "internal_uW": 48.863524811,
+      "leakage_uW": 0.04037056900002001,
+      "total_uW": 90.091780886
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9679313879998,
+      "internal_uW": 77.44703989187,
+      "leakage_uW": 0.006363960000003,
+      "total_uW": 78.4213352399
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_0_97MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.7752219849902,
+      "internal_uW": 4.125855113789996,
+      "leakage_uW": 0.018545520000007,
+      "total_uW": 15.919622618799991
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 16.26956969599,
+      "internal_uW": 20.64487670712,
+      "leakage_uW": 0.03325138400004,
+      "total_uW": 36.9476977871
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 32.10430235904,
+      "internal_uW": 41.72591541503,
+      "leakage_uW": 0.04019478599998,
+      "total_uW": 73.87041255999999
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9807436469958,
+      "internal_uW": 82.55321357217,
+      "leakage_uW": 0.006402026,
+      "total_uW": 83.5403592452
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 12.2887285430442,
+      "internal_uW": 4.378865065430006,
+      "leakage_uW": 0.018610352999989997,
+      "total_uW": 16.686203961800004
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 16.90786887102,
+      "internal_uW": 23.4367497269,
+      "leakage_uW": 0.03329500300015,
+      "total_uW": 40.3779136009
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 36.72876598712,
+      "internal_uW": 42.42342241715,
+      "leakage_uW": 0.04037852999991002,
+      "total_uW": 79.1925669342
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9520034140014,
+      "internal_uW": 77.71210446101,
+      "leakage_uW": 0.006369405000008,
+      "total_uW": 78.67047728
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.6356673490286,
+      "internal_uW": 4.123353896680001,
+      "leakage_uW": 0.018538603000032003,
+      "total_uW": 15.777559848699994
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 14.506986589,
+      "internal_uW": 20.64691440792,
+      "leakage_uW": 0.03329520899995,
+      "total_uW": 35.1871962059
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 32.83093356798,
+      "internal_uW": 38.48497441394,
+      "leakage_uW": 0.04031579400009,
+      "total_uW": 71.35622377589999
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9465527160009,
+      "internal_uW": 76.99889196162,
+      "leakage_uW": 0.006363135999998,
+      "total_uW": 77.9518078136
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.5166371239991,
+      "internal_uW": 4.084844083159993,
+      "leakage_uW": 0.018526583000072,
+      "total_uW": 15.620007790200006
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.59333914998,
+      "internal_uW": 25.3702927083,
+      "leakage_uW": 0.03334554399997,
+      "total_uW": 42.9969774023
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.83902904016,
+      "internal_uW": 45.254682055,
+      "leakage_uW": 0.04037881800007999,
+      "total_uW": 84.1340899132
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9490189889988,
+      "internal_uW": 77.61973548299,
+      "leakage_uW": 0.006360941000013,
+      "total_uW": 78.575115413
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.7408481439812,
+      "internal_uW": 4.132009971810007,
+      "leakage_uW": 0.018544849999996997,
+      "total_uW": 15.891402965799998
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 15.221917414,
+      "internal_uW": 21.42348199498,
+      "leakage_uW": 0.03328959899983,
+      "total_uW": 36.678689008
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 34.74276680084,
+      "internal_uW": 40.15263655384,
+      "leakage_uW": 0.04037329899984994,
+      "total_uW": 74.9357766536
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9523888189969,
+      "internal_uW": 77.79610392697,
+      "leakage_uW": 0.006369711999976,
+      "total_uW": 78.754862458
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.6155050569931,
+      "internal_uW": 4.1250629752899926,
+      "leakage_uW": 0.018537893999974,
+      "total_uW": 15.759105926299995
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.60226455298,
+      "internal_uW": 24.67647304558,
+      "leakage_uW": 0.033308384,
+      "total_uW": 42.3120459826
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.43661426601,
+      "internal_uW": 44.61345226394,
+      "leakage_uW": 0.04046940599991998,
+      "total_uW": 83.0905359359
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9539011379991,
+      "internal_uW": 77.94469870672,
+      "leakage_uW": 0.006370336000001,
+      "total_uW": 78.9049701807
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.7138106649909,
+      "internal_uW": 4.140170257799994,
+      "leakage_uW": 0.018544767999959,
+      "total_uW": 15.87252569079999
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.99816876799,
+      "internal_uW": 24.78098585016,
+      "leakage_uW": 0.03323877,
+      "total_uW": 42.8123933882
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 39.25210295799,
+      "internal_uW": 45.79394529699,
+      "leakage_uW": 0.040310479,
+      "total_uW": 85.086358734
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9678555360021,
+      "internal_uW": 79.58341746111,
+      "leakage_uW": 0.006386459000016,
+      "total_uW": 80.5576594561
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.9486319050179,
+      "internal_uW": 4.229125853319999,
+      "leakage_uW": 0.018570246999994003,
+      "total_uW": 16.196328005300003
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.38377819898,
+      "internal_uW": 26.6070809461,
+      "leakage_uW": 0.03326256600002,
+      "total_uW": 46.0241217111
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 41.06024560602,
+      "internal_uW": 48.26552953903,
+      "leakage_uW": 0.04028569800005001,
+      "total_uW": 89.366060843
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9622510939979,
+      "internal_uW": 78.92992507717,
+      "leakage_uW": 0.006378411000033,
+      "total_uW": 79.8985545822
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.8956263890121,
+      "internal_uW": 4.19861906861,
+      "leakage_uW": 0.018563058999976997,
+      "total_uW": 16.112808516599998
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 15.154304433,
+      "internal_uW": 21.55786944332,
+      "leakage_uW": 0.03321689100003,
+      "total_uW": 36.7453907673
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 35.11110037004,
+      "internal_uW": 40.63991215192,
+      "leakage_uW": 0.040374155999879986,
+      "total_uW": 75.7913866779
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9642977940003,
+      "internal_uW": 79.11912900127,
+      "leakage_uW": 0.006382732000009,
+      "total_uW": 80.0898095273
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.8770969169797,
+      "internal_uW": 4.205046055259999,
+      "leakage_uW": 0.018563118999971,
+      "total_uW": 16.100706091199996
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.34127067496,
+      "internal_uW": 26.97747419401,
+      "leakage_uW": 0.03328086299987,
+      "total_uW": 46.352025732
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 41.18796064293,
+      "internal_uW": 48.86358989486,
+      "leakage_uW": 0.04037056899989996,
+      "total_uW": 90.0919211068
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9679317479975,
+      "internal_uW": 77.44715370669,
+      "leakage_uW": 0.006363959999984,
+      "total_uW": 78.4214494147
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_1_94MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.775225039972499,
+      "internal_uW": 4.125714218520002,
+      "leakage_uW": 0.018545519999926,
+      "total_uW": 15.919484778499992
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 16.26958292798,
+      "internal_uW": 20.64494646255,
+      "leakage_uW": 0.03325138399995,
+      "total_uW": 36.9477807745
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 32.10433906997,
+      "internal_uW": 41.72594868987,
+      "leakage_uW": 0.04019478599994998,
+      "total_uW": 73.87048254589999
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9807436999984,
+      "internal_uW": 82.55325126679,
+      "leakage_uW": 0.006402025999999,
+      "total_uW": 83.5403969928
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 12.288729223991599,
+      "internal_uW": 4.379073405409997,
+      "leakage_uW": 0.018610353000011,
+      "total_uW": 16.686412982199997
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 16.90788223299,
+      "internal_uW": 23.43678673558,
+      "leakage_uW": 0.03329500299997,
+      "total_uW": 40.3779639716
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 36.72880074297,
+      "internal_uW": 42.42345616903,
+      "leakage_uW": 0.04037853000001,
+      "total_uW": 79.192635442
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9520034650024,
+      "internal_uW": 77.71204449458,
+      "leakage_uW": 0.006369405,
+      "total_uW": 78.6704173646
+    },
+    {
+      "design": "MPF",
+      "scenario": "BQTerrace_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.6356679810076,
+      "internal_uW": 4.123488207359998,
+      "leakage_uW": 0.018538602999969997,
+      "total_uW": 15.777694791300007
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 14.50700017899,
+      "internal_uW": 20.64696510478,
+      "leakage_uW": 0.03329520900014,
+      "total_uW": 35.1872604928
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 32.830963145,
+      "internal_uW": 38.48500672607,
+      "leakage_uW": 0.04031579399986001,
+      "total_uW": 71.3562856651
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9465527640017,
+      "internal_uW": 76.99883620344,
+      "leakage_uW": 0.006363135999996,
+      "total_uW": 77.9517521034
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.516637705998301,
+      "internal_uW": 4.084801563339994,
+      "leakage_uW": 0.018526583000014002,
+      "total_uW": 15.6199658524
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.59335290901,
+      "internal_uW": 25.37031269466,
+      "leakage_uW": 0.03334554400002,
+      "total_uW": 42.9970111477
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.83905017901,
+      "internal_uW": 45.25471081398,
+      "leakage_uW": 0.04037881800002,
+      "total_uW": 84.134139811
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9490190390013,
+      "internal_uW": 77.61975208671,
+      "leakage_uW": 0.006360941000001,
+      "total_uW": 78.5751320667
+    },
+    {
+      "design": "MPF",
+      "scenario": "BasketballDrive_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.740848781008701,
+      "internal_uW": 4.131680578050009,
+      "leakage_uW": 0.018544849999989,
+      "total_uW": 15.891074209100012
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 15.221929773,
+      "internal_uW": 21.42352041333,
+      "leakage_uW": 0.03328959899991,
+      "total_uW": 36.6787397853
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 34.74280429795,
+      "internal_uW": 40.1526674431,
+      "leakage_uW": 0.04037329899992001,
+      "total_uW": 74.93584504009999
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.952388863,
+      "internal_uW": 77.79621799223,
+      "leakage_uW": 0.006369712000012,
+      "total_uW": 78.7549765672
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.61550558,
+      "internal_uW": 4.124995790820009,
+      "leakage_uW": 0.018537893999878,
+      "total_uW": 15.759039264799995
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.60227778002,
+      "internal_uW": 24.67652314738,
+      "leakage_uW": 0.03330838400004,
+      "total_uW": 42.3121093114
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 38.43664946303,
+      "internal_uW": 44.61348370002,
+      "leakage_uW": 0.04046940600003001,
+      "total_uW": 83.090602569
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9539011859985,
+      "internal_uW": 77.94484466041,
+      "leakage_uW": 0.006370335999985,
+      "total_uW": 78.9051161824
+    },
+    {
+      "design": "MPF",
+      "scenario": "Cactus_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.713811246991499,
+      "internal_uW": 4.139908043420007,
+      "leakage_uW": 0.018544768000045002,
+      "total_uW": 15.872264058400006
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 17.99818208798,
+      "internal_uW": 24.78099498198,
+      "leakage_uW": 0.03323876999997,
+      "total_uW": 42.81241584
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 39.25214797801,
+      "internal_uW": 45.79398286902,
+      "leakage_uW": 0.04031047900004,
+      "total_uW": 85.086441326
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.967855586,
+      "internal_uW": 79.58323941411,
+      "leakage_uW": 0.006386458999995,
+      "total_uW": 80.5574814591
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.94863253805,
+      "internal_uW": 4.229100148149996,
+      "leakage_uW": 0.018570246999965,
+      "total_uW": 16.196302933200002
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.38379128388,
+      "internal_uW": 26.60718662207,
+      "leakage_uW": 0.03326256599986,
+      "total_uW": 46.024240472
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 41.06029262881,
+      "internal_uW": 48.26556568378,
+      "leakage_uW": 0.040285697999899936,
+      "total_uW": 89.3661440106
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9622511409962,
+      "internal_uW": 78.93018400135,
+      "leakage_uW": 0.006378410999977,
+      "total_uW": 79.8988135533
+    },
+    {
+      "design": "MPF",
+      "scenario": "ParkRunning3_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.8956269689338,
+      "internal_uW": 4.198598307020006,
+      "leakage_uW": 0.018563058999973,
+      "total_uW": 16.112788335000005
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 15.15431710499,
+      "internal_uW": 21.55787403046,
+      "leakage_uW": 0.033216891,
+      "total_uW": 36.7454080265
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 35.11113199899,
+      "internal_uW": 40.63994259099,
+      "leakage_uW": 0.04037415599999,
+      "total_uW": 75.791448746
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9642978380003,
+      "internal_uW": 79.11878587171,
+      "leakage_uW": 0.006382731999977,
+      "total_uW": 80.0894664417
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp22_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.8770974990297,
+      "internal_uW": 4.20562492997,
+      "leakage_uW": 0.018563119000013,
+      "total_uW": 16.101285548000007
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "sequential",
+      "switching_uW": 19.34128504002,
+      "internal_uW": 26.97757818465,
+      "leakage_uW": 0.03328086300006,
+      "total_uW": 46.3521440877
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "logic",
+      "switching_uW": 41.18802490008,
+      "internal_uW": 48.86363481501,
+      "leakage_uW": 0.04037056900004002,
+      "total_uW": 90.09203028409999
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_sequential",
+      "switching_uW": 0.9679318420022,
+      "internal_uW": 77.44705428215,
+      "leakage_uW": 0.006363960000007,
+      "total_uW": 78.4213500842
+    },
+    {
+      "design": "MPF",
+      "scenario": "Tango2_qp37_3_89MHz",
+      "layout_run": "20261125_125823-MPF-final-spef",
+      "category": "clock_combinational",
+      "switching_uW": 11.7752256290178,
+      "internal_uW": 4.125743685859987,
+      "leakage_uW": 0.018545520000023002,
+      "total_uW": 15.919514834799998
+    }
+  ]
+}
