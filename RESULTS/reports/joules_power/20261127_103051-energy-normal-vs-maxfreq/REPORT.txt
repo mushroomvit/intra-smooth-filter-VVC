@@ -1,0 +1,32 @@
+VCD energy consumption: normal versus timing-safe maximum frequency
+
+120 matched VCD workloads, each evaluated at two operating points: 240 energy records.
+Normal = each bench original clock (approximately 0.97, 1.94 or 3.89 MHz).
+Maximum = the last validated clock: minimum passing period + 0.5 ns, not the zero-slack limit.
+Both sets use the same final Innovus netlists, actual buffers/CTS and detailed SPEF at TT_25, 0.8 V, 25 C.
+Energy [nJ] = average power [uW] * effective VCD duration [ms]. Per-block energy [pJ] = 1000 * energy [nJ] / blocks.
+Normal uses the original VCD duration. Maximum uses original duration / Joules frequency scaling factor.
+These are energies for the same complete workloads, including reset/startup and trailing time within each VCD, not for equal wall-clock durations.
+No Joules rerun is needed: the average powers were already computed over these same activity windows.
+Activity is RTL VCD activity propagated through routed netlists; it is not an SDF gate simulation.
+
+Averages below cover the same 30 matched benches per design; they include all three source rates.
+The source rates are separate runs. Aggregate sums are benchmark-suite totals, not a single video energy.
+
+Design       Max MHz   Normal mean nJ   Max mean nJ   Saving %   Normal pJ/block   Max pJ/block
+FPF           80.302       224.392606    216.227665      3.639         48.809650      47.033621
+129-SGPF      80.645       126.974715    122.117226      3.826         27.619410      26.562814
+65-SGPF       82.082        91.848616     89.640601      2.404         19.978817      19.498532
+MPF           87.382        54.464080     53.217005      2.290         11.846971      11.575709
+
+Per-block summary is block-weighted: sum(energy)/sum(blocks), including VCD overhead.
+Dynamic energy is nearly frequency-independent for the same uniformly scaled workload: higher dynamic power is offset by shorter execution time. Leakage energy decreases with the shorter duration.
+
+Files:
+  energy_comparison.csv: 120 paired normal/max cases with nJ by mechanism, durations, frequencies, savings and pJ/block.
+  energy_cases.csv: 240 records with average power in uW and energy in nJ.
+  energy_detail.csv: 960 records; switching/internal/leakage x sequential/logic/clock-sequential/clock-combinational.
+  summary_by_design.csv: four aggregate design comparisons.
+  summary_by_source_frequency.csv: twelve comparisons keeping the three normal rates separate.
+  energy_comparison.json: machine-readable paired cases and summaries.
+  provenance.json: source reports, hashes, units and maximum-frequency definition.

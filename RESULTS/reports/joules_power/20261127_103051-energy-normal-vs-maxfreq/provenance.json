@@ -1,0 +1,39 @@
+{
+  "formula": "energy_nJ = average_power_uW * effective_duration_ms",
+  "max_definition": "Minimum passing clock period + 0.5 ns; routed setup/hold validated",
+  "sources": {
+    "normal": {
+      "power_summary.csv": {
+        "path": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261125_125823-final-spef-power/power_summary.csv",
+        "sha256": "c89aee3b399fe69a08adfaa024b53eb5a7f440f7982792d58b99c5c8435a2d31"
+      },
+      "power_detail.csv": {
+        "path": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261125_125823-final-spef-power/power_detail.csv",
+        "sha256": "253966ec831369e48740b4cb40af50f04b0c9311d9e299f8d71c8fbe3d86b739"
+      },
+      "provenance.json": {
+        "path": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261125_125823-final-spef-power/provenance.json",
+        "sha256": "546aad9f454ee4da913174c1d953fd90213ecd30a78c80fb51b37ca041fbfc14"
+      }
+    },
+    "max": {
+      "power_summary.csv": {
+        "path": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261126_231344-min-period-plus0p5ns/power/power_summary.csv",
+        "sha256": "cdef477927ab2149a7e4c3c44afbfd99a6846c178211fdb559eaea5ff8945992"
+      },
+      "power_detail.csv": {
+        "path": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261126_231344-min-period-plus0p5ns/power/power_detail.csv",
+        "sha256": "096f71c307b58f22168a12269477ca806d478e9a626a47a668deee7efd9d9464"
+      },
+      "provenance.json": {
+        "path": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261126_231344-min-period-plus0p5ns/power/provenance.json",
+        "sha256": "84d74b481c3546706fd43007b771f66e2a4594b4c370fa5a7e47f1355cd3f8e1"
+      }
+    }
+  },
+  "timing_summary": "/home/weber/PESSOAL/intra-smooth-filter-VVC/backend/lay/reports/joules_power/20261126_231344-min-period-plus0p5ns/summary.json",
+  "comparisons": 120,
+  "energy_cases": 240,
+  "category_records": 960,
+  "native_power_rerun_required": false
+}
